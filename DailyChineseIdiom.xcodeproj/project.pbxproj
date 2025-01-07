@@ -6,14 +6,65 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		959911F92D29FC3400654A78 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959911F82D29FC3400654A78 /* WidgetKit.framework */; };
+		959911FB2D29FC3400654A78 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959911FA2D29FC3400654A78 /* SwiftUI.framework */; };
+		9599120C2D29FC3500654A78 /* DailyIdiomExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 959911F62D29FC3400654A78 /* DailyIdiomExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9599120A2D29FC3500654A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 959911D52D29F88F00654A78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 959911F52D29FC3400654A78;
+			remoteInfo = DailyIdiomExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		959912112D29FC3500654A78 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9599120C2D29FC3500654A78 /* DailyIdiomExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		959911DD2D29F88F00654A78 /* DailyChineseIdiom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyChineseIdiom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		959911F62D29FC3400654A78 /* DailyIdiomExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyIdiomExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		959911F82D29FC3400654A78 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		959911FA2D29FC3400654A78 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9599120D2D29FC3500654A78 /* Exceptions for "DailyIdiom" folder in "DailyIdiomExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 959911F52D29FC3400654A78 /* DailyIdiomExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		959911DF2D29F88F00654A78 /* DailyChineseIdiom */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DailyChineseIdiom;
+			sourceTree = "<group>";
+		};
+		959911FC2D29FC3400654A78 /* DailyIdiom */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9599120D2D29FC3500654A78 /* Exceptions for "DailyIdiom" folder in "DailyIdiomExtension" target */,
+			);
+			path = DailyIdiom;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +77,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		959911F32D29FC3400654A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959911FB2D29FC3400654A78 /* SwiftUI.framework in Frameworks */,
+				959911F92D29FC3400654A78 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				959911DF2D29F88F00654A78 /* DailyChineseIdiom */,
+				959911FC2D29FC3400654A78 /* DailyIdiom */,
+				959911F72D29FC3400654A78 /* Frameworks */,
 				959911DE2D29F88F00654A78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +103,18 @@
 			isa = PBXGroup;
 			children = (
 				959911DD2D29F88F00654A78 /* DailyChineseIdiom.app */,
+				959911F62D29FC3400654A78 /* DailyIdiomExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		959911F72D29FC3400654A78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				959911F82D29FC3400654A78 /* WidgetKit.framework */,
+				959911FA2D29FC3400654A78 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +127,12 @@
 				959911D92D29F88F00654A78 /* Sources */,
 				959911DA2D29F88F00654A78 /* Frameworks */,
 				959911DB2D29F88F00654A78 /* Resources */,
+				959912112D29FC3500654A78 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9599120B2D29FC3500654A78 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				959911DF2D29F88F00654A78 /* DailyChineseIdiom */,
@@ -69,6 +143,28 @@
 			productName = DailyChineseIdiom;
 			productReference = 959911DD2D29F88F00654A78 /* DailyChineseIdiom.app */;
 			productType = "com.apple.product-type.application";
+		};
+		959911F52D29FC3400654A78 /* DailyIdiomExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9599120E2D29FC3500654A78 /* Build configuration list for PBXNativeTarget "DailyIdiomExtension" */;
+			buildPhases = (
+				959911F22D29FC3400654A78 /* Sources */,
+				959911F32D29FC3400654A78 /* Frameworks */,
+				959911F42D29FC3400654A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				959911FC2D29FC3400654A78 /* DailyIdiom */,
+			);
+			name = DailyIdiomExtension;
+			packageProductDependencies = (
+			);
+			productName = DailyIdiomExtension;
+			productReference = 959911F62D29FC3400654A78 /* DailyIdiomExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +177,9 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					959911DC2D29F88F00654A78 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					959911F52D29FC3400654A78 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -100,12 +199,20 @@
 			projectRoot = "";
 			targets = (
 				959911DC2D29F88F00654A78 /* DailyChineseIdiom */,
+				959911F52D29FC3400654A78 /* DailyIdiomExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		959911DB2D29F88F00654A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		959911F42D29FC3400654A78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +229,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		959911F22D29FC3400654A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9599120B2D29FC3500654A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 959911F52D29FC3400654A78 /* DailyIdiomExtension */;
+			targetProxy = 9599120A2D29FC3500654A78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		959911EA2D29F89000654A78 /* Debug */ = {
@@ -317,6 +439,65 @@
 			};
 			name = Release;
 		};
+		9599120F2D29FC3500654A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JU395NH3KL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyIdiom/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyIdiom;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Daily.DailyChineseIdiom.DailyIdiom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		959912102D29FC3500654A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JU395NH3KL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyIdiom/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyIdiom;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Daily.DailyChineseIdiom.DailyIdiom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +515,15 @@
 			buildConfigurations = (
 				959911ED2D29F89000654A78 /* Debug */,
 				959911EE2D29F89000654A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9599120E2D29FC3500654A78 /* Build configuration list for PBXNativeTarget "DailyIdiomExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9599120F2D29FC3500654A78 /* Debug */,
+				959912102D29FC3500654A78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
