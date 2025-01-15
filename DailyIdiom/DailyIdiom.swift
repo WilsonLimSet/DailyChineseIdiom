@@ -12,39 +12,36 @@ struct Provider: TimelineProvider {
     typealias Entry = SimpleEntry
     typealias Configuration = ConfigurationAppIntent
     
-    // Sample idiom for testing
-    private let sampleIdiom = Idiom(
-        characters: "加油",
-        pinyin: "jiā yóu",
-        meaning: "keep going",
-        example: "You can do it!"
-    )
-
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(
+        let idiom = IdiomProvider.shared.idiomForDate()
+        return SimpleEntry(
             date: Date(),
             configuration: ConfigurationAppIntent(),
-            idiom: sampleIdiom
+            idiom: WidgetIdiom(from: idiom)
         )
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+        let idiom = IdiomProvider.shared.idiomForDate()
         let entry = SimpleEntry(
             date: Date(),
             configuration: ConfigurationAppIntent(),
-            idiom: sampleIdiom
+            idiom: WidgetIdiom(from: idiom)
         )
         completion(entry)
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
+        let currentDate = Date()
+        let tomorrow = Calendar.current.startOfDay(for: currentDate.addingTimeInterval(86400))
+        let idiom = IdiomProvider.shared.idiomForDate()
         let entry = SimpleEntry(
-            date: Date(),
+            date: currentDate,
             configuration: ConfigurationAppIntent(),
-            idiom: sampleIdiom
+            idiom: WidgetIdiom(from: idiom)
         )
         
-        let timeline = Timeline(entries: [entry], policy: .never)
+        let timeline = Timeline(entries: [entry], policy: .after(tomorrow))
         completion(timeline)
     }
 }
@@ -52,7 +49,7 @@ struct Provider: TimelineProvider {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationAppIntent
-    let idiom: Idiom
+    let idiom: WidgetIdiom
 }
 
 struct DailyIdiomEntryView: View {
@@ -72,106 +69,110 @@ struct DailyIdiomEntryView: View {
         }
     }
     
-    // Small square widget
-    private var smallWidget: some View {
-        VStack(alignment: .center, spacing: 8) {
-            Text(entry.idiom.characters)
-                .font(.system(size: 36, weight: .bold))
-                .minimumScaleFactor(0.5)
-                .foregroundColor(.primary)
-            
+   private var smallWidget: some View {
+    VStack(alignment: .center, spacing: 4) { 
+        Text(entry.idiom.characters)
+            .font(.system(size: 32, weight: .bold)) 
+            .minimumScaleFactor(0.5)
+            .foregroundColor(.primary)
+        
+        Text(entry.idiom.pinyin)
+            .font(.system(size: 12)) 
+            .foregroundColor(.secondary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.8) 
+        
+        Text(entry.idiom.meaning)
+            .font(.system(size: 10)) 
+            .foregroundColor(.secondary)
+            .lineLimit(2)
+            .multilineTextAlignment(.center)
+    }
+    .padding(.horizontal, 4) 
+    .padding(.vertical, 4)
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(
+        RoundedRectangle(cornerRadius: 12)
+            .fill(Color(UIColor.systemBackground))
+            .shadow(radius: 2)
+    )
+}
+    
+   // Medium horizontal widget
+private var mediumWidget: some View {
+    HStack(spacing: 16) {
+        Text(entry.idiom.characters)
+            .font(.system(size: 48, weight: .bold))
+            .minimumScaleFactor(0.5)
+            .foregroundColor(.primary)
+        
+        VStack(alignment: .leading, spacing: 8) {
             Text(entry.idiom.pinyin)
-                .font(.system(size: 14))
+                .font(.system(size: 18))
                 .foregroundColor(.secondary)
             
             Text(entry.idiom.meaning)
-                .font(.system(size: 12))
+                .font(.system(size: 14))
                 .foregroundColor(.secondary)
                 .lineLimit(2)
+        }
+    }
+    .padding()
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(
+        RoundedRectangle(cornerRadius: 12)
+            .fill(Color(UIColor.systemBackground))
+            .shadow(radius: 2)
+    )
+}
+    
+   private var largeWidget: some View {
+    VStack(alignment: .center, spacing: 12) { // Reduced spacing from 16
+        Text(entry.idiom.characters)
+            .font(.system(size: 72, weight: .bold))
+            .minimumScaleFactor(0.5)
+            .foregroundColor(.primary)
+        
+        VStack(spacing: 8) { // Reduced spacing from 12
+            Text(entry.idiom.pinyin)
+                .font(.system(size: 24))
+                .foregroundColor(.secondary)
+            
+            Text(entry.idiom.meaning)
+                .font(.system(size: 18))
+                .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
-        }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color(UIColor.systemBackground))
-                .shadow(radius: 2)
-        )
-    }
-    
-    // Medium horizontal widget
-    private var mediumWidget: some View {
-        HStack(spacing: 16) {
-            Text(entry.idiom.characters)
-                .font(.system(size: 48, weight: .bold))
-                .minimumScaleFactor(0.5)
-                .foregroundColor(.primary)
             
-            VStack(alignment: .leading, spacing: 8) {
-                Text(entry.idiom.pinyin)
-                    .font(.system(size: 18))
-                    .foregroundColor(.secondary)
-                
-                Text(entry.idiom.meaning)
-                    .font(.system(size: 14))
-                    .foregroundColor(.secondary)
-                    .lineLimit(3)
-                
-                if let example = entry.idiom.example {
-                    Text(example)
-                        .font(.system(size: 12))
-                        .foregroundColor(.secondary)
-                        .lineLimit(2)
-                        .italic()
-                }
-            }
-        }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color(UIColor.systemBackground))
-                .shadow(radius: 2)
-        )
-    }
-    
-    // Large vertical widget
-    private var largeWidget: some View {
-        VStack(alignment: .center, spacing: 16) {
-            Text(entry.idiom.characters)
-                .font(.system(size: 72, weight: .bold))
-                .minimumScaleFactor(0.5)
-                .foregroundColor(.primary)
-            
-            VStack(spacing: 12) {
-                Text(entry.idiom.pinyin)
-                    .font(.system(size: 24))
-                    .foregroundColor(.secondary)
-                
-                Text(entry.idiom.meaning)
-                    .font(.system(size: 18))
-                    .foregroundColor(.secondary)
-                    .multilineTextAlignment(.center)
-                
-                if let example = entry.idiom.example {
+            if let example = entry.idiom.example {
+                VStack(spacing: 6) {
+                    if let chineseExample = entry.idiom.chineseExample {
+                        Text(chineseExample)
+                            .font(.system(size: 14))
+                            .foregroundColor(.secondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.top, 4)
+                    }
+                    
                     Text(example)
                         .font(.system(size: 14))
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
                         .italic()
-                        .padding(.top, 8)
                 }
+                .padding(.horizontal, 8)
             }
         }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color(UIColor.systemBackground))
-                .shadow(radius: 2)
-        )
     }
+    .padding()
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(
+        RoundedRectangle(cornerRadius: 12)
+            .fill(Color(UIColor.systemBackground))
+            .shadow(radius: 2)
+    )
 }
+}
+ 
 
 struct DailyIdiom: Widget {
     let kind: String = "DailyIdiom"
@@ -193,12 +194,7 @@ struct DailyIdiom: Widget {
     SimpleEntry(
         date: .now,
         configuration: ConfigurationAppIntent(),
-        idiom: Idiom(
-            characters: "学习",
-            pinyin: "xué xí",
-            meaning: "to study",
-            example: nil
-        )
+        idiom: WidgetIdiom(from: IdiomProvider.shared.idiomForDate())
     )
 }
 
@@ -208,12 +204,7 @@ struct DailyIdiom: Widget {
     SimpleEntry(
         date: .now,
         configuration: ConfigurationAppIntent(),
-        idiom: Idiom(
-            characters: "一举两得",
-            pinyin: "yī jǔ liǎng dé",
-            meaning: "to kill two birds with one stone",
-            example: "Learning Chinese while having fun is 一举两得"
-        )
+        idiom: WidgetIdiom(from: IdiomProvider.shared.idiomForDate())
     )
 }
 
@@ -223,11 +214,6 @@ struct DailyIdiom: Widget {
     SimpleEntry(
         date: .now,
         configuration: ConfigurationAppIntent(),
-        idiom: Idiom(
-            characters: "熟能生巧",
-            pinyin: "shú néng shēng qiǎo",
-            meaning: "practice makes perfect",
-            example: "Keep practicing and you'll improve naturally"
-        )
+        idiom: WidgetIdiom(from: IdiomProvider.shared.idiomForDate())
     )
 }

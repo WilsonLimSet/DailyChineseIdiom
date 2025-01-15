@@ -10,6 +10,8 @@
 		959911F92D29FC3400654A78 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959911F82D29FC3400654A78 /* WidgetKit.framework */; };
 		959911FB2D29FC3400654A78 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959911FA2D29FC3400654A78 /* SwiftUI.framework */; };
 		9599120C2D29FC3500654A78 /* DailyIdiomExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 959911F62D29FC3400654A78 /* DailyIdiomExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9599126F2D3641DF00654A78 /* idioms.json in Resources */ = {isa = PBXBuildFile; fileRef = 9599126C2D3641DF00654A78 /* idioms.json */; };
+		959912702D3641DF00654A78 /* idioms.json in Resources */ = {isa = PBXBuildFile; fileRef = 9599126C2D3641DF00654A78 /* idioms.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 		959911F62D29FC3400654A78 /* DailyIdiomExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyIdiomExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		959911F82D29FC3400654A78 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		959911FA2D29FC3400654A78 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9599126C2D3641DF00654A78 /* idioms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = idioms.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -92,6 +95,7 @@
 		959911D42D29F88F00654A78 = {
 			isa = PBXGroup;
 			children = (
+				9599126E2D3641DF00654A78 /* Shared */,
 				959911DF2D29F88F00654A78 /* DailyChineseIdiom */,
 				959911FC2D29FC3400654A78 /* DailyIdiom */,
 				959911F72D29FC3400654A78 /* Frameworks */,
@@ -115,6 +119,22 @@
 				959911FA2D29FC3400654A78 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9599126D2D3641DF00654A78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9599126C2D3641DF00654A78 /* idioms.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9599126E2D3641DF00654A78 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9599126D2D3641DF00654A78 /* Resources */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959912702D3641DF00654A78 /* idioms.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9599126F2D3641DF00654A78 /* idioms.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

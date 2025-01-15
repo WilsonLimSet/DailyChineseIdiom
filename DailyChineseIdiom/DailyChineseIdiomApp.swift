@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct DailyChineseIdiomApp: App {
+    init() {
+        // Initialize IdiomProvider early to catch any loading issues
+        _ = IdiomProvider.shared
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }
         }
     }
 }
