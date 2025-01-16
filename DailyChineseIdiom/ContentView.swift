@@ -8,35 +8,70 @@
 import SwiftUI
 
 struct ContentView: View {
-    let idiom: Idiom = IdiomProvider.shared.idiomForDate()
+    @State private var currentIdiom: Idiom = IdiomProvider.shared.idiomForDate()
+    @State private var isShowingTodaysIdiom: Bool = true
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 // Header with Today and Year
                 HStack {
-                    Text("TODAY")
-                        .font(.subheadline)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                        .background(Color.gray.opacity(0.3))
-                        .cornerRadius(16)
+                    if isShowingTodaysIdiom {
+                        Text("TODAY")
+                            .font(.subheadline)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(Color.gray.opacity(0.3))
+                            .cornerRadius(16)
+                        
+                        Text(Date(), style: .date)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    } else {
+                        Text("RANDOM")
+                            .font(.subheadline)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(Color.blue.opacity(0.3))
+                            .cornerRadius(16)
+                    }
                     
                     Spacer()
+                    
+                    // Navigation buttons
+                    HStack(spacing: 12) {
+                        if !isShowingTodaysIdiom {
+                            Button(action: {
+                                currentIdiom = IdiomProvider.shared.idiomForDate()
+                                isShowingTodaysIdiom = true
+                            }) {
+                                Image(systemName: "house.fill")
+                                    .foregroundColor(.blue)
+                            }
+                        }
+                        
+                        Button(action: {
+                            currentIdiom = IdiomProvider.shared.randomIdiom()
+                            isShowingTodaysIdiom = false
+                        }) {
+                            Image(systemName: "dice.fill")
+                                .foregroundColor(.blue)
+                        }
+                    }
                 }
                 .padding(.top)
                 
                 // Main Characters
-                Text(idiom.characters)
+                Text(currentIdiom.characters)
                     .font(.system(size: 42, weight: .bold))
                 
                 // Pinyin and Meaning
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(idiom.pinyin)
+                    Text(currentIdiom.pinyin)
                         .font(.title2)
                         .foregroundColor(.secondary)
                     
-                    Text(idiom.meaning)
+                    Text(currentIdiom.meaning)
                         .font(.title3)
                 }
                 
@@ -46,12 +81,12 @@ struct ContentView: View {
                     .foregroundColor(.gray.opacity(0.2))
                 
                 // Example section
-                if let example = idiom.example {
+                if let example = currentIdiom.example {
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Example Usage")
                             .font(.headline)
                         
-                        if let chineseExample = idiom.chineseExample {
+                        if let chineseExample = currentIdiom.chineseExample {
                             Text(chineseExample)
                                 .font(.body)
                                 .foregroundColor(.secondary)
@@ -63,11 +98,16 @@ struct ContentView: View {
                     }
                 }
                 
-                // Description or additional info
-                Text(idiom.description)
-                    .font(.body)
-                    .foregroundColor(.secondary)
-                    .padding(.top)
+                // Description section
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("History & Meaning")
+                        .font(.headline)
+                        .padding(.top)
+                    
+                    Text(currentIdiom.description)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                }
             }
             .padding()
         }
@@ -78,15 +118,15 @@ struct ContentView: View {
                     let shareText = """
                     Daily Chinese Idiom
                     
-                    \(idiom.characters)
-                    \(idiom.pinyin)
-                    \(idiom.meaning)
+                    \(currentIdiom.characters)
+                    \(currentIdiom.pinyin)
+                    \(currentIdiom.meaning)
                     
                     Example:
-                    \(idiom.chineseExample ?? "")
-                    \(idiom.example ?? "")
+                    \(currentIdiom.chineseExample ?? "")
+                    \(currentIdiom.example ?? "")
                     
-                    \(idiom.description)
+                    \(currentIdiom.description)
                     """
                     
                     let activityVC = UIActivityViewController(

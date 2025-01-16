@@ -8,48 +8,47 @@
 import WidgetKit
 import SwiftUI
 
-struct Provider: TimelineProvider {
+struct SimpleEntry: TimelineEntry {
+    let date: Date
+    let configuration: ConfigurationAppIntent
+    let idiom: Idiom
+}
+
+class Provider: TimelineProvider {
     typealias Entry = SimpleEntry
-    typealias Configuration = ConfigurationAppIntent
     
     func placeholder(in context: Context) -> SimpleEntry {
-        let idiom = IdiomProvider.shared.idiomForDate()
-        return SimpleEntry(
+        SimpleEntry(
             date: Date(),
             configuration: ConfigurationAppIntent(),
-            idiom: WidgetIdiom(from: idiom)
+            idiom: IdiomProvider.shared.idiomForDate()
         )
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let idiom = IdiomProvider.shared.idiomForDate()
         let entry = SimpleEntry(
             date: Date(),
             configuration: ConfigurationAppIntent(),
-            idiom: WidgetIdiom(from: idiom)
+            idiom: IdiomProvider.shared.idiomForDate()
         )
         completion(entry)
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
         let currentDate = Date()
-        let tomorrow = Calendar.current.startOfDay(for: currentDate.addingTimeInterval(86400))
+        let calendar = Calendar.current
+        let midnight = calendar.startOfDay(for: currentDate.addingTimeInterval(86400))
         let idiom = IdiomProvider.shared.idiomForDate()
+        
         let entry = SimpleEntry(
             date: currentDate,
             configuration: ConfigurationAppIntent(),
-            idiom: WidgetIdiom(from: idiom)
+            idiom: idiom
         )
         
-        let timeline = Timeline(entries: [entry], policy: .after(tomorrow))
+        let timeline = Timeline(entries: [entry], policy: .after(midnight))
         completion(timeline)
     }
-}
-
-struct SimpleEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationAppIntent
-    let idiom: WidgetIdiom
 }
 
 struct DailyIdiomEntryView: View {
@@ -70,31 +69,44 @@ struct DailyIdiomEntryView: View {
     }
     
    private var smallWidget: some View {
-    VStack(alignment: .center, spacing: 4) { 
+    VStack(alignment: .center, spacing: 8) {
         Text(entry.idiom.characters)
-            .font(.system(size: 32, weight: .bold)) 
-            .minimumScaleFactor(0.5)
+            .font(.system(size: 36, weight: .bold))
+            .minimumScaleFactor(0.4)
             .foregroundColor(.primary)
+            .multilineTextAlignment(.center)
+            .lineLimit(2)
+            .fixedSize(horizontal: false, vertical: true)
         
         Text(entry.idiom.pinyin)
-            .font(.system(size: 12)) 
-            .foregroundColor(.secondary)
-            .lineLimit(1)
-            .minimumScaleFactor(0.8) 
-        
-        Text(entry.idiom.meaning)
-            .font(.system(size: 10)) 
+            .font(.system(size: 14)) 
             .foregroundColor(.secondary)
             .lineLimit(2)
+            .minimumScaleFactor(0.8)
             .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity)
+        
+       
     }
-    .padding(.horizontal, 4) 
-    .padding(.vertical, 4)
-    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .padding(.horizontal, 8)
+    .padding(.vertical, 12)
+    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
     .background(
         RoundedRectangle(cornerRadius: 12)
-            .fill(Color(UIColor.systemBackground))
-            .shadow(radius: 2)
+            .fill(Color(uiColor: UIColor { traitCollection in
+                traitCollection.userInterfaceStyle == .dark ?
+                    UIColor(white: 0.15, alpha: 1.0) :
+                    .systemBackground
+            }))
+            .overlay(
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color(uiColor: UIColor { traitCollection in
+                        traitCollection.userInterfaceStyle == .dark ?
+                            UIColor(white: 0.3, alpha: 1.0) :
+                            UIColor(white: 0, alpha: 0.1)
+                    }), lineWidth: 0.5)
+            )
+            .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.1), radius: 1)
     )
 }
     
@@ -114,40 +126,57 @@ private var mediumWidget: some View {
             Text(entry.idiom.meaning)
                 .font(.system(size: 14))
                 .foregroundColor(.secondary)
-                .lineLimit(2)
+                .lineLimit(3)
+                .multilineTextAlignment(.leading)
+                .minimumScaleFactor(0.5)
         }
     }
     .padding()
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .background(
         RoundedRectangle(cornerRadius: 12)
-            .fill(Color(UIColor.systemBackground))
-            .shadow(radius: 2)
+            .fill(Color(uiColor: UIColor { traitCollection in
+                traitCollection.userInterfaceStyle == .dark ?
+                    UIColor(white: 0.15, alpha: 1.0) :
+                    .systemBackground
+            }))
+            .overlay(
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color(uiColor: UIColor { traitCollection in
+                        traitCollection.userInterfaceStyle == .dark ?
+                            UIColor(white: 0.3, alpha: 1.0) :
+                            UIColor(white: 0, alpha: 0.1)
+                    }), lineWidth: 0.5)
+            )
+            .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.1), radius: 1)
     )
 }
     
    private var largeWidget: some View {
-    VStack(alignment: .center, spacing: 12) { // Reduced spacing from 16
+    VStack(alignment: .center, spacing: 12) {
         Text(entry.idiom.characters)
             .font(.system(size: 72, weight: .bold))
             .minimumScaleFactor(0.5)
             .foregroundColor(.primary)
         
-        VStack(spacing: 8) { // Reduced spacing from 12
+        VStack(spacing: 8) {
             Text(entry.idiom.pinyin)
-                .font(.system(size: 24))
+                .font(.system(size: 23))
                 .foregroundColor(.secondary)
+                .lineLimit(2)
+
             
             Text(entry.idiom.meaning)
-                .font(.system(size: 18))
+                .font(.system(size: 17))
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
+                .lineLimit(2)
             
             if let example = entry.idiom.example {
                 VStack(spacing: 6) {
                     if let chineseExample = entry.idiom.chineseExample {
                         Text(chineseExample)
-                            .font(.system(size: 14))
+                            .font(.system(size: 13))
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
                             .padding(.top, 4)
@@ -167,12 +196,23 @@ private var mediumWidget: some View {
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .background(
         RoundedRectangle(cornerRadius: 12)
-            .fill(Color(UIColor.systemBackground))
-            .shadow(radius: 2)
+            .fill(Color(uiColor: UIColor { traitCollection in
+                traitCollection.userInterfaceStyle == .dark ?
+                    UIColor(white: 0.15, alpha: 1.0) :
+                    .systemBackground
+            }))
+            .overlay(
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color(uiColor: UIColor { traitCollection in
+                        traitCollection.userInterfaceStyle == .dark ?
+                            UIColor(white: 0.3, alpha: 1.0) :
+                            UIColor(white: 0, alpha: 0.1)
+                    }), lineWidth: 0.5)
+            )
+            .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.1), radius: 1)
     )
 }
 }
- 
 
 struct DailyIdiom: Widget {
     let kind: String = "DailyIdiom"
@@ -194,7 +234,7 @@ struct DailyIdiom: Widget {
     SimpleEntry(
         date: .now,
         configuration: ConfigurationAppIntent(),
-        idiom: WidgetIdiom(from: IdiomProvider.shared.idiomForDate())
+        idiom: IdiomProvider.shared.idiomForDate()
     )
 }
 
@@ -204,7 +244,7 @@ struct DailyIdiom: Widget {
     SimpleEntry(
         date: .now,
         configuration: ConfigurationAppIntent(),
-        idiom: WidgetIdiom(from: IdiomProvider.shared.idiomForDate())
+        idiom: IdiomProvider.shared.idiomForDate()
     )
 }
 
@@ -214,6 +254,8 @@ struct DailyIdiom: Widget {
     SimpleEntry(
         date: .now,
         configuration: ConfigurationAppIntent(),
-        idiom: WidgetIdiom(from: IdiomProvider.shared.idiomForDate())
-    )
-}
+        idiom: IdiomProvider.shared.idiomForDate()
+    )}
+
+
+

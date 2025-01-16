@@ -17,7 +17,7 @@
         "example": "Losing his job led him to find his true calling",
         "chineseExample": "失业反而让他找到了真正的使命",
         "theme": "Life Philosophy",
-        "description": "This profound idiom originates from a famous parable in the Huainanzi, a 2nd century BCE philosophical text. The story tells of a wise old man (塞翁) living near the northern border who lost his prized horse. When neighbors came to console him, he asked, 'How do you know this isn't good fortune?' Indeed, the horse later returned with a magnificent wild horse. When neighbors congratulated him, he remained cautious. Later, his son broke his leg while riding the wild horse, but this injury ultimately saved him from being conscripted into a war where many soldiers perished. The idiom teaches the Taoist principle that fortune and misfortune are interconnected and often transform into each other, encouraging us to maintain equilibrium in the face of life's ups and downs."
+        "description": "This profound idiom originates the story tells of a wise old man (塞翁) living near the northern border who lost his prized horse. When neighbors came to console him, he asked, 'How do you know this isn't good fortune?' Indeed, the horse later returned with a magnificent wild horse. When neighbors congratulated him, he remained cautious. Later, his son broke his leg while riding the wild horse, but this injury ultimately saved him from being conscripted into a war where many soldiers perished. The idiom teaches the Taoist principle that fortune and misfortune are interconnected and often transform into each other, encouraging us to maintain equilibrium in the face of life's ups and downs."
     },
     {
         "id": "ID003",
@@ -27,17 +27,15 @@
         "example": "Even at 80, she continues to learn new things every day",
         "chineseExample": "即使八十岁了，她每天仍在学习新东西",
         "theme": "Wisdom & Learning",
-        "description": "This expression powerfully combines '学' (learning) with '海' (ocean) and '无涯' (boundless), creating a metaphor that has inspired scholars for centuries. It comes from a longer phrase '学海无涯，苦作舟渡' (the sea of learning has no bounds, but hard work is the boat that crosses it). The metaphor resonated deeply in Chinese scholarly tradition, where learning was seen not as a finite task but as a lifelong journey. The ocean imagery suggests both the vastness of knowledge and its depth - just as the ocean reveals new mysteries at different depths, knowledge offers deeper insights as one progresses. In contemporary usage, it's often cited in educational contexts to encourage continuous learning and intellectual humility, reminding us that no matter how much we know, there's always more to discover."
+        "description": "This idiom comes from a longer phrase '学海无涯，苦作舟渡' (the sea of learning has no bounds, but hard work is the boat that crosses it). First appearing in Song Dynasty scholarly texts, it resonated particularly during the Ming period when private academies flourished and lifelong scholarship became an established ideal. The ocean metaphor was especially meaningful in Chinese scholarly tradition, as classical education required navigating vast bodies of literature, with each text revealing deeper layers of meaning as one's understanding matured."
     },
     {
         "id": "ID004",
-        "characters": "己所不欲，勿施于人",
-        "pinyin": "jǐ suǒ bù yù, wù shī yú rén",
-        "meaning": "Don't do to others what you wouldn't want done to you",
-        "example": "Before criticizing, think how you'd feel in their position",
-        "chineseExample": "批评他人之前，先想想自己会有什么感受",
-        "theme": "Relationships & Character",
-        "description": "This fundamental ethical principle appears in the Analects of Confucius as part of a conversation about benevolence (仁, rén). The first part '己所不欲' (what you yourself do not desire) paired with '勿施于人' (do not impose on others) creates a complete guide for ethical behavior. While similar to the Western 'Golden Rule,' this Chinese version is notably expressed in the negative form, emphasizing restraint rather than proactive action. In ancient China, it was considered a practical application of empathy in governance and social relationships. Today, it remains a cornerstone of Chinese ethical thinking, applied in contexts from business ethics to personal relationships, reminding us that understanding others' feelings begins with examining our own."
+       "characters": "一模一样",
+    "pinyin": "yī mú yī yàng",
+    "meaning": "Exactly the same; identical",
+    "theme": "Relationships & Character",
+    "description": "The idiom originates from ancient bronze casting, where '模' refers to the mold used to create identical vessels. The doubled '一' (one) emphasizes perfect replication – just as each pour from the same mold creates indistinguishable pieces. During the Song Dynasty, as printing technology advanced, the phrase expanded beyond metallurgy to describe any perfect copy, capturing both the precision of craft and the concept of true replication."
     },
     {
         "id": "ID005",
@@ -77,7 +75,7 @@
         "example": "She always remembers to help those who helped her",
         "chineseExample": "她总是记得回报帮助过她的人",
         "theme": "Relationships & Character",
-        "description": "This elegant idiom uses the character '心' (heart/mind) twice, connected by '换' (exchange), creating a powerful image of reciprocal sincerity. The first '以' sets up the method or means, suggesting intentionality in the exchange. Rooted in traditional Chinese concepts of reciprocity and social harmony, it goes beyond simple repayment of kindness to emphasize the quality of the emotional exchange. Unlike purely transactional relationships, this idiom suggests a deeper level of emotional intelligence and social awareness. In ancient China, it was particularly emphasized in discussions of friendship and loyalty. Modern applications extend to professional relationships, customer service philosophy, and personal relationships, highlighting the importance of authentic emotional engagement in building lasting connections."
+        "description": "This idiom emerged from Song Dynasty discussions of reciprocal relationships, particularly in the writings of Neo-Confucian philosophers. The repeated use of 心 (heart/mind) emphasizes that true reciprocity goes beyond mere exchange of favors - it requires genuine emotional investment from both parties. The concept became especially important in Ming Dynasty commercial ethics, where merchants distinguished between transactional relationships and those built on mutual sincerity. It influenced the development of guanxi (关系) principles in Chinese business culture."
     },
     {
         "id": "ID009",
@@ -99,7 +97,36 @@
         "theme": "Wisdom & Learning",
         "description": "This sophisticated learning concept combines '举' (raise/cite) with '一' (one), followed by '反' (reflect/infer) and '三' (three), where three traditionally represents 'many' in Chinese numerology. The idiom originates from the Confucian classic 'The Doctrine of the Mean,' reflecting ancient Chinese pedagogical philosophy. It describes the intellectual ability to extrapolate broader principles from specific examples, moving from the concrete to the abstract. This approach was particularly valued in traditional scholarship, where students were expected to apply principles learned from classical texts to new situations. In modern education and professional development, it represents the capacity for analytical thinking and pattern recognition. The idiom emphasizes that true learning isn't about memorizing individual cases but understanding underlying principles that can be broadly applied."
     },
-
+  {
+        "id": "ID011",
+        "characters": "门庭若市",
+        "pinyin": "mén tíng ruò shì",
+        "meaning": "As crowded as a marketplace; extremely popular or well-visited",
+        "example": "The new restaurant was so popular that it was always packed with customers",
+        "chineseExample": "这家新餐厅很受欢迎，总是顾客盈门",
+        "theme": "Success & Perseverance",
+        "description":"This phrase originally described the residences of influential Han Dynasty officials. The characters create a vivid comparison: 门庭(the entrance courtyard) 若(is like) 市(a marketplace), depicting how the homes of successful scholar-officials would buzz with activity. It became the classical measure of scholarly or commercial success in Chinese society."
+    },
+    {
+        "id": "ID012",
+        "characters": "改邪归正",
+        "pinyin": "gǎi xié guī zhèng",
+        "meaning": "To abandon evil and return to righteousness; to reform",
+        "example": "After the scandal, the company implemented strict ethical guidelines",
+        "chineseExample": "在丑闻之后，公司实施了严格的道德准则",
+        "theme": "Life Philosophy",
+        "description": "With roots in Buddhist conversion narratives from the Eastern Han period, this idiom captures transformation through its characters: 改(change from) 邪(wrong/evil) 归(return to) 正(right/proper). Historical texts often used it to describe dramatic personal transformations, particularly of notorious individuals who embraced Buddhist or Confucian virtues."
+    },
+    {
+        "id": "ID013",
+        "characters": "好逸恶劳",
+        "pinyin": "hào yì wù láo",
+        "meaning": "To love ease and hate work; lazy and unwilling to work hard",
+        "example": "The team's productivity suffered from members who avoided challenging tasks",
+        "chineseExample": "团队中有人喜欢偷懒避难，影响了工作效率",
+        "theme": "Life Philosophy",
+        "description": "This critical idiom contrasts loving ease (好逸) with hating labor (恶劳), describing an aversion to effort. Each character exposes attitude: '好' suggests preference, '逸' represents ease, '恶' implies aversion, and '劳' represents work. In traditional education, it warned against laziness; in career guidance, lack of diligence. Modern applications span work ethic, professional development, and team dynamics, teaching that success requires overcoming natural tendencies toward comfort over effort. Unlike idioms that simply criticize laziness, this one specifically addresses the psychological preference for ease over effort."
+    },
     {
         "id": "ID014",
         "characters": "天道酬勤",
@@ -158,7 +185,7 @@
         "example": "After years of study, she finally understood how all the concepts connected",
         "chineseExample": "经过多年学习，她终于理解了所有概念之间的联系",
         "theme": "Wisdom & Learning",
-        "description": "This sophisticated idiom combines '融会' (merge and understand) with '贯通' (penetrate thoroughly), describing the highest level of mastery where different elements of knowledge merge into comprehensive understanding. The imagery suggests both horizontal breadth and vertical depth – '融' (merge) implies combining different elements, while '贯' (penetrate) suggests deep understanding. Originally used in Buddhist texts to describe enlightenment, it was adopted by scholars to describe the ideal state of learning where isolated facts become an interconnected web of understanding. In traditional education, it represented the culmination of years of study, where discrete knowledge transforms into wisdom. Modern usage spans academic, professional, and artistic domains, describing the moment when scattered pieces of learning cohese into genuine mastery. It's particularly relevant in today's interdisciplinary world, emphasizing the importance of connecting knowledge across different fields."
+        "description": "Originally a Buddhist term describing the moment of enlightenment when disparate understandings merge into unified wisdom. During the Tang Dynasty, scholar-officials adapted it to describe the highest form of learning, where isolated knowledge transforms into interconnected understanding. The term gained particular significance during the Song Dynasty's educational reforms, when scholars emphasized the integration of Confucian classics with practical governance. Today, it describes the crucial transition from accumulating information to achieving genuine mastery, particularly relevant in interdisciplinary fields."
     },
     {
         "id": "ID020",
@@ -168,18 +195,18 @@
         "example": "She always arrived early for meetings, respecting everyone's time",
         "chineseExample": "她总是提前到达会议，尊重每个人的时间",
         "theme": "Success & Perseverance",
-        "description": "This idiom literally compares keeping time (守时) to gold (如金), reflecting a sophisticated understanding of time as an irreplaceable resource. While punctuality was valued in traditional Chinese society, this particular expression gained prominence during China's modernization, when Western concepts of precise time-keeping merged with traditional values. The character '守' (keep/guard) implies active protection rather than passive awareness, while the comparison to gold (金) elevates time management to a moral virtue. Unlike material wealth, the idiom suggests, time can never be recovered once lost. In professional contexts, it speaks to both personal discipline and respect for others. The expression has gained additional relevance in the modern global economy, where time zone differences and international scheduling make punctuality increasingly crucial. It teaches that respecting time – both one's own and others' – is fundamental to success and mutual respect."
+        "description":"While ancient Chinese time-keeping used more fluid measurements like water clocks, this idiom emerged during the late Qing Dynasty's modernization period, when Western-style precise time-keeping became crucial for commerce and diplomacy. It reflects the merger of traditional Chinese values of responsibility (守) with modern industrial concepts of time management. The comparison to gold (金) was particularly meaningful in trading ports like Shanghai, where punctuality became essential for international business. Today, it embodies both practical necessity and moral virtue in our globally connected world."
     },
     {
         "id": "ID021",
-        "characters": "一叶知秋",
-        "pinyin": "yī yè zhī qiū",
-        "meaning": "To see the bigger picture from small signs",
-        "example": "The experienced investor spotted the market trend from subtle signs",
-        "chineseExample": "有经验的投资者从细微迹象中发现了市场趋势",
-        "theme": "Wisdom & Learning",
-        "description": "This elegant idiom, literally meaning 'from one falling leaf, know autumn is coming,' comes from a poem by the Tang Dynasty poet Liu Yuxi. The image of a single leaf (一叶) revealing the coming of autumn (知秋) creates a powerful metaphor for predictive wisdom and pattern recognition. In classical Chinese thought, this represented not just observational skill but a deeper understanding of how small signs reflect larger natural cycles. The brevity of the phrase – just four characters – mirrors its message about the significance of minimal indicators. Originally used to describe natural observation, it evolved to encompass political insight, where minor events might signal major changes. In modern usage, it's particularly relevant in fields requiring predictive analysis, from market trends to social changes, teaching that expertise often lies not in processing large amounts of data but in recognizing significant patterns in minimal information."
-    },
+         "characters": "青出于蓝",
+    "pinyin": "qīng chū yú lán",
+    "meaning": "The apprentice exceeds the master",
+    "example": "The young researcher's innovations built upon and ultimately surpassed her mentor's original theories",
+    "chineseExample": "这位年轻研究员的创新建立在导师理论基础之上，最终超越了原有理论",
+    "theme": "Success & Perseverance",
+    "description": "This profound idiom comes from the complete phrase '青出于蓝而胜于蓝' (qīng chū yú lán ér shèng yú lán), originating from the Xunzi (荀子), describing how the color blue-green (青) is derived from the indigo plant (蓝) yet surpasses it in intensity. The metaphor draws from the ancient cloth-dyeing process, where the resulting color is deeper and more vibrant than the source plant. Each character carries deep meaning: '青' represents the brilliant derived color and by extension, the student or next generation; '出' suggests emergence or development; '于' indicates origin or source; and '蓝' represents the indigo plant and by extension, the teacher or previous generation. This idiom is particularly significant in Chinese intellectual history as it addresses a fundamental aspect of learning and development: the ideal that students should build upon and ultimately surpass their teachers' achievements. It is particularly relevant in modern contexts of innovation and technological advancement, where each generation must build upon and surpass previous achievements while acknowledging their debt to earlier foundations."
+},
     {
         "id": "ID022",
         "characters": "海纳百川",
@@ -188,7 +215,7 @@
         "example": "The company welcomed diverse perspectives and ideas",
         "chineseExample": "公司欢迎不同的观点和想法",
         "theme": "Relationships & Character",
-        "description": "This magnificent idiom uses the metaphor of the sea (海) accepting all rivers (百川, literally 'hundred rivers'), creating a powerful image of breadth and inclusivity. The full expression often continues with '有容乃大' (capacity makes greatness), though the first four characters are most commonly used. The imagery draws from ancient Chinese geography, where all rivers ultimately flow into the sea, yet the sea never overflows. This natural phenomenon became a metaphor for intellectual and social magnanimity during the Tang Dynasty, when China was at its most cosmopolitan. The use of '百' (hundred) follows the Chinese literary tradition of using this number to represent 'all' or 'many.' In modern context, it promotes diversity in thought, culture, and perspective, suggesting that true greatness comes from the ability to embrace and integrate different ideas and influences. It's particularly relevant in today's globalized world, advocating for inclusive leadership and cross-cultural understanding."
+        "description": "The phrase comes from a longer Tang Dynasty expression '海纳百川，有容乃大' (The sea embraces all rivers; tolerance makes greatness). It gained prominence during Emperor Taizong's reign (627-649 CE), reflecting his policy of cultural inclusivity that attracted scholars and merchants from across Asia. The sea-river metaphor was particularly resonant in Chinese geography, where the four great rivers ultimately flow into the ocean. During the Song Dynasty, it became associated with the ideal of scholarly open-mindedness, encouraging engagement with diverse schools of thought."
     },
     {
         "id": "ID023",
@@ -258,7 +285,7 @@
         "example": "She broadened her perspective through extensive reading",
         "chineseExample": "她通过广泛阅读拓宽了视野",
         "theme": "Wisdom & Learning",
-        "description": "This idiom is actually part of a longer expression '读万卷书，行万里路' (read ten thousand scrolls and travel ten thousand li), capturing the dual nature of comprehensive education. The number '万' (ten thousand) here represents vastness rather than a specific count, while '卷' refers to traditional scroll formats of books. The concept emerged during the Tang Dynasty when scholars emphasized the importance of both book learning and practical experience. The specific mention of scrolls (卷) rather than just books (书) connects to the traditional respect for classical texts, though modern interpretation extends to all forms of reading. In traditional education, it justified the extensive memorization of classics; in modern context, it advocates for broad reading across disciplines. The idiom teaches that true wisdom requires exposure to diverse ideas and perspectives, suggesting that depth of knowledge comes through breadth of reading."
+        "description": "This idiom is actually part of a longer expression '读万卷书，行万里路' (read ten thousand scrolls and travel ten thousand miles), capturing the dual nature of comprehensive education. The number '万' (ten thousand) here represents vastness rather than a specific count, while '卷' refers to traditional scroll formats of books. The concept emerged during the Tang Dynasty when scholars emphasized the importance of both book learning and practical experience. The specific mention of scrolls (卷) rather than just books (书) connects to the traditional respect for classical texts, though modern interpretation extends to all forms of reading. In traditional education, it justified the extensive memorization of classics; in modern context, it advocates for broad reading across disciplines. The idiom teaches that true wisdom requires exposure to diverse ideas and perspectives, suggesting that depth of knowledge comes through breadth of reading."
     },
     {
         "id": "ID030",
@@ -392,13 +419,13 @@
     },
     {
         "id": "ID043",
-        "characters": "一波未平，一波又起",
-        "pinyin": "yī bō wèi píng, yī bō yòu qǐ",
-        "meaning": "Challenges arise in continuous succession",
-        "example": "Just as they solved one crisis, another challenge emerged",
-        "chineseExample": "一个危机刚解决，另一个挑战又出现了",
-        "theme": "Life Philosophy",
-        "description": "This rhythmic idiom uses wave imagery to describe continuous challenges, with '一波未平' (one wave not yet settled) followed by '一波又起' (another wave arising). The repetition of '一波' (one wave) creates both parallel structure and a sense of endless succession. Originally describing maritime observations, it evolved to represent life's tendency to present continuous challenges. The characters paint a vivid scene: the first '未平' (not yet calm) transitions immediately to '又起' (rising again), suggesting no respite between difficulties. In classical literature, it often described political or military challenges; in modern usage, it spans business competition, personal challenges, and organizational change. Unlike simpler idioms about difficulty, this one specifically addresses the phenomenon of consecutive challenges, teaching resilience while acknowledging the sometimes relentless nature of life's trials. It particularly resonates in crisis management contexts, suggesting that preparation for the next challenge should begin even while addressing the current one."
+        "characters": "莫名其妙",
+    "pinyin": "mò míng qí miào",
+    "meaning": "Cannot understand; mysterious or puzzling",
+    "example": "The teacher's patient guidance slowly transformed the struggling student",
+    "chineseExample": "老师耐心的引导慢慢改变了这个困难学生",
+        "theme": "Wisdom & Learning",
+        "description": "This idiom emerged from Buddhist texts of the Tang Dynasty, where '妙' described the ineffable nature of enlightenment. The phrase literally means 'unable to name its mystery,' capturing moments when understanding lies beyond explanation. It gained wider use through Chan Buddhist dialogues where masters would give seemingly nonsensical answers to demonstrate that some truths defy logical explanation."
     },
     {
         "id": "ID044",
@@ -953,23 +980,651 @@
     },
     {
         "id": "ID099",
-        "characters": "一言既出，驷马难追",
-        "pinyin": "yī yán jì chū, sì mǎ nán zhuī",
-        "meaning": "Once spoken, words cannot be taken back",
-        "example": "He carefully considered his public statement, knowing its impact would be irreversible",
-        "chineseExample": "他仔细考虑自己的公开声明，知道其影响将不可逆转",
-        "theme": "Wisdom & Learning",
-        "description": "This cautionary idiom states that once words are spoken (一言既出), even four horses cannot catch them (驷马难追), emphasizing the irrevocable nature of spoken commitments. The image of four horses represents the maximum speed attainable in ancient times, suggesting absolute impossibility of recall. Each character builds consequence: '一言' represents a single statement, '既出' confirms utterance, '驷马' suggests maximum effort, while '难追' confirms the impossibility of retraction. In traditional society, it emphasized the binding nature of verbal commitments; in diplomacy, the gravity of official pronouncements. Modern applications span public communications, personal promises, and professional commitments, teaching the importance of careful speech and honoring one's word. Unlike idioms that simply advise caution, this one creates a vivid image of the irretrievable nature of spoken words."
+       "characters": "驷马难追",
+"pinyin": "sì mǎ nán zhuī",
+"meaning": "Once spoken, can’t be taken back",
+"example": "He carefully considered his public statement, knowing its impact would be irreversible",
+"chineseExample": "他仔细考虑自己的公开声明，知道其影响将不可逆转",
+"theme": "Wisdom & Learning",
+"description": "This idiom comes from the longer phrase '一言既出，驷马难追' (once words are spoken, even four horses cannot catch them). The image of four horses, ancient China's fastest mode of transit, represents the absolute limit of speed and power - yet even this supreme force cannot retrieve spoken words. The phrase gained prominence in imperial courts where hasty pronouncements could affect thousands of lives, serving as a reminder that the most powerful actions are often the ones we cannot undo. Particularly during the Spring and Autumn period, court historians recorded numerous instances where momentous decisions stemmed from words that could not be taken back, even with the empire's full resources at hand."
+
     },
     {
         "id": "ID100",
-        "characters": "百尺竿头，更进一步",
-        "pinyin": "bǎi chǐ gān tóu, gèng jìn yī bù",
-        "meaning": "To advance beyond an already high achievement",
-        "example": "Despite being an industry leader, the company continued to innovate",
-        "chineseExample": "尽管已经是行业领袖，公司仍在不断创新",
+         "characters": "天外有天",
+    "pinyin": "tiān wài yǒu tiān",
+    "meaning": "Skies beyond skies",
+    "theme": "Wisdom & Learning",
+    "description": "A reminder that no matter how accomplished you are, there is always someone more skilled or talented. Typically paired with '人外有人', this phrase cautions against arrogance by highlighting the endless depth of human potential. It teaches that true wisdom lies in maintaining humility and recognizing that there are always greater heights to aspire to."
+    },
+{
+    "id": "ID101",
+    "characters": "春蚕到死",
+    "pinyin": "chūn cán dào sǐ",
+    "meaning": "To dedicate oneself completely to a cause",
+    "example": "The teacher devoted her entire life to educating rural children",
+    "chineseExample": "这位老师将毕生精力都献给了乡村教育",
+    "theme": "Success & Perseverance",
+    "description": "This poignant idiom comes from the complete phrase '春蚕到死丝方尽，蜡炬成灰泪始干' (The spring silkworm spins silk until death; the candle drips tears until it turns to ash), comparing dedication to a silkworm's life cycle. Each character deepens the metaphor: '春' represents life's prime, '蚕' symbolizes productive sacrifice, '到' implies continuation, and '死' represents ultimate completion. The image of the silkworm, which spins silk continuously until death, creates a powerful metaphor for complete dedication to one's purpose. In traditional culture, it often described scholars' devotion to learning or officials' dedication to public service. Modern applications span professional commitment, artistic creation, and personal causes, teaching that true dedication often requires giving one's complete self to a worthy purpose. Unlike idioms that simply praise hard work, this one specifically addresses the nobility of complete life dedication to a meaningful cause."
+},
+{
+    "id": "ID102",
+    "characters": "枕石漱流",
+    "pinyin": "zhěn shí shù liú",
+    "meaning": "To live simply while pursuing noble goals",
+    "example": "The researcher lived modestly while dedicating everything to his work",
+    "chineseExample": "研究员过着简朴的生活，把一切都投入到研究工作中",
+    "theme": "Life Philosophy",
+    "description": "This austere idiom describes using a stone as a pillow (枕石) and rinsing one's mouth with flowing water (漱流), representing voluntary simplicity in pursuit of higher goals. The phrase originates from stories of ancient scholars who chose sparse living conditions to focus on their studies. Each character paints the scene: '枕' suggests resting, '石' represents basic materials, '漱' implies cleansing, and '流' represents natural resources. In traditional scholarship, it described the scholar's willingness to endure hardship for learning; in moral philosophy, the rejection of luxury for principle. Modern applications span academic dedication, artistic pursuit, and social activism, teaching that meaningful achievement often requires sacrificing material comfort. Unlike idioms that simply praise frugality, this one specifically connects simple living with the pursuit of higher purposes."
+},
+{
+    "id": "ID103",
+    "characters": "一叶知秋",
+    "pinyin": "yī yè zhī qiū",
+    "meaning": "To understand the whole through a small part",
+    "example": "The experienced analyst predicted the market trend from subtle indicators",
+    "chineseExample": "经验丰富的分析师从细微指标预测了市场走势",
+    "theme": "Wisdom & Learning",
+    "description": "This perceptive idiom suggests that from a single falling leaf (一叶), one can know autumn's arrival (知秋), representing the ability to understand larger patterns from small signs. The metaphor draws from natural observation where subtle changes signal major transitions. Each character builds the insight: '一' emphasizes singularity, '叶' represents the small detail, '知' implies understanding, and '秋' represents the larger pattern. In traditional scholarship, it guided the study of historical trends; in governance, the recognition of social changes. Modern applications span market analysis, trend forecasting, and strategic planning, teaching that expertise often involves recognizing significant patterns in minimal data. Unlike idioms that simply praise observation, this one specifically addresses how small details can reveal larger truths when properly understood."
+},
+{
+    "id": "ID104",
+    "characters": "悬梁刺股",
+    "pinyin": "xuán liáng cì gǔ",
+    "meaning": "To study with intense determination",
+    "example": "She studied late into the night, determined to master the subject",
+    "chineseExample": "她深夜苦读，决心掌握这门学科",
+    "theme": "Success & Perseverance",
+    "description": "This determined idiom combines two classical stories: tying one's hair to a beam (悬梁) to stay awake and jabbing one's thigh with an awl (刺股) to prevent drowsiness. The phrase references ancient scholars Sun Jing and Su Qin, who used these methods to fight sleep while studying. Each character emphasizes dedication: '悬' suggests suspension, '梁' represents the beam, '刺' implies piercing, and '股' represents the thigh. In traditional education, it set standards for scholarly dedication; in modern context, it represents extreme commitment to learning. Modern applications span academic achievement, professional development, and skill mastery, teaching that extraordinary achievement often requires extraordinary dedication. Unlike idioms that simply praise hard work, this one specifically addresses the intensity of commitment required for significant achievement."
+},
+{
+    "id": "ID105",
+    "characters": "凿壁偷光",
+    "pinyin": "záo bì tōu guāng",
+    "meaning": "To pursue learning despite poverty",
+    "example": "The student studied by streetlight when electricity was unavailable",
+    "chineseExample": "没有电的时候，这个学生在路灯下学习",
+    "theme": "Success & Perseverance",
+    "description": "This inspiring idiom comes from the story of Kuang Heng, who made a hole in his wall (凿壁) to borrow light (偷光) from his neighbor's lamp for reading, as he couldn't afford oil for his own lamp. Each character illuminates determination: '凿' represents active effort, '壁' suggests obstacles, '偷' implies resourcefulness, and '光' represents knowledge or opportunity. In traditional education, it encouraged students facing material hardship; in broader contexts, resourcefulness in pursuing goals. Modern applications span educational perseverance, personal development, and creative problem-solving, teaching that material limitations need not prevent learning when met with determination and creativity. Unlike idioms that simply praise persistence, this one specifically addresses overcoming material constraints through resourceful dedication."
+},
+{
+    "id": "ID106",
+    "characters": "汗牛充栋",
+    "pinyin": "hàn niú chōng dòng",
+    "meaning": "Vast accumulated knowledge or achievement",
+    "example": "The professor's research publications filled entire library shelves",
+    "chineseExample": "教授的研究著作充满了整个图书馆的书架",
+    "theme": "Wisdom & Learning",
+    "description": "This expansive idiom describes books so numerous that oxen sweat (汗牛) carrying them and buildings overflow (充栋) storing them, representing impressive scholarly achievement. The phrase originates from descriptions of imperial libraries and scholarly collections. Each character expands the image: '汗' suggests extreme effort, '牛' represents strength, '充' implies filling, and '栋' represents buildings. In traditional scholarship, it described vast learning; in literary criticism, prolific creation. Modern applications span academic achievement, professional accomplishment, and creative output, teaching that significant achievement often involves substantial accumulated work over time. Unlike idioms that simply praise quantity, this one specifically addresses the impressive scale of accumulated intellectual or creative achievement."
+},
+{
+    "id": "ID107",
+    "characters": "冰消瓦解",
+    "pinyin": "bīng xiāo wǎ jiě",
+    "meaning": "Complete dissolution of resistance or difficulty",
+    "example": "The team's presentation eliminated all objections to the project",
+    "chineseExample": "团队的演示消除了项目所有的反对意见",
+    "theme": "Success & Perseverance",
+    "description": "This transformative idiom describes ice melting (冰消) and tiles crumbling (瓦解), representing the complete dissolution of obstacles or resistance. The metaphor draws from natural processes where solid structures naturally decompose. Each character guides transformation: '冰' represents frozen obstacles, '消' suggests disappearance, '瓦' implies structure, and '解' represents dissolution. In military strategy, it described the collapse of enemy resistance; in negotiations, the resolution of conflicts. Modern applications span problem-solving, conflict resolution, and change management, teaching that seemingly solid opposition can dissolve naturally when approached correctly. Unlike idioms that simply describe victory, this one specifically addresses how resistance can transform naturally without force."
+},
+{
+    "id": "ID108",
+    "characters": "雪中送炭",
+    "pinyin": "xuě zhōng sòng tàn",
+    "meaning": "To provide help when it's most needed",
+    "example": "The timely loan helped the company survive the economic crisis",
+    "chineseExample": "及时的贷款帮助公司度过了经济危机",
+    "theme": "Relationships & Character",
+    "description": "This compassionate idiom describes bringing charcoal (送炭) through snow (雪中), representing aid that addresses urgent need rather than superficial gesture. The metaphor contrasts with '锦上添花' (adding flowers to brocade), which describes enhancement of already favorable conditions. Each character deepens meaning: '雪' represents harsh circumstances, '中' emphasizes timing, '送' implies active delivery, and '炭' represents essential resources. In traditional society, it praised timely material assistance; in modern context, crucial support during difficulties. Modern applications span business partnerships, personal relationships, and social support, teaching that true helping involves providing essential assistance during genuine need. Unlike idioms that simply praise generosity, this one specifically addresses the importance of timing and appropriateness in providing help."
+},
+{
+    "id": "ID109",
+    "characters": "世外桃源",
+    "pinyin": "shì wài táo yuán",
+    "meaning": "An ideal escape from worldly troubles",
+    "example": "The remote mountain retreat offered perfect sanctuary from city stress",
+    "chineseExample": "偏远的山林度假村为城市压力提供了完美的避难所",
+    "theme": "Life Philosophy",
+    "description": "This idyllic idiom refers to the Peach Blossom Spring (桃源) beyond the mundane world (世外), drawing from Tao Yuanming's famous fable about a fisherman who discovers a hidden utopia. Each character builds the escape: '世' represents the mundane world, '外' suggests transcendence, '桃' represents natural beauty, and '源' implies origin or source. In classical literature, it described the scholar's desire for retreat; in modern usage, the search for work-life balance. Modern applications span vacation properties, lifestyle choices, and personal retreats, teaching the importance of maintaining spaces apart from worldly pressure. Unlike idioms that simply praise relaxation, this one specifically addresses the human need for periodic escape from social complexity."
+},
+{
+    "id": "ID110",
+    "characters": "明镜止水",
+    "pinyin": "míng jìng zhǐ shuǐ",
+    "meaning": "Perfect clarity of mind and tranquility",
+    "example": "The experienced mediator maintained complete objectivity throughout the negotiation",
+    "chineseExample": "经验丰富的调解员在整个谈判过程中保持完全的客观性",
+    "theme": "Wisdom & Learning",
+    "description": "This contemplative idiom pairs a bright mirror (明镜) with still water (止水), representing perfect mental clarity and emotional tranquility. The metaphor draws from both Buddhist meditation practices and Taoist natural observation. Each character refines the state: '明' suggests clarity, '镜' represents reflection, '止' implies stillness, and '水' represents the mind's nature. In traditional meditation, it described the ideal mental state; in decision-making, clear judgment. Modern applications span leadership, conflict resolution, and personal development, teaching that optimal performance often requires maintaining both mental clarity and emotional calm. Unlike idioms that simply praise calmness, this one specifically addresses the dual qualities of clear perception and internal peace necessary for wisdom."
+},
+
+{
+"id": "ID111",
+"characters": "引火烧身",
+"pinyin": "yǐn huǒ shāo shēn",
+"meaning": "To bring calamity upon oneself through one's own actions",
+"example": "His questionable business practices eventually led to his downfall",
+"chineseExample": "他不当的商业行为最终导致了自己的垮台",
+"theme": "Life Philosophy",
+"description": "This cautionary idiom describes drawing fire (引火) that burns oneself (烧身), creating a vivid metaphor for self-inflicted problems. The phrase draws from ancient firefighting experiences where attempts to control fire often led to personal injury. Each character builds consequence: '引' suggests drawing or inviting, '火' represents danger, '烧' implies destruction, and '身' represents oneself. In traditional moral teachings, it warned against dangerous schemes; in governance, reckless policy-making. Modern applications span risk management, business ethics, and personal conduct, teaching that actions intended to harm others often rebound on their originator. Unlike idioms that simply warn against wrongdoing, this one specifically addresses how attempting to create problems for others often creates worse problems for oneself."
+},
+{
+"id": "ID112",
+"characters": "铁杵成针",
+"pinyin": "tiě chǔ chéng zhēn",
+"meaning": "To achieve the seemingly impossible through persistence",
+"example": "Through years of practice, the amateur artist became a master",
+"chineseExample": "通过多年练习，这位业余艺术家成为了大师",
+"theme": "Success & Perseverance",
+"description": "This determined idiom describes grinding an iron pestle (铁杵) into a needle (成针), referencing the legendary story of an old woman who demonstrated that even the hardest task could be accomplished through persistence. Each character reinforces determination: '铁' represents iron's hardness, '杵' suggests the crude beginning state, '成' implies transformation, and '针' represents the refined end state. In traditional education, it encouraged students facing difficult subjects; in crafts, the patience needed for mastery. Modern applications span skill development, personal transformation, and long-term goals, teaching that seemingly impossible tasks become achievable through consistent effort. Unlike idioms that simply praise persistence, this one specifically addresses the transformation of seemingly immutable conditions through dedicated effort."
+},
+{
+"id": "ID113",
+"characters": "精卫填海",
+"pinyin": "jīng wèi tián hǎi",
+"meaning": "To persistently pursue a seemingly impossible goal",
+"example": "The small team persisted in challenging the industry giants",
+"chineseExample": "这个小团队坚持不懈地挑战行业巨头",
+"theme": "Success & Perseverance",
+"description": "This mythological idiom references the legend of Jingwei (精卫), a bird spirit who attempted to fill the ocean (填海) with twigs and pebbles to avenge her mortal drowning. Each character deepens the metaphor: '精卫' names the determined spirit, '填' suggests filling, and '海' represents the vast challenge. In traditional storytelling, it illustrated indomitable will; in moral teaching, dedication to righteous causes. Modern applications span social activism, environmental protection, and personal missions, teaching that the magnitude of a challenge doesn't invalidate the nobility of attempting it. Unlike idioms that simply praise determination, this one specifically addresses the value of pursuing grand goals despite their apparent impossibility."
+},
+{
+"id": "ID114",
+"characters": "鹤立鸡群",
+"pinyin": "hè lì jī qún",
+"meaning": "To stand out distinctly from the crowd",
+"example": "Her innovative solution distinguished her from conventional thinkers",
+"chineseExample": "她的创新解决方案使她从传统思维者中脱颖而出",
+"theme": "Success & Perseverance",
+"description": "This distinctive idiom describes a crane standing (鹤立) among chickens (鸡群), representing natural superiority or distinction without arrogance. The metaphor draws from the natural height difference between cranes and chickens. Each character builds the image: '鹤' represents nobility, '立' suggests standing, '鸡' represents the ordinary, and '群' implies the crowd. In traditional society, it described natural scholars among commoners; in arts, exceptional talents. Modern applications span professional excellence, leadership, and innovation, teaching that true distinction often comes from inherent quality rather than conscious comparison. Unlike idioms that praise standing out, this one emphasizes natural rather than cultivated distinction."
+},
+{
+"id": "ID115",
+"characters": "与日月争辉",
+"pinyin": "yǔ rì yuè zhēng huī",
+"meaning": "To compete with the brightest and best",
+"example": "The startup's innovation rivaled the industry leaders' best efforts",
+"chineseExample": "这家创业公司的创新与行业领军企业的最佳成果相媲美",
+"theme": "Success & Perseverance",
+"description": "This ambitious idiom describes competing in brightness (争辉) with the sun and moon (日月), representing the highest level of aspiration and achievement. The metaphor draws from celestial imagery, where sun and moon represent the ultimate natural brilliance. Each character elevates the ambition: '与' suggests engagement, '日月' represents supreme achievement, '争' implies competition, and '辉' represents brilliance. In traditional literature, it described supreme artistic or scholarly achievement; in governance, exceptional leadership. Modern applications span innovation, competitive excellence, and personal achievement, teaching that true greatness often involves competing at the highest possible level. Unlike idioms that simply praise achievement, this one specifically addresses aspiring to compete with the most excellent in one's field."
+},
+{
+"id": "ID116",
+"characters": "聚沙成塔",
+"pinyin": "jù shā chéng tǎ",
+"meaning": "To build something significant from tiny contributions",
+"example": "The platform grew through millions of small user contributions",
+"chineseExample": "该平台通过数百万用户的小贡献而发展壮大",
+"theme": "Success & Perseverance",
+"description": "This constructive idiom describes gathering sand (聚沙) to build a tower (成塔), representing how small elements can accumulate into something significant. The metaphor draws from the observation of how natural forces build substantial structures from tiny particles. Each character builds the concept: '聚' suggests gathering, '沙' represents small elements, '成' implies completion, and '塔' represents significant achievement. In traditional crafts, it justified patient accumulation; in community efforts, collective contribution. Modern applications span crowdfunding, community building, and iterative development, teaching that significant achievements often come through accumulating modest contributions. Unlike idioms that simply praise building, this one specifically addresses how minor elements can create major structures through proper accumulation."
+},
+{
+"id": "ID117",
+"characters": "目不转睛",
+"pinyin": "mù bù zhuǎn jīng",
+"meaning": "To focus with unwavering attention",
+"example": "The surgeon performed the delicate procedure with complete concentration",
+"chineseExample": "外科医生全神贯注地进行着精密手术",
+"theme": "Success & Perseverance",
+"description": "This focused idiom describes eyes (目) that don't shift their gaze (不转睛), representing complete concentration. The phrase captures the physical manifestation of intense mental focus. Each character sharpens attention: '目' represents the eyes, '不' negates, '转' suggests movement, and '睛' refers to the pupils. In traditional martial arts, it described combat focus; in scholarly pursuits, deep study. Modern applications span professional performance, artistic creation, and critical operations, teaching that certain tasks require absolute, unwavering attention. Unlike idioms that simply praise concentration, this one specifically addresses the physical discipline of maintaining complete visual and mental focus."
+},
+{
+"id": "ID118",
+"characters": "深谋远虑",
+"pinyin": "shēn móu yuǎn lǜ",
+"meaning": "To plan carefully for the long term",
+"example": "The policy makers considered implications decades into the future",
+"chineseExample": "政策制定者考虑了几十年后的影响",
+"theme": "Wisdom & Learning",
+"description": "This strategic idiom combines deep planning (深谋) with far-reaching consideration (远虑), representing comprehensive long-term thinking. The phrase emphasizes both depth and distance in strategic thought. Each character extends perspective: '深' suggests depth, '谋' represents planning, '远' implies distance, and '虑' represents consideration. In traditional governance, it guided policy-making; in military strategy, campaign planning. Modern applications span corporate strategy, personal career planning, and policy development, teaching that effective planning requires both deep analysis and long-term vision. Unlike idioms that simply praise planning, this one specifically addresses the dual dimensions of depth and distance in strategic thinking."
+},
+{
+"id": "ID119",
+"characters": "三省吾身",
+"pinyin": "sān xǐng wú shēn",
+"meaning": "To examine oneself critically and regularly",
+"example": "The leader reflected daily on his decisions and their consequences",
+"chineseExample": "这位领导每天反思自己的决定及其后果",
+"theme": "Wisdom & Learning",
+"description": "This reflective idiom, from Confucius's teaching to examine oneself three times daily (三省), emphasizes regular self-examination (吾身). Each character guides reflection: '三' suggests regularity, '省' represents examination, '吾' indicates self-focus, and '身' represents one's conduct. In traditional moral cultivation, it structured daily reflection; in leadership development, continuous improvement. Modern applications span professional development, personal growth, and ethical leadership, teaching that improvement requires regular, honest self-examination. Unlike idioms that simply praise self-improvement, this one specifically addresses the systematic nature of effective self-reflection."
+},
+{
+"id": "ID120",
+"characters": "如鱼得水",
+    "pinyin": "rú yú dé shuǐ",
+    "meaning": "Like a fish finding water; to be in one's element; perfect compatibility",
+    "example": "The experienced teacher in her new classroom was like a fish in water",
+    "chineseExample": "有经验的老师在新教室里如鱼得水",
+    "theme": "Success & Perseverance",
+    "description": "This vivid idiom describes the perfect match between fish (鱼) and water (水), representing ideal compatibility between a person and their environment or role. Each character enriches the metaphor: '如' creates the simile; '鱼' represents the subject in their natural state; '得' suggests attainment or finding; and '水' represents the perfect environment or condition. The idiom originates from the Three Kingdoms period, appearing in the biography of Zhuge Liang in the Records of the Three Kingdoms (三国志), where it described the perfect matching of talent with opportunity. The metaphor works on multiple levels: First, it emphasizes the natural and effortless quality of true compatibility. Second, it suggests the mutual benefit between subject and environment - just as fish cannot live without water, water is enhanced by the life within it. Third, it implies that peak performance comes from being in the right context. In traditional contexts, it often described the relationship between wise ministers and enlightened rulers, or talented people finding their ideal roles. Modern applications span career development, where it describes perfect job fits; organizational culture, where it indicates ideal employee-company matches; and personal relationships, where it suggests natural compatibility. Unlike simpler idioms about success, this one specifically emphasizes the importance of environmental fit and natural alignment. It particularly resonates in modern professional contexts, where finding the right organizational culture and role fit is crucial for success. The idiom teaches that optimal performance comes not just from skill or effort, but from finding or creating the right context for one's talents."
+},
+ {
+        "id": "ID121",
+        "characters": "闭月羞花",
+        "pinyin": "bì yuè xiū huā",
+        "meaning": "Beauty that outshines the moon and shames flowers",
+        "example": "Her elegant presentation captivated the entire audience",
+        "chineseExample": "她优雅的演讲吸引了全场观众",
         "theme": "Success & Perseverance",
-        "description": "This ambitious idiom describes advancing one step further (更进一步) even at the top of a hundred-foot pole (百尺竿头), representing the pursuit of improvement beyond apparent limits. The phrase comes from Chan Buddhist teachings about transcending apparent completion. Each character builds the challenge: '百尺' represents significant height, '竿头' marks the apparent limit, '更进' suggests further advance, and '一步' describes the additional step. In Buddhist context, it described spiritual advancement; in secular achievement, continuous improvement. Modern applications span professional excellence, personal development, and organizational innovation, teaching that true mastery involves advancing even when others might consider the achievement complete. Unlike idioms that simply praise achievement, this one specifically addresses the challenge and importance of progressing beyond apparent limits, particularly relevant in fields requiring constant innovation and improvement."
+        "description": "This aesthetic idiom suggests beauty so remarkable it could make the moon hide (闭月) and flowers feel ashamed (羞花). Originally used to describe Xi Shi, one of China's legendary Four Beauties, it represents excellence that transcends natural beauty. Each character enriches the metaphor: '闭' suggests concealment, '月' represents celestial beauty, '羞' implies surpassing comparison, and '花' represents earthly beauty. In traditional literature, it described supreme beauty; in modern usage, it represents any excellence that outshines conventional standards. Modern applications span outstanding achievement, breakthrough innovation, and exceptional performance in any field, teaching that true excellence often surpasses even nature's highest standards."
+    },
+    {
+        "id": "ID122",
+        "characters": "负重致远",
+        "pinyin": "fù zhòng zhì yuǎn",
+        "meaning": "To shoulder heavy responsibilities while pursuing distant goals",
+        "example": "The CEO balanced daily operations while planning the company's future",
+        "chineseExample": "首席执行官在平衡日常运营的同时规划公司的未来",
+        "theme": "Success & Perseverance",
+        "description": "This determined idiom combines bearing weight (负重) with pursuing distant goals (致远), representing the dual challenge of managing current responsibilities while working toward long-term objectives. The phrase emerged from military strategy, where armies needed to carry supplies while advancing toward distant targets. Each character builds the challenge: '负' suggests bearing, '重' represents burden, '致' implies pursuit, and '远' represents distance. In traditional military campaigns, it guided logistics; in governance, policy implementation. Modern applications span leadership, project management, and personal development, teaching that significant achievement often requires balancing immediate duties with long-term aspirations."
+    },
+    {
+        "id": "ID123",
+        "characters": "悬崖勒马",
+        "pinyin": "xuán yá lè mǎ",
+        "meaning": "To stop at the brink of disaster",
+        "example": "The company halted the risky project just before major losses occurred",
+        "chineseExample": "公司在发生重大损失之前及时叫停了高风险项目",
+        "theme": "Wisdom & Learning",
+        "description": "This dramatic idiom describes pulling back a horse (勒马) at the edge of a cliff (悬崖), representing last-minute recognition of danger and appropriate corrective action. The image draws from horseback riding experiences where awareness and quick response prevent disaster. Each character heightens tension: '悬' suggests danger, '崖' represents the precipice, '勒' implies forceful control, and '马' represents forward momentum. In traditional military strategy, it guided tactical retreat; in business, risk management. Modern applications span crisis prevention, decision-making, and project management, teaching the importance of recognizing and responding to danger signals before catastrophe occurs."
+    },
+    {
+        "id": "ID124",
+        "characters": "开门见山",
+        "pinyin": "kāi mén jiàn shān",
+        "meaning": "To get straight to the point",
+        "example": "The consultant directly addressed the core problems in her report",
+        "chineseExample": "顾问在报告中直接指出了核心问题",
+        "theme": "Wisdom & Learning",
+        "description": "This direct idiom describes opening a door (开门) to immediately see the mountain (见山), representing immediate focus on the essential point. The metaphor suggests removing obstacles between observer and objective. Each character promotes directness: '开' suggests opening or revealing, '门' represents barriers, '见' implies immediate perception, and '山' represents the substantial core. In traditional communication, it valued clarity over ceremony; in diplomacy, direct negotiation. Modern applications span business communication, problem-solving, and project management, teaching that effectiveness often requires addressing core issues without unnecessary preamble."
+    },
+    {
+        "id": "ID125",
+        "characters": "倾盖如故",
+        "pinyin": "qīng gài rú gù",
+        "meaning": "To form an instant connection with someone",
+        "example": "The two scientists immediately recognized their shared passion for research",
+        "chineseExample": "两位科学家立即认识到他们对研究的共同热情",
+        "theme": "Relationships & Character",
+        "description": "This social idiom suggests becoming as close as old friends (如故) in the time it takes to lift carriage covers (倾盖) for greeting, describing immediate rapport. The phrase originates from times when travelers would stop their carriages to converse. Each character builds connection: '倾' suggests brief duration, '盖' references carriage covers, '如' creates comparison, and '故' represents established friendship. In traditional society, it described diplomatic encounters; in literature, character affinity. Modern applications span professional networking, team building, and personal relationships, teaching that genuine connection can transcend traditional time requirements."
+    },
+    {
+        "id": "ID126",
+        "characters": "玉汝于成",
+        "pinyin": "yù rǔ yú chéng",
+        "meaning": "To achieve perfection through careful refinement",
+        "example": "The artisan spent years perfecting his craftsmanship",
+        "chineseExample": "这位工匠花了多年时间完善他的工艺",
+        "theme": "Success & Perseverance",
+        "description": "This refined idiom references the process of jade carving (玉) being worked (汝) until perfection (成), representing the patient pursuit of excellence. The phrase draws from traditional jade crafting, where success requires understanding the material's nature. Each character guides refinement: '玉' represents precious potential, '汝' suggests careful working, '于' indicates process, and '成' represents completion. In traditional crafts, it guided artisanal work; in education, character development. Modern applications span product development, skill mastery, and personal growth, teaching that excellence requires both respect for material nature and patient refinement."
+    },
+    {
+        "id": "ID127",
+        "characters": "披星戴月",
+        "pinyin": "pī xīng dài yuè",
+        "meaning": "To work tirelessly day and night",
+        "example": "The medical team worked around the clock during the crisis",
+        "chineseExample": "医疗团队在危机期间昼夜不停地工作",
+        "theme": "Success & Perseverance",
+        "description": "This dedicated idiom describes wearing stars (披星) and moon (戴月), representing constant effort through all hours. The metaphor suggests being accompanied by celestial bodies through continuous work. Each character emphasizes duration: '披' suggests wearing or being covered by, '星' represents night stars, '戴' implies bearing, and '月' represents the moon. In traditional agriculture, it described harvest urgency; in scholarship, determined study. Modern applications span emergency response, project deadlines, and professional dedication, teaching that certain achievements require sustained effort regardless of natural cycles."
+    },
+   {
+        "id": "ID128",
+        "characters": "四海为家",
+        "pinyin": "sì hǎi wéi jiā",
+        "meaning": "To feel at home anywhere in the world",
+        "example": "The consultant adapted easily to working in different cultural environments",
+        "chineseExample": "这位顾问轻松适应在不同文化环境中工作",
+        "theme": "Life Philosophy",
+        "description": "This cosmopolitan idiom describes taking the four seas (四海) as one's home (为家), representing a global perspective and adaptable nature. Each character expands horizons: '四' represents completeness, '海' suggests vastness, '为' indicates transformation, and '家' represents home. In traditional travel literature, it described the well-traveled scholar; in diplomacy, cultural adaptability. Modern applications span international business, cultural integration, and global citizenship, teaching the importance of developing comfort with diversity and change. Unlike idioms that simply praise travel, this one specifically addresses the mindset of finding belonging anywhere."
+    },
+    {
+        "id": "ID129",
+        "characters": "一气呵成",
+        "pinyin": "yī qì hē chéng",
+        "meaning": "To complete something in a single burst of energy",
+        "example": "The artist completed the masterpiece in one inspired session",
+        "chineseExample": "艺术家在一次充满灵感的创作中完成了这幅杰作",
+        "theme": "Success & Perseverance",
+        "description": "This creative idiom describes completion (成) in one breath (一气), representing perfect execution through maintained momentum. The phrase captures the ideal of unified, unbroken creative flow. Each character guides execution: '一' emphasizes unity, '气' represents energy or spirit, '呵' suggests continuous flow, and '成' represents completion. In traditional arts, it described perfect brushwork; in literary creation, inspired writing. Modern applications span creative work, project execution, and performance arts, teaching that certain achievements require maintaining creative or operational momentum through completion."
+    },
+    {
+        "id": "ID130",
+        "characters": "举重若轻",
+        "pinyin": "jǔ zhòng ruò qīng",
+        "meaning": "To make difficult tasks appear effortless",
+        "example": "The experienced manager handled the crisis with apparent ease",
+        "chineseExample": "经验丰富的经理从容应对危机",
+        "theme": "Success & Perseverance",
+        "description": "This masterful idiom describes handling heavy weights (举重) as if light (若轻), representing the highest level of skill where difficulty appears effortless. Each character refines mastery: '举' suggests lifting or managing, '重' represents difficulty, '若' creates comparison, and '轻' represents lightness. In traditional martial arts, it marked expertise; in leadership, crisis management. Modern applications span professional skills, leadership, and performance arts, teaching that true mastery is demonstrated through making difficult tasks appear natural and effortless."
+    },
+    
+
+
+    {
+        "id": "ID131",
+         "characters": "蚁穴坏堤",
+        "pinyin": "yǐ xuē huài dī",
+        "meaning": "Small problems can lead to major disasters",
+        "example": "A minor oversight in the code led to a critical system failure",
+        "chineseExample": "代码中的一个小疏忽导致了系统的重大故障",
+        "theme": "Life Philosophy",
+        "description": "This preventive idiom describes how ant holes (蚁穴) can destroy a dam (坏堤), representing how small problems can develop into major catastrophes. Each character builds warning: '蚁' represents small things, '穴' suggests hidden damage, '坏' implies destruction, and '堤' represents major structures. In traditional engineering, it guided maintenance practices; in modern context, risk prevention. Modern applications span system maintenance, quality control, and problem management, teaching that preventing major failures often requires attending to minor issues."
+    },
+
+    {
+        "id": "ID132",
+        "characters": "纸上谈兵",
+        "pinyin": "zhǐ shàng tán bīng",
+        "meaning": "To engage in empty talk without practical experience",
+        "example": "The consultant's theories proved useless when faced with real business challenges",
+        "chineseExample": "顾问的理论在面对实际商业挑战时证明毫无用处",
+        "theme": "Wisdom & Learning",
+        "description": "This cautionary idiom literally means 'discussing military affairs on paper,' referencing the story of Zhao Kuo from the Warring States period, who read many military books but failed catastrophically in actual battle. Each character builds criticism: '纸上' suggests theoretical realm, '谈' implies discussion, and '兵' represents practical matters. The idiom originates from Zhao Kuo's tragic example, where extensive book knowledge proved inadequate against practical experience. In traditional military training, it warned against pure theoretical knowledge; in education, the importance of practical application. Modern applications span professional development, education, and leadership training, teaching that real competence requires practical experience rather than just theoretical knowledge. Unlike idioms that simply praise experience, this one specifically criticizes the limitation of pure theoretical understanding."
+    },
+    {
+        "id": "ID133",
+        "characters": "凤毛麟角",
+        "pinyin": "fèng máo lín jiǎo",
+        "meaning": "Rare and precious like phoenix feathers or unicorn horns",
+        "example": "Such exceptional talent is extremely rare in the industry",
+        "chineseExample": "这样杰出的人才在行业中非常罕见",
+        "theme": "Success & Perseverance",
+        "description": "This appreciative idiom combines phoenix feathers (凤毛) with unicorn horns (麟角), representing extremely rare and valuable qualities. The metaphor draws from mythological creatures to emphasize exceptional rarity. Each character heightens value: '凤' represents the phoenix, '毛' suggests its feathers, '麟' references the unicorn, and '角' represents its horn. In traditional evaluation, it described exceptional talents; in collection, rare treasures. Modern applications span talent recognition, resource valuation, and opportunity assessment, teaching the importance of recognizing and appreciating truly exceptional quality."
+    },
+    {
+        "id": "ID134",
+        "characters": "风云际会",
+        "pinyin": "fēng yún jì huì",
+        "meaning": "A critical moment when circumstances align",
+        "example": "The market conditions created a perfect opportunity for the new venture",
+        "chineseExample": "市场条件为新企业创造了完美的机会",
+        "theme": "Success & Perseverance",
+        "description": "This timely idiom describes the meeting (際會) of wind and clouds (風雲), representing the convergence of favorable circumstances. Each character builds momentum: '風' suggests dynamic forces, '雲' represents gathering elements, '際' implies timing, and '會' represents convergence. In traditional strategy, it described perfect tactical moments; in business, market opportunities. Modern applications span entrepreneurship, strategic timing, and opportunity recognition, teaching that success often depends on recognizing and seizing moments when circumstances align favorably."
+    },
+
+    {
+        "id": "ID135",
+        "characters": "望其项背",
+        "pinyin": "wàng qí xiàng bèi",
+        "meaning": "To be close to catching up with a superior",
+        "example": "The startup was finally approaching the industry leaders' level",
+        "chineseExample": "这家创业公司终于接近了行业领导者的水平",
+        "theme": "Success & Perseverance",
+        "description": "This aspiring idiom describes seeing someone's neck and back (望其项背), representing coming close to matching or surpassing a superior. Each character builds proximity: '望' suggests viewing, '其' indicates the target, '项' represents the neck, and '背' represents the back. In traditional competition, it described approaching mastery; in modern context, market competition. Modern applications span business development, skill acquisition, and competitive achievement, teaching that persistent effort can close gaps with seemingly unreachable standards."
+    },
+    {
+        "id": "ID136",
+        "characters": "移樽就教",
+        "pinyin": "yí zūn jiù jiào",
+        "meaning": "To humble oneself to seek guidance",
+        "example": "The CEO personally visited experts to learn about new technologies",
+        "chineseExample": "首席执行官亲自拜访专家学习新技术",
+        "theme": "Wisdom & Learning",
+        "description": "This humble idiom describes moving one's wine jar (移樽) to seek teaching (就教), representing the willingness to humble oneself to learn from others. Each character builds humility: '移' suggests movement, '樽' represents status, '就' implies approaching, and '教' represents learning. In traditional scholarship, it described the proper attitude toward learning; in modern context, professional development. Modern applications span leadership development, skill acquisition, and mentorship, teaching that significant learning often requires setting aside status to seek knowledge."
+    },
+    {
+        "id": "ID137",
+        "characters": "两虎相争",
+        "pinyin": "liǎng hǔ xiāng zhēng",
+        "meaning": "When two powerful forces compete, one must be injured",
+        "example": "When the two star players fought for team leadership, it damaged team morale and performance",
+        "chineseExample": "当两位明星球员争夺队伍领导权时，损害了团队士气和表现",
+        "theme": "Life Philosophy",
+        "description": "This strategic idiom describes two tigers fighting, representing intense conflict between powerful forces. The complete phrase often continues with '必有一伤' (one must be injured), emphasizing the inevitable cost of direct competition between strong opponents. Each character builds tension: '两' establishes duality, '虎' represents powerful forces, '相' implies mutual engagement, and '争' describes conflict. In traditional military strategy, it guided decisions about direct confrontation; in political discourse, power struggles. Modern applications span team dynamics, organizational behavior, and conflict resolution, teaching that ego-driven conflicts between strong personalities often damage the broader community they're meant to serve. Unlike idioms that simply describe conflict, this one specifically addresses how competition between influential figures can undermine collective success."
+    },
+    {
+        "id": "ID138",
+        "characters": "三人成虎",
+        "pinyin": "sān rén chéng hǔ",
+        "meaning": "A repeated rumor, even if false, will be believed as truth",
+        "example": "The untrue rumor about a product defect spread on social media until customers started believing it without evidence",
+        "chineseExample": "关于产品缺陷的不实传言在社交媒体上传播，直到顾客开始在没有证据的情况下相信它",
+        "theme": "Wisdom & Learning",
+        "description": "This perceptive idiom literally means 'three men make a tiger,' suggesting that if three people repeat a lie, it will be believed as truth. The phrase originates from the Warring States period, when Pang Cong, a minister of Wei, told his king that if three people claimed they saw a tiger in the market (an obvious impossibility), the king would believe them. Each character builds the concept: '三' represents critical mass, '人' suggests multiple sources, '成' implies transformation, and '虎' represents an absurd claim. In traditional politics, it warned against the power of rumors; in social discourse, the dangers of uncritical acceptance. Modern applications span media literacy, public opinion management, and social psychology, teaching the importance of critical thinking and fact-checking rather than accepting repeated claims as truth. The idiom is particularly relevant in today's social media environment, where misinformation can rapidly spread and gain credibility through repetition."
+    },
+
+    {
+        "id": "ID139",
+        "characters": "枕流漱石",
+        "pinyin": "zhěn liú shù shí",
+        "meaning": "To live simply while pursuing noble goals",
+        "example": "The researcher lived modestly while dedicating everything to her discoveries",
+        "chineseExample": "研究员过着简朴的生活，把一切都投入到研究发现中",
+        "theme": "Life Philosophy",
+        "description": "This austere idiom describes using flowing water (流) as a pillow (枕) and washing one's mouth with stones (漱石), representing voluntary simplicity in pursuit of higher goals. The phrase originates from stories of ancient scholars who chose ascetic living conditions to focus on their studies. Each character paints the scene: '枕' suggests resting, '流' represents nature's flow, '漱' implies cleansing, and '石' represents basic materials. In traditional scholarship, it described the scholar's willingness to endure hardship for learning; in moral philosophy, the rejection of luxury for principle. Modern applications span academic dedication, artistic pursuit, and social activism, teaching that meaningful achievement often requires sacrificing material comfort for higher purposes."
+    },
+
+       {
+        "id": "ID140",
+        "characters": "老马识途",
+        "pinyin": "lǎo mǎ shí tú",
+        "meaning": "Experience leads to wisdom",
+        "example": "The veteran guide easily found the path in difficult terrain",
+        "chineseExample": "经验丰富的向导在困难地形中轻松找到道路",
+        "theme": "Wisdom & Learning",
+        "description": "This wise idiom describes how an old horse (老马) knows the way (识途), representing how experience leads to reliable knowledge. Each character builds wisdom: '老' suggests maturity, '马' represents the subject, '识' implies recognition, and '途' represents the path. In traditional travel, it valued experienced guides; in modern context, professional expertise. Modern applications span leadership, decision-making, and problem-solving, teaching that accumulated experience often provides reliable guidance in challenging situations."
+    },
+    {
+        "id": "ID141",
+        "characters": "饮水思源",
+        "pinyin": "yǐn shuǐ sī yuán",
+        "meaning": "To remember one's origins and those who helped",
+        "example": "After achieving success, she created a scholarship at her old school",
+        "chineseExample": "在成功之后，她在母校设立了奖学金",
+        "theme": "Relationships & Character",
+        "description": "This thoughtful idiom combines drinking water (饮水) with remembering its source (思源), creating a metaphor for gratitude and remembrance of one's origins. The phrase originates from ancient Chinese agricultural society, where understanding and maintaining water sources was crucial for survival. Each character deepens the meaning: '饮' represents receiving benefit, '水' symbolizes nourishment or help, '思' implies conscious reflection, and '源' represents origins or sources. In traditional society, it primarily described student-teacher relationships and filial piety; in modern context, it guides professional mentorship and institutional memory. Modern applications span business relationships, personal development, and organizational culture, teaching that success should be accompanied by recognition and appreciation of those who contributed to it. Unlike idioms that simply praise gratitude, this one specifically emphasizes the importance of maintaining awareness of and connection to one's roots and benefactors."
+    },
+    {
+        "id": "ID142",
+        "characters": "杯弓蛇影",
+        "pinyin": "bēi gōng shé yǐng",
+        "meaning": "To be overly suspicious and fearful of harmless things",
+        "example": "The team's excessive caution about minor changes paralyzed decision-making",
+        "chineseExample": "团队对小变化的过度警惕导致决策瘫痪",
+        "theme": "Life Philosophy",
+        "description": "This perceptive idiom comes from a story where someone mistook the reflection of a bow in their cup (杯弓) for a snake (蛇影), representing unnecessary fear caused by misperception. Each character builds the metaphor: '杯' represents the cup, '弓' is the bow, '蛇' suggests perceived threat, and '影' represents reflection or illusion. In traditional psychology, it described paranoia; in organizational behavior, excessive risk aversion. Modern applications span risk assessment, decision-making, and personal psychology, teaching that fears often arise more from perception than reality. Unlike idioms that simply warn against fear, this one specifically addresses how misinterpretation can create unnecessary anxiety and paralysis."
+    },
+    {
+        "id": "ID143",
+        "characters": "掉以轻心",
+        "pinyin": "diào yǐ qīng xīn",
+        "meaning": "To lower one's guard and become careless",
+        "example": "The leading company's complacency allowed competitors to catch up",
+        "chineseExample": "领先公司的自满让竞争对手迎头赶上",
+        "theme": "Wisdom & Learning",
+        "description": "This cautionary idiom describes dropping (掉) one's serious attention into lightness (轻心), warning against complacency. The phrase emerged from military strategy, where overconfidence often led to defeat. Each character builds warning: '掉' suggests losing or dropping, '以' indicates transformation, '轻' represents lightness or casualness, and '心' represents attention or concern. In traditional military texts, it warned against battlefield complacency; in business strategy, market overconfidence. Modern applications span risk management, competitive strategy, and personal development, teaching that success often requires maintaining vigilance even in favorable situations. Unlike idioms that simply praise caution, this one specifically addresses the danger of allowing success to erode necessary vigilance."
+    },
+    {
+        "id": "ID144",
+        "characters": "见贤思齐",
+        "pinyin": "jiàn xián sī qí",
+        "meaning": "To be inspired by the virtuous to improve oneself",
+        "example": "Reading about innovative leaders motivated her to enhance her skills",
+        "chineseExample": "阅读创新领袖的事迹激励她提升自己的技能",
+        "theme": "Wisdom & Learning",
+        "description": "This aspirational idiom describes seeing the worthy (见贤) and striving to equal them (思齐), promoting active self-improvement through positive example. The phrase comes from Confucian teaching about moral and personal development. Each character guides improvement: '见' represents observation, '贤' represents the virtuous or capable, '思' implies reflection and effort, and '齐' suggests equality or matching. In traditional education, it guided character development; in professional context, career advancement. Modern applications span personal development, professional growth, and leadership training, teaching that improvement often comes through studying and emulating those who excel. Unlike idioms that simply praise learning, this one specifically addresses the role of positive models in self-improvement."
+    },
+    {
+        "id": "ID145",
+        "characters": "亡羊补牢",
+        "pinyin": "wáng yáng bǔ láo",
+        "meaning": "It's never too late to correct a mistake",
+        "example": "After the security breach, the company finally upgraded their systems",
+        "chineseExample": "在安全漏洞事件后，公司终于升级了系统",
+        "theme": "Wisdom & Learning",
+        "description": "This remedial idiom describes fixing the pen (补牢) after losing sheep (亡羊), teaching that it's better to remedy a situation late than never. The phrase comes from an ancient story about a shepherd who improved his fence after losing animals. Each character builds the lesson: '亡' represents loss, '羊' suggests valuable assets, '补' implies repair, and '牢' represents protection. In traditional agriculture, it guided risk management; in modern context, system improvement. Modern applications span cybersecurity, quality control, and organizational learning, teaching that past failures should prompt protective measures even if damage has already occurred. Unlike idioms that simply address mistakes, this one specifically encourages taking corrective action regardless of timing."
+    }, 
+{
+        "id": "ID146",
+        "characters": "寥若晨星",
+        "pinyin": "liáo ruò chén xīng",
+        "meaning": "As scarce as morning stars; very rare or few in number",
+        "example": "True experts in this emerging technology are as rare as morning stars",
+        "chineseExample": "这个新兴技术领域的真正专家寥若晨星",
+        "theme": "Life Philosophy",
+        "description": "This poetic idiom compares scarcity (寥) to morning stars (晨星), which appear fewer as dawn approaches. Each character builds the metaphor: '寥' suggests sparseness, '若' creates comparison, '晨' represents early morning, and '星' depicts stars. In traditional literature, it described rare talents; in scholarly assessment, exceptional works. Modern applications span talent recruitment, resource allocation, and market analysis, teaching the importance of recognizing and valuing rare qualities or resources. Unlike idioms that simply describe scarcity, this one specifically uses the natural phenomenon of fading stars to convey both rarity and preciousness."
+    },
+    {
+        "id": "ID147",
+        "characters": "浩浩荡荡",
+        "pinyin": "hào hào dàng dàng",
+        "meaning": "Vast and mighty; grand and magnificent in scale",
+        "example": "The reform movement swept through the industry like a mighty wave",
+        "chineseExample": "改革运动浩浩荡荡地席卷了整个行业",
+        "theme": "Success & Perseverance",
+        "description": "This majestic idiom uses repeated characters to emphasize tremendous scale and momentum, like vast flowing waters. Each character reinforces magnitude: the doubled '浩' and '荡' create rhythm while suggesting enormous scale and unstoppable movement. In traditional historical writing, it described massive armies or social movements; in natural description, great rivers or tides. Modern applications span organizational change, social movements, and market trends, teaching the power of accumulated momentum and scale. Unlike idioms that simply describe size, this one specifically conveys both magnitude and irresistible forward movement."
+    },
+    {
+        "id": "ID148",
+        "characters": "一诺千金",
+        "pinyin": "yī nuò qiān jīn",
+        "meaning": "A promise worth a thousand in gold; keeping one's word at any cost",
+        "example": "Despite better offers, she honored her original commitment to the client",
+        "chineseExample": "尽管有更好的机会，她仍然信守对客户的承诺",
+        "theme": "Relationships & Character",
+        "description": "This honorable idiom equates a single promise (一诺) with a thousand in gold (千金), emphasizing the supreme value of keeping one's word. Each character builds integrity: '一' emphasizes singularity, '诺' represents the promise, '千' suggests great quantity, and '金' represents value. In traditional business ethics, it guided merchant conduct; in personal relationships, trust-building. Modern applications span contract negotiation, partnership management, and personal integrity, teaching that reputation for trustworthiness often exceeds immediate material gain. Unlike idioms that simply praise honesty, this one specifically equates promise-keeping with material wealth to emphasize its value."
+    },
+    {
+        "id": "ID149",
+        "characters": "如数家珍",
+        "pinyin": "rú shǔ jiā zhēn",
+        "meaning": "To know something as well as counting one's family treasures",
+        "example": "The historian discussed ancient artifacts with intimate familiarity",
+        "chineseExample": "这位历史学家谈论古代文物如数家珍",
+        "theme": "Wisdom & Learning",
+        "description": "This knowledgeable idiom compares subject mastery to counting (数) family treasures (家珍), representing intimate familiarity with a topic. Each character builds expertise: '如' creates comparison, '数' suggests counting or enumeration, '家' represents personal possession, and '珍' implies precious items. In traditional scholarship, it described comprehensive knowledge; in artisan training, complete mastery. Modern applications span professional expertise, subject mastery, and knowledge management, teaching that true expertise involves both broad knowledge and intimate familiarity. Unlike idioms that simply praise knowledge, this one specifically addresses the personal, detailed nature of true mastery."
+    },
+    {
+        "id": "ID150",
+        "characters": "精益求精",
+        "pinyin": "jīng yì qiú jīng",
+        "meaning": "To improve upon perfection; constant refinement",
+        "example": "The software team continued refining their already excellent product",
+        "chineseExample": "软件团队不断完善他们已经很优秀的产品",
+        "theme": "Success & Perseverance",
+        "description": "This idiom originates from the Book of Rites (Lǐjì), which emphasizes the pursuit of excellence even after achieving high standards. It describes seeking (求) excellence (精) beyond excellence (精益), symbolizing the relentless drive for improvement. In ancient times, it often guided artisans to perfect their craft or martial artists in their practice. Today, it is a reminder that true mastery demands continuous refinement."
+    },
+{
+        "id": "ID151",
+        "characters": "聚精会神",
+        "pinyin": "jù jīng huì shén",
+        "meaning": "To concentrate with all one's spirit and mind",
+        "example": "The surgeon focused completely during the complex procedure",
+        "chineseExample": "外科医生在复杂手术过程中全神贯注",
+        "theme": "Success & Perseverance",
+        "description": "This idiom has its roots in Daoist meditation practices, where gathering one’s essence (聚精) and unifying one’s spirit (会神) represented the ideal state of mental focus. It emphasizes complete absorption, whether in scholarly pursuits, artistic endeavors, or critical tasks like surgery. The imagery underscores the unity of mind and spirit as essential for peak performance."
+    },
+    {
+        "id": "ID152",
+        "characters": "唇亡齿寒",
+        "pinyin": "chún wáng chǐ hán",
+        "meaning": "Interdependent relationships where one's loss affects the other",
+        "example": "When the supplier failed, the manufacturer's production also suffered",
+        "chineseExample": "当供应商倒闭时，制造商的生产也受到影响",
+        "theme": "Life Philosophy",
+        "description": "This idiom comes from the Zuo Zhuan (左传), a historical commentary, where it described alliances and interdependence among states. The metaphor illustrates that when lips (唇) are lost, the teeth (齿) become cold, showing how seemingly separate entities often rely on each other for survival. It is widely used in contexts like diplomacy, ecosystems, and partnerships."
+    },
+    {
+        "id": "ID153",
+        "characters": "言不由衷",
+        "pinyin": "yán bù yóu zhōng",
+        "meaning": "Words that don't come from the heart; insincerity",
+        "example": "His praise felt empty because it didn't match his actions",
+        "chineseExample": "他的赞美感觉空洞，因为与他的行动不符",
+        "theme": "Relationships & Character",
+        "description": "This idiom has its origins in Confucian teachings, warning against disingenuous behavior. Words (言) not emerging from the heart (由衷) signify a disconnect between speech and true intent. It was historically used to promote authenticity in personal relationships and governance. The phrase highlights the importance of aligning one’s words with genuine feelings."
+    },
+    {
+        "id": "ID154",
+        "characters": "目无全牛",
+        "pinyin": "mù wú quán niú",
+        "meaning": "To achieve such mastery that conscious effort becomes unnecessary",
+        "example": "After decades of practice, the chef could create masterpieces without recipes",
+        "chineseExample": "经过几十年的练习，这位厨师可以不用食谱创作出杰作",
+        "theme": "Success & Perseverance",
+        "description": "This idiom comes from Zhuangzi (壮子), where a butcher explains that he no longer sees the whole ox (全牛) but instead focuses instinctively on the spaces between bones. It symbolizes reaching a level of mastery where conscious effort disappears, making actions appear effortless and intuitive. It is often cited in discussions of skill and expertise."
+    },
+    {
+        "id": "ID155",
+        "characters": "各得其所",
+        "pinyin": "gè dé qí suǒ",
+        "meaning": "Everyone finds their proper place",
+        "example": "The reorganization helped each team member find their ideal role",
+        "chineseExample": "重组帮助每个团队成员找到了最适合的角色",
+        "theme": "Success & Perseverance",
+        "description": "This idiom reflects ancient Chinese governance principles that emphasized placing the right people in the right roles. Each element (各) finding (得) its proper place (其所) symbolizes harmony and efficiency. It is often used in contexts like team-building, social structures, and resource management to stress the importance of organization."
+    },
+{
+        "id": "ID156",
+        "characters": "夸夸其谈",
+        "pinyin": "kuā kuā qí tán",
+        "meaning": "To talk boastfully without substance",
+        "example": "The consultant made grand promises but delivered little results",
+        "chineseExample": "这位顾问说得天花乱坠，但几乎没有实际成果",
+        "theme": "Life Philosophy",
+        "description": "This idiom criticizes empty boasting, where ‘夸’ is repeated to emphasize exaggeration. Historically, it was used to describe scholars or officials who made grand claims without backing them up. It warns against relying on appearances and emphasizes the value of substance over rhetoric."
+    },
+    {
+        "id": "ID157",
+        "characters": "迫在眉睫",
+        "pinyin": "pò zài méi jié",
+        "meaning": "Extremely urgent or imminent",
+        "example": "The deadline was so close that immediate action was necessary",
+        "chineseExample": "截止日期迫在眉睫，需要立即采取行动",
+        "theme": "Life Philosophy",
+        "description": "This urgent idiom describes something so close it's between the eyebrows and eyelashes (眉睫), representing extreme immediacy. Each character builds urgency: '迫' suggests pressing, '在' indicates location, '眉' represents eyebrows, and '睫' represents eyelashes. In traditional military contexts, it described imminent battle; in governance, pressing crises. Modern applications span project management, crisis response, and deadline management, teaching the recognition and appropriate response to truly urgent situations. Unlike idioms that simply describe urgency, this one specifically uses physical proximity to convey immediate pressure."
+    },
+    {
+        "id": "ID158",
+        "characters": "口是心非",
+        "pinyin": "kǒu shì xīn fēi",
+        "meaning": "To say one thing but mean another",
+        "example": "The politician's public support contradicted his private actions",
+        "chineseExample": "这位政治家的公开支持与他的私下行为相矛盾",
+        "theme": "Relationships & Character",
+        "description": "This idiom pairs '口' (mouth) with '心' (heart) to capture the tension between public statements and private beliefs. It emerged during the political intrigues of the Three Kingdoms period, where courtiers often had to navigate between diplomatic speech and true loyalty. The phrase gained particular resonance through the story of Cao Cao's advisor Cheng Yu, who used apparent criticism to actually praise his lord's wisdom."
+    },
+    {
+        "id": "ID159",
+        "characters": "自相矛盾",
+        "pinyin": "zì xiāng máo dùn",
+        "meaning": "To contradict oneself",
+        "example": "The policy's conflicting requirements made implementation impossible",
+        "chineseExample": "政策中相互矛盾的要求使得实施变得不可能",
+        "theme": "Wisdom & Learning",
+        "description": "This logical idiom comes from the story of a merchant selling both spears (矛) claimed to pierce anything and shields (盾) claimed to be impenetrable, representing inherent contradiction. Each character exposes inconsistency: '自' indicates self-origin, '相' suggests mutual relation, '矛' represents offense, and '盾' represents defense. In traditional logic, it exposed flawed arguments; in policy analysis, inconsistent planning. Modern applications span policy development, strategic planning, and argument construction, teaching the importance of maintaining internal consistency in thinking and planning. Unlike idioms that simply criticize mistakes, this one specifically addresses internal logical contradictions."
+    },
+    {
+        "id": "ID160",
+        "characters": "目不暇给",
+        "pinyin": "mù bù xiá jǐ",
+        "meaning": "Too much to take in at once; overwhelming",
+        "example": "The exhibition's countless displays overwhelmed visitors",
+        "chineseExample": "展览中数不清的展品让参观者目不暇给",
+        "theme": "Life Philosophy",
+        "description": "This idiom first appeared in classic poetry descriptions of imperial palace scenes during the Han Dynasty. The characters paint a vivid picture: 目(eyes) 不(cannot) 暇(find time) 给(to give attention), capturing how the observer's eyes cannot keep up with everything they're trying to see. Court historians used it to describe the challenge of documenting multiple simultaneous events, highlighting a fundamental human limitation in processing overwhelming sensory input."
+    }
+,
+    {
+        "id": "ID161",
+        "characters": "循序渐进",
+        "pinyin": "xún xù jiàn jìn",
+        "meaning": "To advance gradually in proper order",
+        "example": "She learned the language step by step, building a solid foundation",
+        "chineseExample": "她循序渐进地学习语言，打下了坚实的基础",
+        "theme": "Wisdom & Learning",
+        "description": "This methodical idiom combines following order (循序) with gradual progress (渐进), emphasizing systematic advancement. Each character builds method: '循' suggests following, '序' represents order, '渐' implies gradual change, and '进' indicates progress. In traditional education, it guided curriculum design; in martial arts, skill development. Modern applications span education methodology, skill acquisition, and project management, teaching that sustainable progress often requires respecting natural learning sequences. Unlike idioms that simply praise progress, this one specifically addresses the importance of proper order and gradual advancement."
+    },
+    {
+        "id": "ID162",
+        "characters": "对症下药",
+        "pinyin": "duì zhèng xià yào",
+        "meaning": "To prescribe the right medicine for an illness; to take appropriate measures for a specific problem",
+        "example": "The consultant first diagnosed the company's issues before proposing solutions",
+        "chineseExample": "顾问先诊断公司的问题，然后才提出解决方案",
+        "theme": "Wisdom & Learning",
+        "description": "This idiom emerged from traditional Chinese medicine texts, particularly the Yellow Emperor's Classic of Medicine (黄帝内经). The characters outline the medical process: 对症(matching the symptoms) 下药(administering medicine). It exemplifies the diagnostic approach of Chinese medicine, where understanding the pattern of illness precedes treatment. During the Song Dynasty, scholar-officials applied this medical concept to social and political problems."
     }
 ]
-
+  
