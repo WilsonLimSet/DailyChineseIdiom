@@ -183,10 +183,12 @@ private var mediumWidget: some View {
                     }
                     
                     Text(example)
-                        .font(.system(size: 14))
+                        .font(.system(size: 13))
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
                         .italic()
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.5)
                 }
                 .padding(.horizontal, 8)
             }

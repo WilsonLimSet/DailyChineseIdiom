@@ -115,8 +115,13 @@ struct ContentView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateStyle = .long
+                    let dateString = dateFormatter.string(from: Date())
+                    
                     let shareText = """
                     Daily Chinese Idiom
+                    \(dateString)
                     
                     \(currentIdiom.characters)
                     \(currentIdiom.pinyin)
@@ -126,7 +131,10 @@ struct ContentView: View {
                     \(currentIdiom.chineseExample ?? "")
                     \(currentIdiom.example ?? "")
                     
+                    History & Meaning:
                     \(currentIdiom.description)
+                    
+                    Learn more at https://www.chineseidioms.com
                     """
                     
                     let activityVC = UIActivityViewController(
