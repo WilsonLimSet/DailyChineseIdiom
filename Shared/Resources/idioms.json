@@ -169,16 +169,6 @@
     },
     {
         "id": "ID018",
-        "characters": "近水楼台",
-        "pinyin": "jìn shuǐ lóu tái",
-        "meaning": "To benefit from proximity to resources or power",
-        "example": "Living in the city gave her more career opportunities",
-        "chineseExample": "住在城市给了她更多的职业机会",
-        "theme": "Life Philosophy",
-        "description": "The complete idiom is '近水楼台先得月' (the pavilion closest to the water gets the moonlight first), though it's often shortened to its first four characters. It paints a serene image of classical Chinese architecture where waterside pavilions (楼台) would catch the moon's reflection on the water (近水) before other buildings. This poetic image evolved into a sophisticated metaphor about the advantages of positioning and access. Originally used to describe literal physical proximity, it gained broader significance during the Tang Dynasty when it began to reference social and political advantage. The idiom acknowledges that opportunity isn't just about capability but also about positioning and access. In contemporary usage, it describes various situations where proximity creates advantage, from business networking to educational opportunities, while maintaining a subtle warning about the role of privilege in success."
-    },
-    {
-        "id": "ID019",
         "characters": "塞翁失马",
         "pinyin": "sài wēng shī mǎ",
         "meaning": "A blessing in disguise",
@@ -186,7 +176,16 @@
         "chineseExample": "失业反而让他找到了真正的使命",
         "theme": "Life Philosophy",
         "description": "This profound idiom originates from the story of a wise old man (塞翁) living near the northern border who lost his prized horse. When neighbors came to console him, he asked, 'How do you know this isn't good fortune?' Indeed, the horse later returned with a magnificent wild horse. When neighbors congratulated him, he remained cautious. Later, his son broke his leg while riding the wild horse, but this injury ultimately saved him from being conscripted into a war where many soldiers perished. The idiom teaches the Taoist principle that fortune and misfortune are interconnected and often transform into each other, encouraging us to maintain equilibrium in the face of life's ups and downs."
-
+    }, 
+    {
+        "id": "ID019",
+        "characters": "近水楼台",
+        "pinyin": "jìn shuǐ lóu tái",
+        "meaning": "To benefit from proximity to resources or power",
+        "example": "Living in the city gave her more career opportunities",
+        "chineseExample": "住在城市给了她更多的职业机会",
+        "theme": "Life Philosophy",
+        "description": "This idiom comes from the longer phrase '近水楼台先得月' (the pavilion nearest to water sees the moon first). It draws from classical Chinese architecture, where waterside pavilions would first catch the moon's reflection. During the Tang Dynasty, it evolved from describing physical proximity to representing social and political advantage, acknowledging how position and access often determine opportunity. The metaphor perfectly captured the relationship between location and opportunity in Chinese society."
     },
     {
         "id": "ID020",
@@ -197,6 +196,7 @@
         "chineseExample": "她总是提前到达会议，尊重每个人的时间",
         "theme": "Success & Perseverance",
         "description":"While ancient Chinese time-keeping used more fluid measurements like water clocks, this idiom emerged during the late Qing Dynasty's modernization period, when Western-style precise time-keeping became crucial for commerce and diplomacy. It reflects the merger of traditional Chinese values of responsibility (守) with modern industrial concepts of time management. The comparison to gold (金) was particularly meaningful in trading ports like Shanghai, where punctuality became essential for international business. Today, it embodies both practical necessity and moral virtue in our globally connected world."
+    
     },
     {
         "id": "ID021",
