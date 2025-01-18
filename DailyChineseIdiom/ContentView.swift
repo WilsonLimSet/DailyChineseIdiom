@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var currentIdiom: Idiom = IdiomProvider.shared.idiomForDate()
     @State private var isShowingTodaysIdiom: Bool = true
+    @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
         ScrollView {
@@ -159,6 +160,11 @@ struct ContentView: View {
                 NavigationLink(destination: PrivacyPolicyView()) {
                     Image(systemName: "doc.text")
                 }
+            }
+        }
+        .onChange(of: scenePhase) { newPhase in
+            if newPhase == .active && isShowingTodaysIdiom {
+                currentIdiom = IdiomProvider.shared.idiomForDate()
             }
         }
     }
