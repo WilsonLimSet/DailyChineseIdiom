@@ -1,4 +1,4 @@
-struct Idiom: Codable {
+struct Idiom: Codable, Equatable {
     let id: String
     let characters: String
     let pinyin: String
@@ -7,6 +7,10 @@ struct Idiom: Codable {
     let chineseExample: String?
     let theme: String
     let description: String
+    
+    static func == (lhs: Idiom, rhs: Idiom) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 // Fallback sample idiom

@@ -46,14 +46,13 @@ class IdiomProvider {
         }
     }
     
-    func idiomForDate() -> Idiom {
+    func idiomForDate(_ date: Date = Date()) -> Idiom {
         if idioms.isEmpty {
             return sampleIdiom
         }
         
         let calendar = Calendar.current
-        let now = Date()
-        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: now) ?? 1
+        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date) ?? 1
         let index = (dayOfYear - 1) % max(1, idioms.count)
         return idioms[index]
     }

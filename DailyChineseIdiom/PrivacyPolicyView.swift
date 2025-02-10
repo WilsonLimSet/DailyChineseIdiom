@@ -9,12 +9,12 @@ struct PrivacyPolicyView: View {
                         .font(.largeTitle)
                         .bold()
                     
-                    Text("Last updated: January 13, 2025")
+                    Text("Last updated: February 10, 2025")
                         .foregroundColor(.secondary)
                     
                     Text("Overview")
                         .font(.headline)
-                    Text("Daily Chinese Idiom is a widget and app that displays Chinese idioms. We believe in complete transparency and want you to know that we do not collect, store, or share any personal information.")
+                    Text("ChengYuis a widget and app that displays Chinese idioms. We believe in complete transparency and want you to know that we do not collect, store, or share any personal information.")
                     
                     Text("Information Collection")
                         .font(.headline)

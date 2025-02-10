@@ -10,7 +10,17 @@ import SwiftUI
 struct ContentView: View {
     @State private var currentIdiom: Idiom = IdiomProvider.shared.idiomForDate()
     @State private var isShowingTodaysIdiom: Bool = true
+    @State private var showCopiedToast = false
     @Environment(\.scenePhase) private var scenePhase
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        return formatter
+    }()
+    
+    var shareText: String {
+        ShareUtils.formatShareText(idiom: currentIdiom, date: Date(), dateFormatter: dateFormatter)
+    }
     
     var body: some View {
         ScrollView {
@@ -84,7 +94,7 @@ struct ContentView: View {
                 // Example section
                 if let example = currentIdiom.example {
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("Example Usage")
+                        Text("Example Applicable Situation")
                             .font(.headline)
                         
                         if let chineseExample = currentIdiom.chineseExample {
@@ -115,51 +125,52 @@ struct ContentView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    let dateFormatter = DateFormatter()
-                    dateFormatter.dateStyle = .long
-                    let dateString = dateFormatter.string(from: Date())
-                    
-                    let shareText = """
-                    Daily Chinese Idiom
-                    \(dateString)
-                    
-                    \(currentIdiom.characters)
-                    \(currentIdiom.pinyin)
-                    \(currentIdiom.meaning)
-                    
-                    Example:
-                    \(currentIdiom.chineseExample ?? "")
-                    \(currentIdiom.example ?? "")
-                    
-                    History & Meaning:
-                    \(currentIdiom.description)
-                    
-                    Learn more at https://www.chineseidioms.com
-                    """
-                    
-                    let activityVC = UIActivityViewController(
-                        activityItems: [shareText],
-                        applicationActivities: nil
-                    )
-                    
-                    // For iPad support
-                    if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                       let window = windowScene.windows.first,
-                       let rootVC = window.rootViewController {
-                        activityVC.popoverPresentationController?.sourceView = rootVC.view
-                        activityVC.popoverPresentationController?.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 0, height: 0)
-                        activityVC.popoverPresentationController?.permittedArrowDirections = []
-                        rootVC.present(activityVC, animated: true)
+                HStack(spacing: 16) {
+                    NavigationLink(destination: HistoryView()) {
+                        Image(systemName: "calendar")
+                            .foregroundColor(.blue)
                     }
-                }) {
-                    Image(systemName: "square.and.arrow.up")
+                    
+                    Menu {
+                        Button(action: {
+                            ShareUtils.copyToClipboard(text: shareText) { showing in
+                                showCopiedToast = showing
+                            }
+                        }) {
+                            Label("Copy", systemImage: "doc.on.doc")
+                        }
+                        
+                        Button(action: {
+                            ShareUtils.presentShareSheet(text: shareText)
+                        }) {
+                            Label("Share", systemImage: "square.and.arrow.up")
+                        }
+                    } label: {
+                        Image(systemName: "square.and.arrow.up")
+                    }
                 }
             }
+            
             ToolbarItem(placement: .navigationBarLeading) {
-                NavigationLink(destination: PrivacyPolicyView()) {
-                    Image(systemName: "doc.text")
+                HStack(spacing: 16) {
+                    NavigationLink(destination: PrivacyPolicyView()) {
+                        Image(systemName: "doc.text")
+                            .foregroundColor(.blue)
+                    }
+                    
+                    NavigationLink(destination: HelpView()) {
+                        Image(systemName: "questionmark.circle")
+                            .foregroundColor(.blue)
+                    }
                 }
+            }
+        }
+        .overlay(alignment: .top) {
+            if showCopiedToast {
+                CopyToastView()
+                    .padding(.top, 10)
+                    .transition(.move(edge: .top).combined(with: .opacity))
+                    .zIndex(1)
             }
         }
         .onChange(of: scenePhase) { newPhase in
