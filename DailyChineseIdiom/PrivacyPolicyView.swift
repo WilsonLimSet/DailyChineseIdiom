@@ -14,7 +14,7 @@ struct PrivacyPolicyView: View {
                     
                     Text("Overview")
                         .font(.headline)
-                    Text("ChengYuis a widget and app that displays Chinese idioms. We believe in complete transparency and want you to know that we do not collect, store, or share any personal information.")
+                    Text("ChengYu is a widget and app that displays Chinese idioms. We believe in complete transparency and want you to know that we do not collect, store, or share any personal information.")
                     
                     Text("Information Collection")
                         .font(.headline)

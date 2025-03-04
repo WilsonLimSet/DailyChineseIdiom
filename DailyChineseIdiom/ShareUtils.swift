@@ -2,13 +2,16 @@ import SwiftUI
 
 struct ShareUtils {
     static func formatShareText(idiom: Idiom, date: Date, dateFormatter: DateFormatter) -> String {
-        """
+        let preferences = UserPreferences.shared
+        let meaning = preferences.getMeaningForIdiom(idiom)
+        
+        return """
         Daily Chinese Idiom
         \(dateFormatter.string(from: date))
         
         \(idiom.characters)
         \(idiom.pinyin)
-        \(idiom.meaning)
+        \(meaning)
         
         Example Applicable Situation:
         \(idiom.chineseExample ?? "")

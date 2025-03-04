@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var currentIdiom: Idiom = IdiomProvider.shared.idiomForDate()
     @State private var isShowingTodaysIdiom: Bool = true
     @State private var showCopiedToast = false
+    @StateObject private var preferences = UserPreferences.shared
     @Environment(\.scenePhase) private var scenePhase
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -82,7 +83,7 @@ struct ContentView: View {
                         .font(.title2)
                         .foregroundColor(.secondary)
                     
-                    Text(currentIdiom.meaning)
+                    Text(preferences.getMeaningForIdiom(currentIdiom))
                         .font(.title3)
                 }
                 
@@ -160,6 +161,11 @@ struct ContentView: View {
                     
                     NavigationLink(destination: HelpView()) {
                         Image(systemName: "questionmark.circle")
+                            .foregroundColor(.blue)
+                    }
+                    
+                    NavigationLink(destination: SettingsView()) {
+                        Image(systemName: "gear")
                             .foregroundColor(.blue)
                     }
                 }

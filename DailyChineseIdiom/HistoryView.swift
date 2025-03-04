@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HistoryView: View {
     @State private var selectedDate = Date()
+    @StateObject private var preferences = UserPreferences.shared
     private let startDate = Calendar.current.date(from: DateComponents(year: 2025, month: 1, day: 1)) ?? Date()
     @State private var showingFullIdiom = false
     @State private var showingShareSheet = false
@@ -47,7 +48,7 @@ struct HistoryView: View {
                             .font(.title2)
                             .foregroundColor(.secondary)
                         
-                        Text(idiom.meaning)
+                        Text(preferences.getMeaningForIdiom(idiom))
                             .font(.title3)
                     }
                     .transition(.opacity.combined(with: .move(edge: .leading)))
@@ -90,6 +91,7 @@ struct IdiomDetailView: View {
     let date: Date
     @Environment(\.dismiss) private var dismiss
     @State private var showCopiedToast = false
+    @StateObject private var preferences = UserPreferences.shared
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
@@ -121,7 +123,7 @@ struct IdiomDetailView: View {
                         .font(.title2)
                         .foregroundColor(.secondary)
                     
-                    Text(idiom.meaning)
+                    Text(preferences.getMeaningForIdiom(idiom))
                         .font(.title3)
                 }
                 .transition(.move(edge: .leading))

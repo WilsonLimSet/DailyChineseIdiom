@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		952487CF2D5E4C9400852232 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952487CE2D5E4C9400852232 /* AppGroup.swift */; };
+		952487D02D5E4C9400852232 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952487CE2D5E4C9400852232 /* AppGroup.swift */; };
 		959911F92D29FC3400654A78 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959911F82D29FC3400654A78 /* WidgetKit.framework */; };
 		959911FB2D29FC3400654A78 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959911FA2D29FC3400654A78 /* SwiftUI.framework */; };
 		9599120C2D29FC3500654A78 /* DailyIdiomExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 959911F62D29FC3400654A78 /* DailyIdiomExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -43,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		952487CD2D5E3AC800852232 /* DailyIdiomExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyIdiomExtension.entitlements; sourceTree = "<group>"; };
+		952487CE2D5E4C9400852232 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		959911DD2D29F88F00654A78 /* DailyChineseIdioms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyChineseIdioms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959911F62D29FC3400654A78 /* DailyIdiomExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyIdiomExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		959911F82D29FC3400654A78 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -101,6 +105,7 @@
 		959911D42D29F88F00654A78 = {
 			isa = PBXGroup;
 			children = (
+				952487CD2D5E3AC800852232 /* DailyIdiomExtension.entitlements */,
 				9599126E2D3641DF00654A78 /* Shared */,
 				959911DF2D29F88F00654A78 /* DailyChineseIdiom */,
 				959911FC2D29FC3400654A78 /* DailyIdiom */,
@@ -141,6 +146,7 @@
 			children = (
 				959912D72D380CAD00654A78 /* IdiomProvider.swift */,
 				9599126D2D3641DF00654A78 /* Resources */,
+				952487CE2D5E4C9400852232 /* AppGroup.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952487D02D5E4C9400852232 /* AppGroup.swift in Sources */,
 				959912D82D380CAD00654A78 /* IdiomProvider.swift in Sources */,
 				959912D62D380C9C00654A78 /* Idiom.swift in Sources */,
 			);
@@ -265,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952487CF2D5E4C9400852232 /* AppGroup.swift in Sources */,
 				959912D92D380CAD00654A78 /* IdiomProvider.swift in Sources */,
 				959912D52D380C9C00654A78 /* Idiom.swift in Sources */,
 			);
@@ -403,7 +411,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = DailyChineseIdiom/DailyChineseIdiom.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.10;
+				CURRENT_PROJECT_VERSION = 1.17;
 				DEVELOPMENT_ASSET_PATHS = "\"DailyChineseIdiom/Preview Content\"";
 				DEVELOPMENT_TEAM = JU395NH3KL;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -425,7 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilsonlimsetiawan.dailychineseidioms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -446,7 +454,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = DailyChineseIdiom/DailyChineseIdiom.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.10;
+				CURRENT_PROJECT_VERSION = 1.17;
 				DEVELOPMENT_ASSET_PATHS = "\"DailyChineseIdiom/Preview Content\"";
 				DEVELOPMENT_TEAM = JU395NH3KL;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -468,7 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilsonlimsetiawan.dailychineseidioms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -486,8 +494,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DailyIdiomExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.10;
+				CURRENT_PROJECT_VERSION = 1.17;
 				DEVELOPMENT_TEAM = JU395NH3KL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyIdiom/Info.plist;
@@ -499,7 +508,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilsonlimsetiawan.dailychineseidioms.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = NO;
@@ -520,8 +529,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DailyIdiomExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.10;
+				CURRENT_PROJECT_VERSION = 1.17;
 				DEVELOPMENT_TEAM = JU395NH3KL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyIdiom/Info.plist;
@@ -533,7 +543,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilsonlimsetiawan.dailychineseidioms.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = NO;
