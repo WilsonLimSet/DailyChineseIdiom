@@ -195,29 +195,28 @@ struct DailyIdiomEntryView: View {
     .clipShape(RoundedRectangle(cornerRadius: 16))
 }
     
-   // Medium horizontal widget
-private var mediumWidget: some View {
+   private var mediumWidget: some View {
     HStack(spacing: 20) {
         // Left side with Chinese characters
         Text(entry.idiom.characters)
-            .font(.system(size: 52, weight: .bold))
+            .font(.system(size: 56, weight: .bold))
             .minimumScaleFactor(0.5)
             .foregroundColor(.primary)
             .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.1), radius: 1.5)
             .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
         
         // Right side with pinyin and meaning
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 6) {
             Text(entry.idiom.pinyin)
-                .font(.system(size: 18, weight: .medium, design: .rounded))
+                .font(.system(size: 17, weight: .medium, design: .rounded))
                 .foregroundColor(.secondary)
                 .lineLimit(1)
                 .minimumScaleFactor(0.8)
             
             Text(getMeaning(entry.idiom))
-                .font(.system(size: 15))
+                .font(.system(size: 15, weight: .regular))
                 .foregroundColor(.secondary)
-                .lineLimit(3)
+                .lineLimit(2)
                 .multilineTextAlignment(.leading)
                 .minimumScaleFactor(0.7)
                 .fixedSize(horizontal: false, vertical: true)
@@ -225,7 +224,7 @@ private var mediumWidget: some View {
         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
     }
     .padding(.horizontal, 20)
-    .padding(.vertical, 16)
+    .padding(.vertical, 12)
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .background(
         ZStack {
@@ -277,7 +276,7 @@ private var mediumWidget: some View {
         
         // Main characters with enhanced styling
         Text(entry.idiom.characters)
-            .font(.system(size: 76, weight: .bold))
+            .font(.system(size: 72, weight: .bold))
             .minimumScaleFactor(0.6)
             .foregroundColor(.primary)
             .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.15), radius: 2)
@@ -285,7 +284,7 @@ private var mediumWidget: some View {
         
         // Pinyin with enhanced styling
         Text(entry.idiom.pinyin)
-            .font(.system(size: 24, weight: .medium, design: .rounded))
+            .font(.system(size: 22, weight: .medium, design: .rounded))
             .foregroundColor(.secondary)
             .lineLimit(1)
             .padding(.bottom, 4)
@@ -298,7 +297,7 @@ private var mediumWidget: some View {
         
         // Meaning with enhanced styling
         Text(getMeaning(entry.idiom))
-            .font(.system(size: 18, weight: .regular))
+            .font(.system(size: 17, weight: .regular))
             .foregroundColor(.secondary)
             .multilineTextAlignment(.center)
             .lineLimit(2)
