@@ -6,7 +6,23 @@ struct SettingsView: View {
     
     var body: some View {
         List {
-            Section(header: Text("Display Options")) {
+            Section(header: Text("Character Display")) {
+                Picker("Character Type", selection: $preferences.useTraditionalCharacters) {
+                    Text("Simplified")
+                        .tag(false)
+                    Text("Traditional")
+                        .tag(true)
+                }
+                .pickerStyle(.segmented)
+                .padding(.vertical, 4)
+                
+                Text("Choose between simplified and traditional Chinese characters")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding(.top, 4)
+            }
+            
+            Section(header: Text("Meaning Display")) {
                 Picker("Meaning Display", selection: $preferences.showMetaphoricMeaning) {
                     Text("Literal Translation")
                         .tag(false)
@@ -24,7 +40,7 @@ struct SettingsView: View {
             
             Section(header: Text("Example")) {
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("塞翁失马")
+                    Text(preferences.getCharactersForIdiom(sampleIdiom))
                         .font(.title2)
                         .bold()
                     

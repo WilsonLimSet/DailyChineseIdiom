@@ -67,7 +67,7 @@ class IdiomProvider {
         
         repeat {
             randomIdiom = idioms.randomElement() ?? sampleIdiom
-        } while randomIdiom.characters == currentIdiom.characters && idioms.count > 1
+        } while randomIdiom.id == currentIdiom.id && idioms.count > 1
         
         return randomIdiom
     }

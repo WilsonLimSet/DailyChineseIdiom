@@ -74,7 +74,7 @@ struct ContentView: View {
                 .padding(.top)
                 
                 // Main Characters
-                Text(currentIdiom.characters)
+                Text(preferences.getCharactersForIdiom(currentIdiom))
                     .font(.system(size: 42, weight: .bold))
                 
                 // Pinyin and Meaning
@@ -98,7 +98,7 @@ struct ContentView: View {
                         Text("Example Applicable Situation")
                             .font(.headline)
                         
-                        if let chineseExample = currentIdiom.chineseExample {
+                        if let chineseExample = preferences.getChineseExampleForIdiom(currentIdiom) {
                             Text(chineseExample)
                                 .font(.body)
                                 .foregroundColor(.secondary)
@@ -114,9 +114,8 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 12) {
                     Text("History & Meaning")
                         .font(.headline)
-                        .padding(.top)
                     
-                    Text(currentIdiom.description)
+                    Text(preferences.getDescriptionForIdiom(currentIdiom))
                         .font(.body)
                         .foregroundColor(.secondary)
                 }

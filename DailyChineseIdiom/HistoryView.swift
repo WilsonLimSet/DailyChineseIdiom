@@ -39,7 +39,7 @@ struct HistoryView: View {
                     .padding(.bottom, 4)
                     
                     // Main content
-                    Text(idiom.characters)
+                    Text(preferences.getCharactersForIdiom(idiom))
                         .font(.system(size: 36, weight: .bold))
                         .transition(.opacity.combined(with: .scale))
                     
@@ -114,7 +114,7 @@ struct IdiomDetailView: View {
                 }
                 
                 // Main content
-                Text(idiom.characters)
+                Text(preferences.getCharactersForIdiom(idiom))
                     .font(.system(size: 42, weight: .bold))
                     .transition(.scale)
                 
@@ -135,7 +135,7 @@ struct IdiomDetailView: View {
                         Text("Example Applicable Situation")
                             .font(.headline)
                         
-                        if let chineseExample = idiom.chineseExample {
+                        if let chineseExample = preferences.getChineseExampleForIdiom(idiom) {
                             Text(chineseExample)
                                 .font(.body)
                                 .foregroundColor(.secondary)
@@ -153,7 +153,7 @@ struct IdiomDetailView: View {
                     Text("History & Meaning")
                         .font(.headline)
                     
-                    Text(idiom.description)
+                    Text(preferences.getDescriptionForIdiom(idiom))
                         .font(.body)
                         .foregroundColor(.secondary)
                 }

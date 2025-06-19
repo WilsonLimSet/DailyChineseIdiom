@@ -4,21 +4,24 @@ struct ShareUtils {
     static func formatShareText(idiom: Idiom, date: Date, dateFormatter: DateFormatter) -> String {
         let preferences = UserPreferences.shared
         let meaning = preferences.getMeaningForIdiom(idiom)
+        let characters = preferences.getCharactersForIdiom(idiom)
+        let chineseExample = preferences.getChineseExampleForIdiom(idiom)
+        let description = preferences.getDescriptionForIdiom(idiom)
         
         return """
         Daily Chinese Idiom
         \(dateFormatter.string(from: date))
         
-        \(idiom.characters)
+        \(characters)
         \(idiom.pinyin)
         \(meaning)
         
         Example Applicable Situation:
-        \(idiom.chineseExample ?? "")
+        \(chineseExample ?? "")
         \(idiom.example ?? "")
         
         History & Meaning:
-        \(idiom.description)
+        \(description)
         
         Learn more at https://www.chineseidioms.com
         """
