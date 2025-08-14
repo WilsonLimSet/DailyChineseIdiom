@@ -38,6 +38,27 @@ struct SettingsView: View {
                     .padding(.top, 4)
             }
             
+            Section(header: Text("Support")) {
+                Button(action: {
+                    ReviewManager.shared.openAppStoreForReview()
+                }) {
+                    HStack {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.yellow)
+                        Text("Rate & Review on App Store")
+                            .foregroundColor(.primary)
+                        Spacer()
+                        Image(systemName: "arrow.up.forward.app")
+                            .foregroundColor(.secondary)
+                            .font(.caption)
+                    }
+                }
+                
+                Text("Your reviews help other users discover the app!")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+            
             Section(header: Text("Example")) {
                 VStack(alignment: .leading, spacing: 12) {
                     Text(preferences.getCharactersForIdiom(sampleIdiom))

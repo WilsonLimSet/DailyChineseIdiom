@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var showCopiedToast = false
     @StateObject private var preferences = UserPreferences.shared
     @Environment(\.scenePhase) private var scenePhase
+    @State private var viewAppearCount = 0
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
@@ -178,9 +179,18 @@ struct ContentView: View {
                     .zIndex(1)
             }
         }
-        .onChange(of: scenePhase) { newPhase in
+        .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .active && isShowingTodaysIdiom {
                 currentIdiom = IdiomProvider.shared.idiomForDate()
+            }
+        }
+        .onAppear {
+            viewAppearCount += 1
+            
+            // Request review after user has viewed 3 idioms in this session
+            // This ensures they're engaged with the app
+            if viewAppearCount == 3 {
+                ReviewManager.shared.requestReviewIfAppropriate()
             }
         }
     }

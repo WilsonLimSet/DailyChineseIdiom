@@ -12,6 +12,9 @@ struct DailyChineseIdiomApp: App {
     init() {
         // Initialize IdiomProvider early to catch any loading issues
         _ = IdiomProvider.shared
+        
+        // Increment launch count for review prompt tracking
+        ReviewManager.shared.incrementLaunchCount()
     }
     
     var body: some Scene {
