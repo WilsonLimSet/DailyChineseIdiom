@@ -170,7 +170,7 @@ struct DailyIdiomEntryView: View {
             .lineLimit(2)
             .fixedSize(horizontal: false, vertical: true)
             .padding(.bottom, 6)
-        
+
         Text(entry.idiom.pinyin)
             .font(.system(size: 16, weight: .medium, design: .rounded))
             .foregroundColor(.secondary)
@@ -182,39 +182,6 @@ struct DailyIdiomEntryView: View {
     .padding(.horizontal, 12)
     .padding(.vertical, 16)
     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-    .background(
-        ZStack {
-            // Subtle gradient background
-            LinearGradient(
-                gradient: Gradient(colors: [
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.15, alpha: 1.0) :
-                            UIColor.systemBackground
-                    }),
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.18, alpha: 1.0) :
-                            UIColor(white: 0.98, alpha: 1.0)
-                    })
-                ]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            
-            // Elegant rounded rectangle with thinner border
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.3, alpha: 0.8) :
-                            UIColor(white: 0, alpha: 0.07)
-                    }),
-                    lineWidth: 0.5
-                )
-        }
-    )
-    .clipShape(RoundedRectangle(cornerRadius: 16))
 }
     
    private var mediumWidget: some View {
@@ -226,7 +193,7 @@ struct DailyIdiomEntryView: View {
             .foregroundColor(.primary)
             .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.1), radius: 1.5)
             .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
-        
+
         // Right side with pinyin and meaning
         VStack(alignment: .leading, spacing: 6) {
             Text(entry.idiom.pinyin)
@@ -234,7 +201,7 @@ struct DailyIdiomEntryView: View {
                 .foregroundColor(.secondary)
                 .lineLimit(1)
                 .minimumScaleFactor(0.8)
-            
+
             Text(getMeaning(entry.idiom))
                 .font(.system(size: 15, weight: .regular))
                 .foregroundColor(.secondary)
@@ -248,39 +215,6 @@ struct DailyIdiomEntryView: View {
     .padding(.horizontal, 20)
     .padding(.vertical, 12)
     .frame(maxWidth: .infinity, maxHeight: .infinity)
-    .background(
-        ZStack {
-            // Subtle gradient background
-            LinearGradient(
-                gradient: Gradient(colors: [
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.15, alpha: 1.0) :
-                            UIColor.systemBackground
-                    }),
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.18, alpha: 1.0) :
-                            UIColor(white: 0.98, alpha: 1.0)
-                    })
-                ]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            
-            // Elegant rounded rectangle with thinner border
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.3, alpha: 0.8) :
-                            UIColor(white: 0, alpha: 0.07)
-                    }),
-                    lineWidth: 0.5
-                )
-        }
-    )
-    .clipShape(RoundedRectangle(cornerRadius: 16))
 }
     
    private var largeWidget: some View {
@@ -295,7 +229,7 @@ struct DailyIdiomEntryView: View {
             decorativeLine
         }
         .padding(.top, 4)
-        
+
         // Main characters with enhanced styling
         Text(getCharacters(entry.idiom))
             .font(.system(size: 72, weight: .bold))
@@ -303,20 +237,20 @@ struct DailyIdiomEntryView: View {
             .foregroundColor(.primary)
             .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.15), radius: 2)
             .padding(.vertical, 4)
-        
+
         // Pinyin with enhanced styling
         Text(entry.idiom.pinyin)
             .font(.system(size: 22, weight: .medium, design: .rounded))
             .foregroundColor(.secondary)
             .lineLimit(1)
             .padding(.bottom, 4)
-        
+
         // Divider
         Rectangle()
             .frame(height: 1)
             .foregroundColor(Color.secondary.opacity(0.2))
             .padding(.horizontal, 40)
-        
+
         // Meaning with enhanced styling
         Text(getMeaning(entry.idiom))
             .font(.system(size: 17, weight: .regular))
@@ -325,7 +259,7 @@ struct DailyIdiomEntryView: View {
             .lineLimit(2)
             .padding(.vertical, 4)
             .padding(.horizontal, 20)
-        
+
         // Example section with enhanced styling
         if let example = entry.idiom.example {
             VStack(spacing: 8) {
@@ -336,7 +270,7 @@ struct DailyIdiomEntryView: View {
                         .multilineTextAlignment(.center)
                         .padding(.top, 2)
                 }
-                
+
                 Text(example)
                     .font(.system(size: 14, weight: .light, design: .serif))
                     .foregroundColor(.secondary.opacity(0.8))
@@ -351,39 +285,6 @@ struct DailyIdiomEntryView: View {
     }
     .padding()
     .frame(maxWidth: .infinity, maxHeight: .infinity)
-    .background(
-        ZStack {
-            // Subtle gradient background
-            LinearGradient(
-                gradient: Gradient(colors: [
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.15, alpha: 1.0) :
-                            UIColor.systemBackground
-                    }),
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.18, alpha: 1.0) :
-                            UIColor(white: 0.98, alpha: 1.0)
-                    })
-                ]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            
-            // Elegant rounded rectangle with thinner border
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(
-                    Color(uiColor: UIColor { traitCollection in
-                        traitCollection.userInterfaceStyle == .dark ?
-                            UIColor(white: 0.3, alpha: 0.8) :
-                            UIColor(white: 0, alpha: 0.07)
-                    }),
-                    lineWidth: 0.5
-                )
-        }
-    )
-    .clipShape(RoundedRectangle(cornerRadius: 16))
 }
 
 // Decorative line for the large widget
@@ -399,7 +300,7 @@ struct DailyIdiom: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            if #available(iOSApplicationExtension 17.0, *) {
+            if #available(iOS 17.0, *) {
                 DailyIdiomEntryView(entry: entry)
                     .containerBackground(.fill.tertiary, for: .widget)
             } else {
@@ -411,7 +312,6 @@ struct DailyIdiom: Widget {
         .configurationDisplayName("Daily Chinese Idiom")
         .description("Learn a new Chinese idiom every day")
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
-        .contentMarginsDisabled()
     }
 }
 
