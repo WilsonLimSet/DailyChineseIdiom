@@ -295,14 +295,27 @@ private var decorativeLine: some View {
 }
 }
 
+struct DailyIdiomWidgetView: View {
+    var entry: Provider.Entry
+    @Environment(\.widgetRenderingMode) var renderingMode
+
+    var body: some View {
+        DailyIdiomEntryView(entry: entry)
+            .containerBackground(for: .widget) {
+                if renderingMode == .fullColor {
+                    Color(.systemBackground).opacity(0.8)
+                }
+            }
+    }
+}
+
 struct DailyIdiom: Widget {
     let kind: String = "DailyIdiom"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
-                DailyIdiomEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
+                DailyIdiomWidgetView(entry: entry)
             } else {
                 DailyIdiomEntryView(entry: entry)
                     .padding()
