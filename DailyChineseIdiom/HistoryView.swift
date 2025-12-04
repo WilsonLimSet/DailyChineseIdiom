@@ -3,6 +3,7 @@ import SwiftUI
 struct HistoryView: View {
     @State private var selectedDate = Date()
     @StateObject private var preferences = UserPreferences.shared
+    @StateObject private var speechService = SpeechService.shared
     private let startDate = Calendar.current.date(from: DateComponents(year: 2025, month: 1, day: 1)) ?? Date()
     @State private var showingFullIdiom = false
     @State private var showingShareSheet = false
@@ -38,10 +39,20 @@ struct HistoryView: View {
                     }
                     .padding(.bottom, 4)
                     
-                    // Main content
-                    Text(preferences.getCharactersForIdiom(idiom))
-                        .font(.system(size: 36, weight: .bold))
-                        .transition(.opacity.combined(with: .scale))
+                    // Main content with speaker button
+                    HStack(alignment: .center, spacing: 12) {
+                        Text(preferences.getCharactersForIdiom(idiom))
+                            .font(.system(size: 36, weight: .bold))
+
+                        Button(action: {
+                            speechService.speak(idiom.characters)
+                        }) {
+                            Image(systemName: speechService.isSpeaking ? "speaker.wave.2.fill" : "speaker.wave.2")
+                                .font(.system(size: 20))
+                                .foregroundColor(.blue)
+                        }
+                    }
+                    .transition(.opacity.combined(with: .scale))
                     
                     VStack(alignment: .leading, spacing: 8) {
                         Text(idiom.pinyin)
@@ -92,6 +103,7 @@ struct IdiomDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var showCopiedToast = false
     @StateObject private var preferences = UserPreferences.shared
+    @StateObject private var speechService = SpeechService.shared
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
@@ -113,10 +125,20 @@ struct IdiomDetailView: View {
                     Spacer()
                 }
                 
-                // Main content
-                Text(preferences.getCharactersForIdiom(idiom))
-                    .font(.system(size: 42, weight: .bold))
-                    .transition(.scale)
+                // Main content with speaker button
+                HStack(alignment: .center, spacing: 12) {
+                    Text(preferences.getCharactersForIdiom(idiom))
+                        .font(.system(size: 42, weight: .bold))
+
+                    Button(action: {
+                        speechService.speak(idiom.characters)
+                    }) {
+                        Image(systemName: speechService.isSpeaking ? "speaker.wave.2.fill" : "speaker.wave.2")
+                            .font(.system(size: 24))
+                            .foregroundColor(.blue)
+                    }
+                }
+                .transition(.scale)
                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text(idiom.pinyin)

@@ -3,7 +3,8 @@ import WidgetKit
 
 struct SettingsView: View {
     @StateObject private var preferences = UserPreferences.shared
-    
+    @StateObject private var speechService = SpeechService.shared
+
     var body: some View {
         List {
             Section(header: Text("Character Display")) {
@@ -22,22 +23,53 @@ struct SettingsView: View {
                     .padding(.top, 4)
             }
             
-            Section(header: Text("Meaning Display")) {
-                Picker("Meaning Display", selection: $preferences.showMetaphoricMeaning) {
-                    Text("Literal Translation")
-                        .tag(false)
-                    Text("Deeper Meaning")
-                        .tag(true)
+            Section(header: Text("Pronunciation")) {
+                HStack {
+                    Image(systemName: speechService.hasHighQualityVoice ? "checkmark.circle.fill" : "exclamationmark.circle.fill")
+                        .foregroundColor(speechService.hasHighQualityVoice ? .green : .orange)
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(speechService.hasHighQualityVoice ? "Enhanced Voice Installed" : "Using Default Voice")
+                            .font(.body)
+
+                        if !speechService.hasHighQualityVoice {
+                            Text("Download an enhanced voice for clearer pronunciation")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                    }
                 }
-                .pickerStyle(.segmented)
                 .padding(.vertical, 4)
-                
-                Text("Choose how idioms are translated in the app and widgets")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .padding(.top, 4)
+
+                if !speechService.hasHighQualityVoice {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("How to download:")
+                            .font(.caption)
+                            .fontWeight(.medium)
+
+                        VStack(alignment: .leading, spacing: 4) {
+                            Label("Open Settings app", systemImage: "1.circle.fill")
+                            Label("Accessibility → Spoken Content", systemImage: "2.circle.fill")
+                            Label("Voices → Chinese → Mandarin", systemImage: "3.circle.fill")
+                            Label("Tap a voice → Download Enhanced", systemImage: "4.circle.fill")
+                        }
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                    }
+                    .padding(.vertical, 4)
+                }
+
+                Button(action: {
+                    speechService.speak("你好")
+                }) {
+                    HStack {
+                        Image(systemName: "speaker.wave.2.fill")
+                        Text("Test Pronunciation")
+                    }
+                }
+                .padding(.vertical, 4)
             }
-            
+
             Section(header: Text("Support")) {
                 Button(action: {
                     ReviewManager.shared.openAppStoreForReview()
@@ -59,6 +91,22 @@ struct SettingsView: View {
                     .foregroundColor(.secondary)
             }
             
+            Section(header: Text("Meaning Display")) {
+                Picker("Meaning Display", selection: $preferences.showMetaphoricMeaning) {
+                    Text("Literal Translation")
+                        .tag(false)
+                    Text("Deeper Meaning")
+                        .tag(true)
+                }
+                .pickerStyle(.segmented)
+                .padding(.vertical, 4)
+
+                Text("Choose how idioms are translated in the app and widgets")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding(.top, 4)
+            }
+
             Section(header: Text("Example")) {
                 VStack(alignment: .leading, spacing: 12) {
                     Text(preferences.getCharactersForIdiom(sampleIdiom))

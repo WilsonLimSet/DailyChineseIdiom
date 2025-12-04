@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var isShowingTodaysIdiom: Bool = true
     @State private var showCopiedToast = false
     @StateObject private var preferences = UserPreferences.shared
+    @StateObject private var speechService = SpeechService.shared
     @Environment(\.scenePhase) private var scenePhase
     @State private var viewAppearCount = 0
     private let dateFormatter: DateFormatter = {
@@ -74,9 +75,19 @@ struct ContentView: View {
                 }
                 .padding(.top)
                 
-                // Main Characters
-                Text(preferences.getCharactersForIdiom(currentIdiom))
-                    .font(.system(size: 42, weight: .bold))
+                // Main Characters with speaker button
+                HStack(alignment: .center, spacing: 12) {
+                    Text(preferences.getCharactersForIdiom(currentIdiom))
+                        .font(.system(size: 42, weight: .bold))
+
+                    Button(action: {
+                        speechService.speak(currentIdiom.characters)
+                    }) {
+                        Image(systemName: speechService.isSpeaking ? "speaker.wave.2.fill" : "speaker.wave.2")
+                            .font(.system(size: 24))
+                            .foregroundColor(.blue)
+                    }
+                }
                 
                 // Pinyin and Meaning
                 VStack(alignment: .leading, spacing: 8) {
