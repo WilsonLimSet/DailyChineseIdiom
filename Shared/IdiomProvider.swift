@@ -50,10 +50,15 @@ class IdiomProvider {
         if idioms.isEmpty {
             return sampleIdiom
         }
-        
+
         let calendar = Calendar.current
-        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date) ?? 1
-        let index = (dayOfYear - 1) % max(1, idioms.count)
+        // Reference date: Jan 1, 2025
+        let referenceComponents = DateComponents(year: 2025, month: 1, day: 1)
+        let referenceDate = calendar.date(from: referenceComponents) ?? date
+
+        // Calculate days since reference date
+        let daysSinceReference = calendar.dateComponents([.day], from: referenceDate, to: date).day ?? 0
+        let index = abs(daysSinceReference) % max(1, idioms.count)
         return idioms[index]
     }
     
