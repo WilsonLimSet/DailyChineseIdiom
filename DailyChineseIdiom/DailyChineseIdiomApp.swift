@@ -12,7 +12,10 @@ struct DailyChineseIdiomApp: App {
     init() {
         // Initialize IdiomProvider early to catch any loading issues
         _ = IdiomProvider.shared
-        
+
+        // Carry over preferences saved before the app shared a container with the widget
+        AppGroup.migrateLegacyPreferencesIfNeeded()
+
         // Increment launch count for review prompt tracking
         ReviewManager.shared.incrementLaunchCount()
     }
