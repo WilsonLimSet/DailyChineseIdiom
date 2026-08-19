@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var showCopiedToast = false
     @StateObject private var preferences = UserPreferences.shared
     @StateObject private var speechService = SpeechService.shared
+    @StateObject private var favorites = FavoritesManager.shared
     @Environment(\.scenePhase) private var scenePhase
     @State private var viewAppearCount = 0
     private let dateFormatter: DateFormatter = {
@@ -75,7 +76,7 @@ struct ContentView: View {
                 }
                 .padding(.top)
                 
-                // Main Characters with speaker button
+                // Main Characters with speaker button and favorite star
                 HStack(alignment: .center, spacing: 12) {
                     Text(preferences.getCharactersForIdiom(currentIdiom))
                         .font(.system(size: 42, weight: .bold))
@@ -87,6 +88,17 @@ struct ContentView: View {
                             .font(.system(size: 24))
                             .foregroundColor(.blue)
                     }
+
+                    Spacer()
+
+                    Button(action: {
+                        favorites.toggleFavorite(currentIdiom)
+                    }) {
+                        Image(systemName: favorites.isFavorite(currentIdiom) ? "star.fill" : "star")
+                            .font(.system(size: 24))
+                            .foregroundColor(.yellow)
+                    }
+                    .accessibilityLabel(favorites.isFavorite(currentIdiom) ? "Remove from favorites" : "Add to favorites")
                 }
                 
                 // Pinyin and Meaning
@@ -138,6 +150,11 @@ struct ContentView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 HStack(spacing: 16) {
+                    NavigationLink(destination: FavoritesView()) {
+                        Image(systemName: "list.star")
+                            .foregroundColor(.blue)
+                    }
+
                     NavigationLink(destination: HistoryView()) {
                         Image(systemName: "calendar")
                             .foregroundColor(.blue)

@@ -62,6 +62,10 @@ class IdiomProvider {
         return idioms[index]
     }
     
+    func idiomById(_ id: String) -> Idiom? {
+        idioms.first(where: { $0.id == id })
+    }
+
     func randomIdiom() -> Idiom {
         if idioms.isEmpty {
             return sampleIdiom

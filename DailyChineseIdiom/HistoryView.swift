@@ -99,33 +99,37 @@ struct HistoryView: View {
 
 struct IdiomDetailView: View {
     let idiom: Idiom
-    let date: Date
+    let date: Date?
+    var presentedAsSheet: Bool = true
     @Environment(\.dismiss) private var dismiss
     @State private var showCopiedToast = false
     @StateObject private var preferences = UserPreferences.shared
     @StateObject private var speechService = SpeechService.shared
+    @StateObject private var favorites = FavoritesManager.shared
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
         return formatter
     }()
-    
+
     var shareText: String {
-        ShareUtils.formatShareText(idiom: idiom, date: date, dateFormatter: dateFormatter)
+        ShareUtils.formatShareText(idiom: idiom, date: date ?? Date(), dateFormatter: dateFormatter)
     }
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 // Date header
-                HStack {
-                    Text(dateFormatter.string(from: date))
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                    Spacer()
+                if let date {
+                    HStack {
+                        Text(dateFormatter.string(from: date))
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                        Spacer()
+                    }
                 }
-                
-                // Main content with speaker button
+
+                // Main content with speaker button and favorite star
                 HStack(alignment: .center, spacing: 12) {
                     Text(preferences.getCharactersForIdiom(idiom))
                         .font(.system(size: 42, weight: .bold))
@@ -137,6 +141,17 @@ struct IdiomDetailView: View {
                             .font(.system(size: 24))
                             .foregroundColor(.blue)
                     }
+
+                    Spacer()
+
+                    Button(action: {
+                        favorites.toggleFavorite(idiom)
+                    }) {
+                        Image(systemName: favorites.isFavorite(idiom) ? "star.fill" : "star")
+                            .font(.system(size: 24))
+                            .foregroundColor(.yellow)
+                    }
+                    .accessibilityLabel(favorites.isFavorite(idiom) ? "Remove from favorites" : "Add to favorites")
                 }
                 .transition(.scale)
                 
@@ -206,10 +221,12 @@ struct IdiomDetailView: View {
                 }
             }
             
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button("Done") {
-                    withAnimation {
-                        dismiss()
+            if presentedAsSheet {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Done") {
+                        withAnimation {
+                            dismiss()
+                        }
                     }
                 }
             }
