@@ -1,50 +1,61 @@
 import SwiftUI
 import WidgetKit
 
+/// Backed by the shared app-group store so the widget sees the same values.
+///
+/// These are deliberately `@Published` rather than `@AppStorage`: `@AppStorage` only drives
+/// view updates when it is declared inside a View. Inside an ObservableObject it writes the
+/// value but never fires `objectWillChange`, so screens observing this object would keep
+/// rendering the old setting until something else forced a redraw.
 class UserPreferences: ObservableObject {
     static let shared = UserPreferences()
-    
-    @AppStorage(AppGroup.showMetaphoricMeaningKey, store: UserDefaults(suiteName: AppGroup.identifier))
-    var showMetaphoricMeaning: Bool = false {
-        didSet {
-            AppGroup.updateWidgetPreference(showMetaphoricMeaning: showMetaphoricMeaning, useTraditionalCharacters: useTraditionalCharacters)
-        }
+
+    private let store: UserDefaults
+
+    @Published var meaningDisplayMode: MeaningDisplayMode {
+        didSet { persist() }
     }
-    
-    @AppStorage(AppGroup.useTraditionalCharactersKey, store: UserDefaults(suiteName: AppGroup.identifier))
-    var useTraditionalCharacters: Bool = false {
-        didSet {
-            AppGroup.updateWidgetPreference(showMetaphoricMeaning: showMetaphoricMeaning, useTraditionalCharacters: useTraditionalCharacters)
-        }
+
+    @Published var useTraditionalCharacters: Bool {
+        didSet { persist() }
     }
-    
-    private init() {}
-    
+
+    private init() {
+        let store = UserDefaults(suiteName: AppGroup.identifier) ?? .standard
+        self.store = store
+        self.meaningDisplayMode = AppGroup.meaningDisplayMode(from: store)
+        self.useTraditionalCharacters = store.bool(forKey: AppGroup.useTraditionalCharactersKey)
+    }
+
+    private func persist() {
+        AppGroup.updateWidgetPreference(
+            meaningDisplayMode: meaningDisplayMode,
+            useTraditionalCharacters: useTraditionalCharacters
+        )
+    }
+
     func getMeaningForIdiom(_ idiom: Idiom) -> String {
-        if showMetaphoricMeaning {
-            return idiom.metaphoric_meaning ?? idiom.meaning
-        }
-        return idiom.meaning
+        meaningDisplayMode.text(literal: idiom.meaning, metaphoric: idiom.metaphoric_meaning)
     }
-    
+
     func getCharactersForIdiom(_ idiom: Idiom) -> String {
         if useTraditionalCharacters, let traditional = idiom.traditionalCharacters {
             return traditional
         }
         return idiom.characters
     }
-    
+
     func getChineseExampleForIdiom(_ idiom: Idiom) -> String? {
         if useTraditionalCharacters, let traditional = idiom.chineseExample_tr {
             return traditional
         }
         return idiom.chineseExample
     }
-    
+
     func getDescriptionForIdiom(_ idiom: Idiom) -> String {
         if useTraditionalCharacters, let traditional = idiom.description_tr {
             return traditional
         }
         return idiom.description
     }
-} 
+}
