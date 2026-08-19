@@ -12,7 +12,7 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationAppIntent
     let idiom: Idiom
-    let showMetaphoricMeaning: Bool
+    let meaningDisplayMode: MeaningDisplayMode
     let useTraditionalCharacters: Bool
 }
 
@@ -50,26 +50,26 @@ class Provider: NSObject, TimelineProvider {
     
     func placeholder(in context: Context) -> SimpleEntry {
         // Get the latest values safely
-        let showMetaphoricMeaning = getUserDefaultsBool(forKey: AppGroup.showMetaphoricMeaningKey)
+        let meaningDisplayMode = AppGroup.meaningDisplayMode(from: userDefaults)
         let useTraditionalCharacters = getUserDefaultsBool(forKey: AppGroup.useTraditionalCharactersKey)
         return SimpleEntry(
             date: Date(),
             configuration: ConfigurationAppIntent(),
             idiom: IdiomProvider.shared.idiomForDate(),
-            showMetaphoricMeaning: showMetaphoricMeaning,
+            meaningDisplayMode: meaningDisplayMode,
             useTraditionalCharacters: useTraditionalCharacters
         )
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         // Get the latest values safely
-        let showMetaphoricMeaning = getUserDefaultsBool(forKey: AppGroup.showMetaphoricMeaningKey)
+        let meaningDisplayMode = AppGroup.meaningDisplayMode(from: userDefaults)
         let useTraditionalCharacters = getUserDefaultsBool(forKey: AppGroup.useTraditionalCharactersKey)
         let entry = SimpleEntry(
             date: Date(),
             configuration: ConfigurationAppIntent(),
             idiom: IdiomProvider.shared.idiomForDate(),
-            showMetaphoricMeaning: showMetaphoricMeaning,
+            meaningDisplayMode: meaningDisplayMode,
             useTraditionalCharacters: useTraditionalCharacters
         )
         completion(entry)
@@ -82,7 +82,7 @@ class Provider: NSObject, TimelineProvider {
         let idiom = IdiomProvider.shared.idiomForDate()
         
         // Get the latest values safely
-        let showMetaphoricMeaning = getUserDefaultsBool(forKey: AppGroup.showMetaphoricMeaningKey)
+        let meaningDisplayMode = AppGroup.meaningDisplayMode(from: userDefaults)
         let useTraditionalCharacters = getUserDefaultsBool(forKey: AppGroup.useTraditionalCharactersKey)
         
         let entries = [
@@ -90,14 +90,14 @@ class Provider: NSObject, TimelineProvider {
                 date: currentDate,
                 configuration: ConfigurationAppIntent(),
                 idiom: idiom,
-                showMetaphoricMeaning: showMetaphoricMeaning,
+                meaningDisplayMode: meaningDisplayMode,
                 useTraditionalCharacters: useTraditionalCharacters
             ),
             SimpleEntry(
                 date: midnight,
                 configuration: ConfigurationAppIntent(),
                 idiom: idiom,
-                showMetaphoricMeaning: showMetaphoricMeaning,
+                meaningDisplayMode: meaningDisplayMode,
                 useTraditionalCharacters: useTraditionalCharacters
             )
         ]
@@ -125,10 +125,7 @@ struct DailyIdiomEntryView: View {
     @Environment(\.widgetFamily) var family
     
     private func getMeaning(_ idiom: Idiom) -> String {
-        if entry.showMetaphoricMeaning {
-            return idiom.metaphoric_meaning ?? idiom.meaning
-        }
-        return idiom.meaning
+        entry.meaningDisplayMode.text(literal: idiom.meaning, metaphoric: idiom.metaphoric_meaning)
     }
     
     private func getCharacters(_ idiom: Idiom) -> String {
@@ -205,9 +202,9 @@ struct DailyIdiomEntryView: View {
             Text(getMeaning(entry.idiom))
                 .font(.system(size: 15, weight: .regular))
                 .foregroundColor(.secondary)
-                .lineLimit(2)
+                .lineLimit(entry.meaningDisplayMode == .both ? 4 : 2)
                 .multilineTextAlignment(.leading)
-                .minimumScaleFactor(0.7)
+                .minimumScaleFactor(0.6)
                 .fixedSize(horizontal: false, vertical: true)
         }
         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
@@ -256,7 +253,8 @@ struct DailyIdiomEntryView: View {
             .font(.system(size: 17, weight: .regular))
             .foregroundColor(.secondary)
             .multilineTextAlignment(.center)
-            .lineLimit(2)
+            .lineLimit(entry.meaningDisplayMode == .both ? 3 : 2)
+            .minimumScaleFactor(0.8)
             .padding(.vertical, 4)
             .padding(.horizontal, 20)
 
@@ -335,7 +333,7 @@ struct DailyIdiom: Widget {
         date: .now,
         configuration: ConfigurationAppIntent(),
         idiom: IdiomProvider.shared.idiomForDate(),
-        showMetaphoricMeaning: UserDefaults(suiteName: AppGroup.identifier)?.bool(forKey: AppGroup.showMetaphoricMeaningKey) ?? false,
+        meaningDisplayMode: AppGroup.meaningDisplayMode(from: AppGroup.sharedDefaults),
         useTraditionalCharacters: UserDefaults(suiteName: AppGroup.identifier)?.bool(forKey: AppGroup.useTraditionalCharactersKey) ?? false
     )
 }
@@ -349,15 +347,15 @@ struct DailyIdiom: Widget {
         date: .now,
         configuration: ConfigurationAppIntent(),
         idiom: idiom,
-        showMetaphoricMeaning: false,
+        meaningDisplayMode: .literal,
         useTraditionalCharacters: false
     )
-    // Second entry with metaphorical meaning
+    // Second entry showing both meanings
     SimpleEntry(
         date: .now.addingTimeInterval(1),
         configuration: ConfigurationAppIntent(),
         idiom: idiom,
-        showMetaphoricMeaning: true,
+        meaningDisplayMode: .both,
         useTraditionalCharacters: true
     )
 }
@@ -369,7 +367,7 @@ struct DailyIdiom: Widget {
         date: .now,
         configuration: ConfigurationAppIntent(),
         idiom: IdiomProvider.shared.idiomForDate(),
-        showMetaphoricMeaning: UserDefaults(suiteName: AppGroup.identifier)?.bool(forKey: AppGroup.showMetaphoricMeaningKey) ?? false,
+        meaningDisplayMode: AppGroup.meaningDisplayMode(from: AppGroup.sharedDefaults),
         useTraditionalCharacters: UserDefaults(suiteName: AppGroup.identifier)?.bool(forKey: AppGroup.useTraditionalCharactersKey) ?? false
     )
 }

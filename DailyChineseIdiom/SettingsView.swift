@@ -4,6 +4,7 @@ import WidgetKit
 struct SettingsView: View {
     @StateObject private var preferences = UserPreferences.shared
     @StateObject private var speechService = SpeechService.shared
+    @StateObject private var tipJar = TipJarManager.shared
 
     var body: some View {
         List {
@@ -16,13 +17,56 @@ struct SettingsView: View {
                 }
                 .pickerStyle(.segmented)
                 .padding(.vertical, 4)
-                
-                Text("Choose between simplified and traditional Chinese characters")
+
+                Text("Choose between simplified and traditional Chinese characters. Some idioms are written the same in both scripts.")
                     .font(.caption)
                     .foregroundColor(.secondary)
                     .padding(.top, 4)
             }
-            
+
+            Section(header: Text("Meaning Display")) {
+                Picker("Meaning Display", selection: $preferences.meaningDisplayMode) {
+                    Text("Literal")
+                        .tag(MeaningDisplayMode.literal)
+                    Text("Deeper")
+                        .tag(MeaningDisplayMode.deeper)
+                    Text("Both")
+                        .tag(MeaningDisplayMode.both)
+                }
+                .pickerStyle(.segmented)
+                .padding(.vertical, 4)
+
+                Text("Choose how idioms are translated in the app and widgets")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding(.top, 4)
+            }
+
+            Section(header: Text("Example")) {
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(preferences.getCharactersForIdiom(sampleIdiom))
+                        .font(.title2)
+                        .bold()
+
+                    VStack(alignment: .leading, spacing: 16) {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Literal Translation:")
+                                .font(.headline)
+                            Text("Old man loses horse")
+                                .foregroundColor(.secondary)
+                        }
+
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Deeper Meaning:")
+                                .font(.headline)
+                            Text("Misfortune might be a blessing")
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }
+                .padding(.vertical, 4)
+            }
+
             Section(header: Text("Pronunciation")) {
                 HStack {
                     Image(systemName: speechService.hasHighQualityVoice ? "checkmark.circle.fill" : "exclamationmark.circle.fill")
@@ -85,54 +129,61 @@ struct SettingsView: View {
                             .font(.caption)
                     }
                 }
-                
+
                 Text("Your reviews help other users discover the app!")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
-            
-            Section(header: Text("Meaning Display")) {
-                Picker("Meaning Display", selection: $preferences.showMetaphoricMeaning) {
-                    Text("Literal Translation")
-                        .tag(false)
-                    Text("Deeper Meaning")
-                        .tag(true)
-                }
-                .pickerStyle(.segmented)
-                .padding(.vertical, 4)
 
-                Text("Choose how idioms are translated in the app and widgets")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .padding(.top, 4)
-            }
+            if !tipJar.products.isEmpty {
+                Section(header: Text("Tip Jar")) {
+                    Text(tipJar.hasTipped
+                         ? "Thank you for supporting Daily Chinese Idiom 谢谢!"
+                         : "Daily Chinese Idiom is free, with no ads and no tracking. If it's part of your day, you can leave a tip.")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .padding(.vertical, 4)
 
-            Section(header: Text("Example")) {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text(preferences.getCharactersForIdiom(sampleIdiom))
-                        .font(.title2)
-                        .bold()
-                    
-                    VStack(alignment: .leading, spacing: 16) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Literal Translation:")
-                                .font(.headline)
-                            Text("Old man loses horse")
-                                .foregroundColor(.secondary)
+                    ForEach(tipJar.products) { product in
+                        Button(action: {
+                            Task { await tipJar.purchase(product) }
+                        }) {
+                            HStack {
+                                Text(tipJar.symbol(for: product))
+                                    .font(.title3)
+                                Text(product.displayName)
+                                    .foregroundColor(.primary)
+                                Spacer()
+                                if tipJar.purchasingProductID == product.id {
+                                    ProgressView()
+                                } else {
+                                    Text(product.displayPrice)
+                                        .foregroundColor(.secondary)
+                                }
+                            }
                         }
-                        
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Deeper Meaning:")
-                                .font(.headline)
-                            Text("Misfortune might be a blessing")
-                                .foregroundColor(.secondary)
-                        }
+                        .disabled(tipJar.purchasingProductID != nil)
                     }
                 }
-                .padding(.vertical, 4)
             }
         }
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .task {
+            await tipJar.loadProducts()
+        }
+        .alert("谢谢! Thank you", isPresented: $tipJar.showThankYou) {
+            Button("You're welcome", role: .cancel) { }
+        } message: {
+            Text("Your tip keeps Daily Chinese Idiom free and ad-free for everyone.")
+        }
+        .alert("Purchase Failed", isPresented: Binding(
+            get: { tipJar.errorMessage != nil },
+            set: { if !$0 { tipJar.errorMessage = nil } }
+        )) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(tipJar.errorMessage ?? "")
+        }
     }
 }
