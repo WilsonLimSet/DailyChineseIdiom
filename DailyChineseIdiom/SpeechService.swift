@@ -28,6 +28,10 @@ class SpeechService: NSObject, ObservableObject {
     }
 
     func speak(_ text: String) {
+        // Without an explicit playback session the default category is .soloAmbient,
+        // which is silenced by the ring/silent switch — the speech plays but is inaudible.
+        activateAudioSession()
+
         // Stop any current speech
         if synthesizer.isSpeaking {
             synthesizer.stopSpeaking(at: .immediate)
@@ -50,6 +54,26 @@ class SpeechService: NSObject, ObservableObject {
     func stop() {
         synthesizer.stopSpeaking(at: .immediate)
         isSpeaking = false
+        deactivateAudioSession()
+    }
+
+    private func activateAudioSession() {
+        let session = AVAudioSession.sharedInstance()
+        do {
+            // .playback ignores the silent switch; .duckOthers lowers any music instead of stopping it
+            try session.setCategory(.playback, mode: .spokenAudio, options: [.duckOthers])
+            try session.setActive(true)
+        } catch {
+            print("SpeechService: failed to activate audio session - \(error)")
+        }
+    }
+
+    private func deactivateAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setActive(false, options: [.notifyOthersOnDeactivation])
+        } catch {
+            print("SpeechService: failed to deactivate audio session - \(error)")
+        }
     }
 
     private func findBestMandarinVoice() -> AVSpeechSynthesisVoice? {
@@ -81,12 +105,14 @@ extension SpeechService: AVSpeechSynthesizerDelegate {
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         Task { @MainActor in
             self.isSpeaking = false
+            self.deactivateAudioSession()
         }
     }
 
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
         Task { @MainActor in
             self.isSpeaking = false
+            self.deactivateAudioSession()
         }
     }
 }
