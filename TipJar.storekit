@@ -1,0 +1,50 @@
+{
+  "identifier": "A1F3C0D2-6B7E-4C21-9F80-5D3B1E7A9C44",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "1.99",
+      "familyShareable": false,
+      "internalID": "1000000001",
+      "localizations": [
+        {
+          "description": "A small thank you for the daily idiom.",
+          "displayName": "Buy me a bāozi",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.wilsonlimsetiawan.dailychineseidioms.tip.small",
+      "referenceName": "Tip Small (Baozi)",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "19.99",
+      "familyShareable": false,
+      "internalID": "1000000003",
+      "localizations": [
+        {
+          "description": "满汉全席 — the legendary 108-dish banquet.",
+          "displayName": "Buy me an imperial feast",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.wilsonlimsetiawan.dailychineseidioms.tip.large",
+      "referenceName": "Tip Large (Imperial Feast)",
+      "type": "Consumable"
+    }
+  ],
+  "settings": {
+    "_applicationInternalID": "6740611324",
+    "_developerTeamID": "JU395NH3KL",
+    "_failTransactionsEnabled": false,
+    "_lastSynchronizedDate": 0,
+    "_locale": "en_US",
+    "_storefront": "USA",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}
