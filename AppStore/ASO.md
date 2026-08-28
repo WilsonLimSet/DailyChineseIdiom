@@ -216,3 +216,45 @@ doing for this app. Ask and I'll draft the keyword variants.
 
 ---
 
+
+---
+
+## 7. What is actually LIVE vs. drafted — check this first (2026-08-27)
+
+The subtitle drafted in section 1 was **never applied**. It sat empty from v1.07 through
+v1.93 — roughly a year of launches with 30 indexed characters unused. The keywords *did*
+ship. Nothing above is live until you verify it against the API:
+
+```
+python3 scripts/asc.py show                     # editable version only
+python3 scripts/asc_sales.py 60                 # downloads + IAP, ChengYu-filtered
+python3 scripts/asc_analytics.py reports engagement
+```
+
+**Staged on version 1.94 (`PREPARE_FOR_SUBMISSION`, not submitted):**
+
+| Field | Value |
+|---|---|
+| Subtitle (all 4 locales) | `Learn Mandarin proverbs` (23/30) |
+| en-US keywords | unchanged, 98/100 |
+| en-GB keywords | `study,character,language,quote,wisdom,expression,dictionary,translate,putonghua,exam,speak` (90) |
+| en-AU keywords | `beginner,practice,review,story,history,calligraphy,tone,lockscreen,homescreen,word,day` (86) |
+| en-CA keywords | `cantonese,teacher,kids,school,reading,writing,listening,memorize,quiz,fluent,course,yct` (87) |
+
+Indexed keyword characters went from 98 to **361**. Apple indexes each locale's keyword
+field separately, so en-GB/AU/CA are three more bites at the same English-speaking learner
+— no term repeats the app name, the subtitle, or another locale's list.
+
+The drafted subtitle `Learn Mandarin proverbs daily` was cut to drop *daily*, which already
+appears in the app name; Apple treats name + subtitle + keywords as one bag of words, so the
+repeat was ~6 wasted characters of 30.
+
+**1.94 still needs a build.** Subtitle, keywords and locales are version-scoped, and Apple
+will not accept a version without a build attached — there is no metadata-only submission
+path. Promotional Text is the only field that changes without review. See `RELEASE.md`.
+
+**Expect a modest result.** As of 2026-08-27 the app takes ~20 new downloads/week, flat for
+two months, against an active base of ~840. Better search coverage plausibly moves that
+20-50%. It does not move it 35x, which is what tip revenue of $10/week would require — see
+[[chengyu-tip-revenue-goal]]. Distribution outside App Store search is the only lever at
+that scale.

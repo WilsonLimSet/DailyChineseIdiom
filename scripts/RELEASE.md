@@ -95,9 +95,37 @@ python3 scripts/asc.py show                      # read back before submitting
 python3 scripts/asc.py submit                    # last step, ask first
 ```
 
-A new version record itself still has to be created in the ASC web UI (App Store tab →
-`+` next to iOS App). Everything after that is scriptable. Existing screenshots carry
-over to a new version automatically — do not re-upload them.
+Creating the version record is scriptable too — this was wrong until 2026-08-28 and cost
+a web-UI round trip every release:
+
+```bash
+python3 - <<'EOF'
+import sys; sys.path.insert(0, "scripts"); import asc
+tok = asc.auth()
+asc.api("POST", "/v1/appStoreVersions", tok, {"data": {
+    "type": "appStoreVersions",
+    "attributes": {"platform": "IOS", "versionString": "1.95"},
+    "relationships": {"app": {"data": {"type": "apps", "id": asc.APP_ID}}}}})
+EOF
+```
+
+Existing screenshots carry over to a new version automatically — do not re-upload them.
+
+**Subtitle and keywords are not in `metadata.json` and `push` does not touch them.** The
+subtitle lives on `appInfoLocalizations` (app-level), keywords on
+`appStoreVersionLocalizations` (version-level). That split is why the subtitle stayed empty
+from v1.07 to v1.93 without anyone noticing — see `AppStore/ASO.md` section 7.
+
+**A new locale needs its own `privacyPolicyUrl` or review submission is blocked.** It does
+not inherit from en-US. The failure surfaces late — not when you create the locale, but as a
+409 `STATE_ERROR.ENTITY_STATE_INVALID` when you add the version to a review submission, with
+one `ENTITY_ERROR.ATTRIBUTE.REQUIRED` per offending locale in `associatedErrors`. Copy it
+from en-US (`https://www.chineseidioms.com/privacy`) right after creating the locale.
+
+**Adding a locale auto-creates a blank version localization.** POSTing your own
+`appStoreVersionLocalizations` for that locale then collides and silently leaves keywords
+and description empty while still returning success. PATCH the auto-created row instead,
+and always read back what you wrote.
 
 ## Things that cost hours once, so read this
 

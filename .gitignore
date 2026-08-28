@@ -21,3 +21,6 @@ DerivedData/
 
 # Swift Package Manager
 .build/
+
+# Python bytecode from scripts/
+__pycache__/
