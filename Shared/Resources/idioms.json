@@ -63,10 +63,10 @@
     "example": "Despite numerous rejections, she never gave up on her dreams",
     "chineseExample": "尽管屡次被拒绝，她从未放弃梦想",
     "theme": "Success & Perseverance",
-    "description": "Dating to the Warring States period, this idiom describes bamboo that bends a hundred (百) times (折) but never (不) yields (挠). The imagery comes from ancient observations of bamboo groves surviving severe storms by bending rather than breaking. The metaphor gained particular significance during the Three Kingdoms period, when strategist Zhuge Liang used it to encourage his troops during difficult campaigns. Confucian scholars later adopted it to describe moral resilience under pressure. In modern contexts, it's often invoked during times of personal or national adversity, emphasizing that true strength lies not in rigid resistance but in flexible persistence. The idiom particularly resonates in business and personal development contexts.",
+    "description": "This comes from the Book of Later Han, in a memorial praising Qiao Xuan as a man who could be broken (折) a hundred (百) times and would not (不) bend (挠). The 折 is setbacks, not bamboo — the image is of a person repeatedly struck rather than a plant flexing. What is praised is that the shape does not change under repeated force. Modern usage describes unbreakable persistence through successive failures.",
     "metaphoric_meaning": "Unshakeable despite adversity",
     "traditionalCharacters": "百折不撓",
-    "description_tr": "Dating to the Warring States period, this idiom describes bamboo that bends a hundred (百) times (折) but never (不) yields (撓). The imagery comes from ancient observations of bamboo groves surviving severe storms by bending rather than breaking. The metaphor gained particular significance during the Three Kingdoms period, when strategist Zhuge Liang used it to encourage his troops during difficult campaigns. Confucian scholars later adopted it to describe moral resilience under pressure. In modern contexts, it's often invoked during times of personal or national adversity, emphasizing that true strength lies not in rigid resistance but in flexible persistence. The idiom particularly resonates in business and personal development contexts.",
+    "description_tr": "This comes from the Book of Later Han, in a memorial praising Qiao Xuan as a man who could be broken (折) a hundred (百) times and would not (不) bend (撓). The 折 is setbacks, not bamboo — the image is of a person repeatedly struck rather than a plant flexing. What is praised is that the shape does not change under repeated force. Modern usage describes unbreakable persistence through successive failures.",
     "chineseExample_tr": "儘管屢次被拒絕，她從未放棄夢想"
   },
   {
@@ -266,20 +266,6 @@
     "chineseExample_tr": "住在城市給了她更多的職業機會"
   },
   {
-    "id": "ID020",
-    "characters": "守时如金",
-    "pinyin": "shǒu shí rú jīn",
-    "meaning": "Value time like gold",
-    "example": "She always arrived early for meetings, respecting everyone's time",
-    "chineseExample": "她总是提前到达会议，尊重每个人的时间",
-    "theme": "Success & Perseverance",
-    "description": "This idiom, emerging during the Song Dynasty's growing commercial culture, equates valuing (如) time (时) with gold (金). It gained prominence as mechanical water clocks improved timekeeping precision, making punctuality increasingly important in civil service and commerce. The comparison was particularly meaningful as gold was not just precious but also finite and irreplaceable, like time itself. During the Ming Dynasty, the concept became central to merchant ethics and official conduct. Modern usage emphasizes professional reliability and time management, particularly in business contexts where punctuality indicates respect and professionalism. It reflects a universal truth that time, unlike most resources, can never be recovered once lost.",
-    "metaphoric_meaning": "Value time preciously",
-    "traditionalCharacters": "守時如金",
-    "description_tr": "This idiom, emerging during the Song Dynasty's growing commercial culture, equates valuing (如) time (時) with gold (金). It gained prominence as mechanical water clocks improved timekeeping precision, making punctuality increasingly important in civil service and commerce. The comparison was particularly meaningful as gold was not just precious but also finite and irreplaceable, like time itself. During the Ming Dynasty, the concept became central to merchant ethics and official conduct. Modern usage emphasizes professional reliability and time management, particularly in business contexts where punctuality indicates respect and professionalism. It reflects a universal truth that time, unlike most resources, can never be recovered once lost.",
-    "chineseExample_tr": "她總是提前到達會議，尊重每個人的時間"
-  },
-  {
     "id": "ID021",
     "characters": "青出于蓝",
     "pinyin": "qīng chū yú lán",
@@ -371,10 +357,10 @@
     "example": "Instead of arguing, they found a compromise that benefited everyone",
     "chineseExample": "他们没有争吵，而是找到了一个对大家都有利的折中方案",
     "theme": "Relationships & Character",
-    "description": "This idiom, promoting harmony (和) as precious (贵), traces back to the Zhou Dynasty classic 'Guoyu,' reflecting early Chinese diplomatic philosophy. The concept gained renewed importance during the Tang Dynasty's cosmopolitan empire, where it guided both domestic governance and international relations. The phrase suggests that harmony is more valuable than victory in confrontation, advocating for balanced solutions over dominant ones. During the Song Dynasty, Neo-Confucian philosophers expanded its meaning to include personal relationships and social order. Modern usage promotes conflict resolution through compromise and mutual understanding, particularly valuable in business negotiations and international relations.",
+    "description": "This comes from the Analects, where Master You says that in the working of ritual, harmony (和) is what is precious (贵) — 礼之用，和为贵. The claim is more careful than it looks: harmony is the point of the forms, but he adds at once that harmony pursued without the forms will not stand. Modern usage advocates settling matters amicably, and usually drops the second half.",
     "metaphoric_meaning": "Value harmony above all",
     "traditionalCharacters": "以和爲貴",
-    "description_tr": "This idiom, promoting harmony (和) as precious (貴), traces back to the Zhou Dynasty classic 'Guoyu,' reflecting early Chinese diplomatic philosophy. The concept gained renewed importance during the Tang Dynasty's cosmopolitan empire, where it guided both domestic governance and international relations. The phrase suggests that harmony is more valuable than victory in confrontation, advocating for balanced solutions over dominant ones. During the Song Dynasty, Neo-Confucian philosophers expanded its meaning to include personal relationships and social order. Modern usage promotes conflict resolution through compromise and mutual understanding, particularly valuable in business negotiations and international relations.",
+    "description_tr": "This comes from the Analects, where Master You says that in the working of ritual, harmony (和) is what is precious (貴) — 禮之用，和為貴. The claim is more careful than it looks: harmony is the point of the forms, but he adds at once that harmony pursued without the forms will not stand. Modern usage advocates settling matters amicably, and usually drops the second half.",
     "chineseExample_tr": "他們沒有爭吵，而是找到了一個對大家都有利的折中方案"
   },
   {
@@ -553,10 +539,10 @@
     "example": "The teacher's patient guidance slowly transformed the struggling student",
     "chineseExample": "老师耐心的引导慢慢改变了这个困难学生",
     "theme": "Relationships & Character",
-    "description": "This poetic metaphor traces back to the Han Dynasty's educational philosophy, where ideal teaching was compared to spring winds (春风) transforming into nurturing rain (化雨). The imagery draws from agricultural wisdom – spring breezes and gentle rains nurture plants without forcing growth. Scholar Han Yu popularized this concept during the Tang Dynasty, describing how effective mentors influence students subtly and naturally. Modern educators still reference this idiom when discussing student-centered learning approaches that prioritize gentle guidance over rigid instruction.",
+    "description": "This comes from the Mencius, which counts among a teacher's modes the one who transforms a student as a timely rain does — the spring wind (春风) and the rain that transforms (化雨). Nothing is forced; the growth is the student's own, and the teacher supplies the conditions. It is reserved for education rather than influence in general. Modern usage praises teaching that shapes someone gradually and without pressure.",
     "metaphoric_meaning": "Gentle, nurturing influence",
     "traditionalCharacters": "春風化雨",
-    "description_tr": "This poetic metaphor traces back to the Han Dynasty's educational philosophy, where ideal teaching was compared to spring winds (春風) transforming into nurturing rain (化雨). The imagery draws from agricultural wisdom – spring breezes and gentle rains nurture plants without forcing growth. Scholar Han Yu popularized this concept during the Tang Dynasty, describing how effective mentors influence students subtly and naturally. Modern educators still reference this idiom when discussing student-centered learning approaches that prioritize gentle guidance over rigid instruction.",
+    "description_tr": "This comes from the Mencius, which counts among a teacher's modes the one who transforms a student as a timely rain does — the spring wind (春風) and the rain that transforms (化雨). Nothing is forced; the growth is the student's own, and the teacher supplies the conditions. It is reserved for education rather than influence in general. Modern usage praises teaching that shapes someone gradually and without pressure.",
     "chineseExample_tr": "老師耐心的引導慢慢改變了這個困難學生"
   },
   {
@@ -567,10 +553,10 @@
     "example": "The teacher's patient guidance slowly transformed the struggling student",
     "chineseExample": "老师耐心的引导慢慢改变了这个困难学生",
     "theme": "Wisdom & Learning",
-    "description": "Originating in Daoist texts describing inexplicable mysteries, this phrase captures the sensation of encountering something whose wonder (妙) cannot (莫) be named (名). During the Six Dynasties period, it was frequently used in poetry and philosophical writings to describe transcendent experiences. Buddhist translators later adopted it to express concepts of ineffable enlightenment. In contemporary usage, it's evolved to describe confusing or inexplicable situations, though it retains a subtle appreciation for life's mysteries that distinguishes it from purely negative expressions of confusion.",
+    "description": "This idiom describes something whose strangeness (妙) cannot (莫) be named (名). It belongs to late-imperial vernacular writing rather than to Daoist philosophy, and its tone is exasperated rather than reverent — the speaker is not contemplating a mystery but failing to make sense of something absurd. Modern usage describes bafflement at something that makes no sense, often with irritation.",
     "metaphoric_meaning": "Makes no sense",
     "traditionalCharacters": "莫名其妙",
-    "description_tr": "Originating in Daoist texts describing inexplicable mysteries, this phrase captures the sensation of encountering something whose wonder (妙) cannot (莫) be named (名). During the Six Dynasties period, it was frequently used in poetry and philosophical writings to describe transcendent experiences. Buddhist translators later adopted it to express concepts of ineffable enlightenment. In contemporary usage, it's evolved to describe confusing or inexplicable situations, though it retains a subtle appreciation for life's mysteries that distinguishes it from purely negative expressions of confusion.",
+    "description_tr": "This idiom describes something whose strangeness (妙) cannot (莫) be named (名). It belongs to late-imperial vernacular writing rather than to Daoist philosophy, and its tone is exasperated rather than reverent — the speaker is not contemplating a mystery but failing to make sense of something absurd. Modern usage describes bafflement at something that makes no sense, often with irritation.",
     "chineseExample_tr": "老師耐心的引導慢慢改變了這個困難學生"
   },
   {
@@ -687,16 +673,16 @@
   },
   {
     "id": "ID050",
-    "characters": "金石良言",
-    "pinyin": "jīn shí liáng yán",
-    "meaning": "Gold and stone good words",
+    "characters": "金玉良言",
+    "pinyin": "jīn yù liáng yán",
+    "meaning": "Gold and jade good words",
     "example": "Her mentor's guidance proved invaluable throughout her career",
     "chineseExample": "她导师的指导在她的职业生涯中证明是无价的",
     "theme": "Wisdom & Learning",
-    "description": "Originating in early Chinese metallurgy, this idiom equates valuable advice to gold (金) and stone (石) - materials known for their durability and value. The term good words (良言) gained special significance during the Spring and Autumn period (771-476 BCE) when adviser roles became crucial in statecraft. The metaphor suggests that truly valuable advice, like precious metals and stones, maintains its worth across time. Modern usage describes advice or wisdom that proves particularly enduring and valuable, often emphasizing the rare combination of practicality and moral insight. It frequently appears in contexts of mentorship and professional guidance.",
+    "description": "This idiom likens sound advice to gold (金) and jade (玉) — the two materials Chinese tradition treats as both precious and enduring. Good words (良言) of this kind are not merely correct but worth keeping, and the phrase is normally used of counsel received rather than counsel given. It is sometimes miswritten 金石良言, substituting stone for jade. Modern usage describes advice valuable enough to act on and remember.",
     "metaphoric_meaning": "Valuable, lasting advice",
-    "traditionalCharacters": "金石良言",
-    "description_tr": "Originating in early Chinese metallurgy, this idiom equates valuable advice to gold (金) and stone (石) - materials known for their durability and value. The term good words (良言) gained special significance during the Spring and Autumn period (771-476 BCE) when adviser roles became crucial in statecraft. The metaphor suggests that truly valuable advice, like precious metals and stones, maintains its worth across time. Modern usage describes advice or wisdom that proves particularly enduring and valuable, often emphasizing the rare combination of practicality and moral insight. It frequently appears in contexts of mentorship and professional guidance.",
+    "traditionalCharacters": "金玉良言",
+    "description_tr": "This idiom likens sound advice to gold (金) and jade (玉) — the two materials Chinese tradition treats as both precious and enduring. Good words (良言) of this kind are not merely correct but worth keeping, and the phrase is normally used of counsel received rather than counsel given. It is sometimes miswritten 金石良言, substituting stone for jade. Modern usage describes advice valuable enough to act on and remember.",
     "chineseExample_tr": "她導師的指導在她的職業生涯中證明是無價的"
   },
   {
@@ -763,10 +749,10 @@
     "example": "She preferred direct criticism to unspoken disapproval",
     "chineseExample": "她更喜欢直接的批评而不是未说出口的不满",
     "theme": "Wisdom & Learning",
-    "description": "In ancient Chinese warfare, a visible (明) spear (枪) was considered easy (易) to dodge (躲). This military wisdom emerged from the Spring and Autumn period, when straightforward attacks were less feared than hidden strategies. The idiom gained prominence through historical chronicles describing how skilled generals preferred subtle tactics over obvious aggression. It parallels Sun Tzu's teachings about the superiority of indirect approaches in The Art of War. In modern contexts, it warns against transparent threats while suggesting that obvious dangers are often less perilous than concealed ones. Commonly used in business negotiations and social dynamics to emphasize that predictable challenges are manageable, while hidden agendas pose greater risks.",
+    "description": "This is half of a paired saying: an open (明) spear (枪) is easy (易) to dodge (躲), but a hidden arrow is hard to guard against. It belongs to Yuan drama and later vernacular, and the two halves only work together — the visible threat is named in order to dismiss it, so that the concealed one can be the point. Modern usage warns that the dangerous attacks are the ones you cannot see coming.",
     "metaphoric_meaning": "Open threats easier than hidden",
     "traditionalCharacters": "明槍易躲",
-    "description_tr": "In ancient Chinese warfare, a visible (明) spear (槍) was considered easy (易) to dodge (躲). This military wisdom emerged from the Spring and Autumn period, when straightforward attacks were less feared than hidden strategies. The idiom gained prominence through historical chronicles describing how skilled generals preferred subtle tactics over obvious aggression. It parallels Sun Tzu's teachings about the superiority of indirect approaches in The Art of War. In modern contexts, it warns against transparent threats while suggesting that obvious dangers are often less perilous than concealed ones. Commonly used in business negotiations and social dynamics to emphasize that predictable challenges are manageable, while hidden agendas pose greater risks.",
+    "description_tr": "This is half of a paired saying: an open (明) spear (槍) is easy (易) to dodge (躲), but a hidden arrow is hard to guard against. It belongs to Yuan drama and later vernacular, and the two halves only work together — the visible threat is named in order to dismiss it, so that the concealed one can be the point. Modern usage warns that the dangerous attacks are the ones you cannot see coming.",
     "chineseExample_tr": "她更喜歡直接的批評而不是未說出口的不滿"
   },
   {
@@ -861,10 +847,10 @@
     "example": "The investigation revealed that key data had been subtly altered",
     "chineseExample": "调查显示关键数据被巧妙地篡改了",
     "theme": "Life Philosophy",
-    "description": "This idiom refers to the cunning act of stealing (偷) beams (梁) and swapping (换) pillars (柱), derived from a Warring States period tale of architectural deception. The story involves a craftsman who gradually replaced a building's support structure while maintaining its appearance, ultimately compromising its integrity. Originally describing physical sabotage, it evolved to represent any subtle substitution intended to undermine foundations while preserving surface appearances. In modern usage, it often describes corporate espionage, intellectual property theft, or any situation where essential elements are surreptitiously replaced with inferior alternatives.",
+    "description": "This is the twenty-fifth of the Thirty-Six Stratagems: stealing (偷) the beams (梁) and swapping (换) the pillars (柱) while the building still stands. The substitution is made inside a structure that keeps its outward form, so that nothing appears to have changed until weight is put on it. Modern usage describes a covert switch of something essential behind an unchanged surface.",
     "metaphoric_meaning": "Deceive by substitution",
     "traditionalCharacters": "偷樑換柱",
-    "description_tr": "This idiom refers to the cunning act of stealing (偷) beams (梁) and swapping (換) pillars (柱), derived from a Warring States period tale of architectural deception. The story involves a craftsman who gradually replaced a building's support structure while maintaining its appearance, ultimately compromising its integrity. Originally describing physical sabotage, it evolved to represent any subtle substitution intended to undermine foundations while preserving surface appearances. In modern usage, it often describes corporate espionage, intellectual property theft, or any situation where essential elements are surreptitiously replaced with inferior alternatives.",
+    "description_tr": "This is the twenty-fifth of the Thirty-Six Stratagems: stealing (偷) the beams (樑) and swapping (換) the pillars (柱) while the building still stands. The substitution is made inside a structure that keeps its outward form, so that nothing appears to have changed until weight is put on it. Modern usage describes a covert switch of something essential behind an unchanged surface.",
     "chineseExample_tr": "調查顯示關鍵數據被巧妙地篡改了"
   },
   {
@@ -903,10 +889,10 @@
     "example": "The surgeon performed each procedure with absolute precision",
     "chineseExample": "外科医生一丝不苟地执行每个手术程序",
     "theme": "Success & Perseverance",
-    "description": "This meticulous idiom literally means not allowing a single (一) silk thread (丝) to be careless (不苟). Emerging from textile craftsmanship during the Song Dynasty, it originally described the precise attention required in silk weaving, where a single loose thread could compromise an entire piece. The phrase exemplifies the Chinese cultural value of perfectionism in craftsmanship. Modern usage applies to any task requiring extreme precision and attention to detail, from scientific research to artistic creation, emphasizing thoroughness and an uncompromising commitment to quality.",
+    "description": "This idiom means not allowing a single (一) thread (丝) to be done carelessly (不苟). It comes from late-imperial vernacular fiction, where it describes conduct and paperwork rather than weaving; the thread is a measure of the smallest possible unit, not a reference to textile work. Modern usage praises scrupulous attention to every detail.",
     "metaphoric_meaning": "Extremely careful and thorough",
     "traditionalCharacters": "一絲不苟",
-    "description_tr": "This meticulous idiom literally means not allowing a single (一) silk thread (絲) to be careless (不苟). Emerging from textile craftsmanship during the Song Dynasty, it originally described the precise attention required in silk weaving, where a single loose thread could compromise an entire piece. The phrase exemplifies the Chinese cultural value of perfectionism in craftsmanship. Modern usage applies to any task requiring extreme precision and attention to detail, from scientific research to artistic creation, emphasizing thoroughness and an uncompromising commitment to quality.",
+    "description_tr": "This idiom means not allowing a single (一) thread (絲) to be done carelessly (不苟). It comes from late-imperial vernacular fiction, where it describes conduct and paperwork rather than weaving; the thread is a measure of the smallest possible unit, not a reference to textile work. Modern usage praises scrupulous attention to every detail.",
     "chineseExample_tr": "外科醫生一絲不苟地執行每個手術程序"
   },
   {
@@ -1001,10 +987,10 @@
     "example": "The team got lost in technical details and forgot the project's main goal",
     "chineseExample": "团队陷入技术细节而忘记了项目的主要目标",
     "theme": "Wisdom & Learning",
-    "description": "This idiom illustrates how a single (一) leaf (叶) can block (障) one's vision/eyes (目). Emerging from Buddhist texts warning against limited perspective, it gained prominence during the Song Dynasty's Neo-Confucian movement. The deceptively simple image of a leaf blocking an entire view became a powerful metaphor for how minor distractions can prevent broader understanding. In contemporary contexts, it critiques tunnel vision in decision-making, from business strategy to political analysis, reminding us that fixation on small details can obscure the larger picture.",
+    "description": "This comes from the Heguanzi, which observes that a single leaf before the eyes hides the mountain, and two beans in the ears hide the thunder — 一叶蔽目，不见泰山. One (一) leaf (叶) blocks (障) the eye (目) not because it is large but because it is close. The obstruction is trivial and the loss of view is total. Modern usage describes letting a small preoccupation hide something obvious.",
     "metaphoric_meaning": "Miss big picture",
     "traditionalCharacters": "一葉障目",
-    "description_tr": "This idiom illustrates how a single (一) leaf (葉) can block (障) one's vision/eyes (目). Emerging from Buddhist texts warning against limited perspective, it gained prominence during the Song Dynasty's Neo-Confucian movement. The deceptively simple image of a leaf blocking an entire view became a powerful metaphor for how minor distractions can prevent broader understanding. In contemporary contexts, it critiques tunnel vision in decision-making, from business strategy to political analysis, reminding us that fixation on small details can obscure the larger picture.",
+    "description_tr": "This comes from the Heguanzi, which observes that a single leaf before the eyes hides the mountain, and two beans in the ears hide the thunder — 一葉蔽目，不見泰山. One (一) leaf (葉) blocks (障) the eye (目) not because it is large but because it is close. The obstruction is trivial and the loss of view is total. Modern usage describes letting a small preoccupation hide something obvious.",
     "chineseExample_tr": "團隊陷入技術細節而忘記了項目的主要目標"
   },
   {
@@ -1015,10 +1001,10 @@
     "example": "The detective traced the evidence methodically to find the truth",
     "chineseExample": "侦探循着线索找到真相",
     "theme": "Wisdom & Learning",
-    "description": "Rooted in agricultural wisdom, this idiom describes following (顺) a vine (藤) to find (摸) its melons (瓜). It gained prominence in Song Dynasty detective stories and practical farming guides, where understanding plant patterns helped locate harvest-ready melons hidden under foliage. The metaphor captured the essence of methodical investigation - following visible trails to discover hidden connections. Modern usage spans various fields, from criminal investigations to market research, describing any process where careful tracking of evident clues leads to concealed answers.",
+    "description": "This idiom describes following (顺) the vine (藤) to feel out (摸) the melon (瓜) at its end. It is an ordinary modern expression drawn from farming rather than a classical idiom, and it has no source text. The method it names is patient and sequential: you do not look for the melon, you hold the vine and keep going. Modern usage describes tracing something back to its source by following the connections.",
     "metaphoric_meaning": "Follow clues to solution",
     "traditionalCharacters": "順藤摸瓜",
-    "description_tr": "Rooted in agricultural wisdom, this idiom describes following (順) a vine (藤) to find (摸) its melons (瓜). It gained prominence in Song Dynasty detective stories and practical farming guides, where understanding plant patterns helped locate harvest-ready melons hidden under foliage. The metaphor captured the essence of methodical investigation - following visible trails to discover hidden connections. Modern usage spans various fields, from criminal investigations to market research, describing any process where careful tracking of evident clues leads to concealed answers.",
+    "description_tr": "This idiom describes following (順) the vine (藤) to feel out (摸) the melon (瓜) at its end. It is an ordinary modern expression drawn from farming rather than a classical idiom, and it has no source text. The method it names is patient and sequential: you do not look for the melon, you hold the vine and keep going. Modern usage describes tracing something back to its source by following the connections.",
     "chineseExample_tr": "偵探循着線索找到真相"
   },
   {
@@ -3554,20 +3540,6 @@
     "traditionalCharacters": "膽大心細",
     "description_tr": "This balanced idiom pairs a large gallbladder (膽大, representing courage) with a fine/careful heart (心細), originating from Ming Dynasty military manuals. Traditional Chinese medicine associated the gallbladder with courage and decision-making, while the heart governed careful thinking. The combination described the ideal military commander who could make bold decisions while attending to crucial details. During the Qing Dynasty, it expanded beyond military contexts to describe the optimal approach to any challenging enterprise. Modern usage describes the powerful combination of courage with caution, particularly in high-stakes situations where both boldness and precision prove necessary for success, suggesting that true effectiveness often requires seemingly contradictory qualities in perfect balance.",
     "chineseExample_tr": "這位消防員既表現出勇氣，又對安全協議一絲不苟"
-  },
-  {
-    "id": "ID257",
-    "characters": "纸上富贵",
-    "pinyin": "zhǐ shàng fù guì",
-    "meaning": "Wealth on paper only",
-    "example": "The entrepreneur's business looked impressive in presentations but generated little actual revenue",
-    "chineseExample": "这位企业家的业务在演示中看起来令人印象深刻，但几乎没有产生实际收入",
-    "theme": "Life Philosophy",
-    "description": "This illusory idiom describes wealth and status (富贵) existing only on paper (纸上), originating from Ming Dynasty commercial critiques. It first described merchants who maintained elaborate account books showing theoretical profits while actually struggling financially. The specific reference to paper connected to both accounting records and the examination system, where scholastic achievement on paper didn't always translate to practical capability. During the Qing Dynasty, it expanded to describe any disconnection between documented prosperity and actual circumstances. Modern usage identifies situations where theoretical or reported success masks actual performance issues, particularly in business and professional contexts where impressive documentation often substitutes for genuine accomplishment.",
-    "metaphoric_meaning": "Success in theory not reality",
-    "traditionalCharacters": "紙上富貴",
-    "description_tr": "This illusory idiom describes wealth and status (富貴) existing only on paper (紙上), originating from Ming Dynasty commercial critiques. It first described merchants who maintained elaborate account books showing theoretical profits while actually struggling financially. The specific reference to paper connected to both accounting records and the examination system, where scholastic achievement on paper didn't always translate to practical capability. During the Qing Dynasty, it expanded to describe any disconnection between documented prosperity and actual circumstances. Modern usage identifies situations where theoretical or reported success masks actual performance issues, particularly in business and professional contexts where impressive documentation often substitutes for genuine accomplishment.",
-    "chineseExample_tr": "這位企業家的業務在演示中看起來令人印象深刻，但幾乎沒有產生實際收入"
   },
   {
     "id": "ID258",
@@ -8064,20 +8036,6 @@
     "chineseExample_tr": "退休教授桃李滿門，培養了數百名成功的學者。"
   },
   {
-    "id": "ID586",
-    "characters": "春风满面",
-    "pinyin": "chūn fēng mǎn miàn",
-    "meaning": "Spring wind fills the face",
-    "example": "She returned from vacation looking refreshed and happy.",
-    "chineseExample": "她度假回来春风满面。",
-    "theme": "Life Philosophy",
-    "description": "This idiom describes spring wind (春风) filling (满) the face (面). It depicts someone whose face radiates warmth and happiness like the pleasant spring breeze. The phrase captures the appearance of contentment and good fortune. Modern usage describes someone who looks happy and satisfied, whose good mood or good fortune is visible in their pleasant expression.",
-    "metaphoric_meaning": "Look happy and content",
-    "traditionalCharacters": "春風滿面",
-    "description_tr": "This idiom describes spring wind (春風) filling (滿) the face (面). It depicts someone whose face radiates warmth and happiness like the pleasant spring breeze. The phrase captures the appearance of contentment and good fortune. Modern usage describes someone who looks happy and satisfied, whose good mood or good fortune is visible in their pleasant expression.",
-    "chineseExample_tr": "她度假回來春風滿面。"
-  },
-  {
     "id": "ID587",
     "characters": "秋毫无犯",
     "pinyin": "qiū háo wú fàn",
@@ -11347,10 +11305,10 @@
     "example": "After receiving the good news, she walked into the room with a beaming smile.",
     "chineseExample": "听到好消息后，她满面春风地走进房间。",
     "theme": "Relationships & Character",
-    "description": "Commonly used in classical Chinese literature, the idiom 满面春风 (mǎn miàn chūn fēng) paints a vivid picture of a person whose face is glowing with happiness and warmth, much like the gentle and refreshing breeze of spring (春风, spring breeze). The phrase originates from a line in the Song dynasty poem 《沁园春》 by Cheng Jiezai (程节斋), where it describes a person exuding joy and amiability (满面, full face; 春风, spring breeze). In modern usage, this idiom is often employed to describe someone who is visibly cheerful and approachable, often due to good news or personal success.",
+    "description": "This idiom describes a face (面) filled (满) with spring breeze (春风) — the look of someone whose good humour is visible before they speak. The comparison is to weather rather than to expression: the warmth is taken to be radiating outward rather than performed. It is also written 春风满面, with the halves reversed. Modern usage describes someone visibly pleased and at ease.",
     "metaphoric_meaning": "Radiant happiness",
     "traditionalCharacters": "滿面春風",
-    "description_tr": "Commonly used in classical Chinese literature, the idiom 滿面春風 (mǎn miàn chūn fēng) paints a vivid picture of a person whose face is glowing with happiness and warmth, much like the gentle and refreshing breeze of spring (春風, spring breeze). The phrase originates from a line in the Song dynasty poem 《沁園春》 by Cheng Jiezai (程節齋), where it describes a person exuding joy and amiability (滿面, full face; 春風, spring breeze). In modern usage, this idiom is often employed to describe someone who is visibly cheerful and approachable, often due to good news or personal success.",
+    "description_tr": "This idiom describes a face (面) filled (滿) with spring breeze (春風) — the look of someone whose good humour is visible before they speak. The comparison is to weather rather than to expression: the warmth is taken to be radiating outward rather than performed. It is also written 春風滿面, with the halves reversed. Modern usage describes someone visibly pleased and at ease.",
     "chineseExample_tr": "聽到好消息後，她滿面春風地走進房間。"
   },
   {
