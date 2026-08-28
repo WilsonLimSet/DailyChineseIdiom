@@ -721,10 +721,10 @@
     "example": "The architect had a complete vision of the building before drawing the first line",
     "chineseExample": "建筑师在画第一笔之前就已经对建筑有了完整的构想",
     "theme": "Strategy & Action",
-    "description": "This comes from Su Shi's account of the painter Wen Tong of the Northern Song, who held that to paint bamboo (竹) one must first have the finished bamboo complete within the breast (胸有成竹) — and then work fast, before the image fades. The idiom is about the completeness of the mental picture, not about caution. Modern usage describes going into something with a fully formed plan.",
+    "description": "This comes from Su Shi's account of the painter Wen Tong of the Northern Song, who held that to paint bamboo (竹) one must first have the finished bamboo complete within the breast (胸有成竹) — and then work fast, before the image fades. The idiom is about the completeness of the mental picture, not about caution. It is also written 成竹在胸. Modern usage describes going into something with a fully formed plan.",
     "metaphoric_meaning": "Have clear plan beforehand",
     "traditionalCharacters": "胸有成竹",
-    "description_tr": "This comes from Su Shi's account of the painter Wen Tong of the Northern Song, who held that to paint bamboo (竹) one must first have the finished bamboo complete within the breast (胸有成竹) — and then work fast, before the image fades. The idiom is about the completeness of the mental picture, not about caution. Modern usage describes going into something with a fully formed plan.",
+    "description_tr": "This comes from Su Shi's account of the painter Wen Tong of the Northern Song, who held that to paint bamboo (竹) one must first have the finished bamboo complete within the breast (胸有成竹) — and then work fast, before the image fades. The idiom is about the completeness of the mental picture, not about caution. It is also written 成竹在胸. Modern usage describes going into something with a fully formed plan.",
     "chineseExample_tr": "建築師在畫第一筆之前就已經對建築有了完整的構想"
   },
   {
@@ -1113,10 +1113,10 @@
     "example": "His friendly investment advice concealed a fraudulent scheme",
     "chineseExample": "他友好的投资建议掩盖着诈骗计划",
     "theme": "Life Philosophy",
-    "description": "This chilling idiom describes hiding a knife (刀) within a smile (笑), originating from historical accounts of court intrigue during the Late Han period. It gained prominence through stories of strategic advisors who maintained friendly appearances while plotting against rivals. The contrast between the warm smile and concealed weapon (藏) created a powerful image of deception. Modern usage describes hidden malicious intent behind friendly facades, particularly relevant in business and political contexts where surface cordiality may mask hostile intentions.",
+    "description": "This comes from accounts of Li Yifu, a chancellor under the Tang, who was mild in manner and unfailingly courteous, and who destroyed anyone who crossed him. Contemporaries said he carried a knife (刀) hidden (藏) inside (里) his smile (笑). It is also the tenth of the Thirty-Six Stratagems. The smile is not a disguise assumed for the occasion but his ordinary manner, which is what made him dangerous. Modern usage describes friendliness concealing intent to harm.",
     "metaphoric_meaning": "Hide malice behind smile",
     "traditionalCharacters": "笑裏藏刀",
-    "description_tr": "This chilling idiom describes hiding a knife (刀) within a smile (笑), originating from historical accounts of court intrigue during the Late Han period. It gained prominence through stories of strategic advisors who maintained friendly appearances while plotting against rivals. The contrast between the warm smile and concealed weapon (藏) created a powerful image of deception. Modern usage describes hidden malicious intent behind friendly facades, particularly relevant in business and political contexts where surface cordiality may mask hostile intentions.",
+    "description_tr": "This comes from accounts of Li Yifu, a chancellor under the Tang, who was mild in manner and unfailingly courteous, and who destroyed anyone who crossed him. Contemporaries said he carried a knife (刀) hidden (藏) inside (裏) his smile (笑). It is also the tenth of the Thirty-Six Stratagems. The smile is not a disguise assumed for the occasion but his ordinary manner, which is what made him dangerous. Modern usage describes friendliness concealing intent to harm.",
     "chineseExample_tr": "他友好的投資建議掩蓋着詐騙計劃"
   },
   {
@@ -1239,10 +1239,10 @@
     "example": "Despite repeated failures, the researcher continued his experiments with determination",
     "chineseExample": "尽管屡次失败，研究员仍然坚持不懈地进行实验",
     "theme": "Success & Perseverance",
-    "description": "This idiom originates from the story of an ancient man who attempted to carve (锲) through a mountain with unwavering persistence (不舍). Recorded in pre-Qin texts, it exemplifies the classical Chinese virtue of perseverance through seemingly impossible tasks. The character 锲 specifically refers to carving jade - a process requiring both strength and delicacy. Modern usage emphasizes persistent effort toward goals, particularly in contexts requiring both determination and careful attention to detail.",
+    "description": "This comes from the Xunzi: carve and give up, and rotten wood will not break; carve (锲) without ceasing (不舍), and metal and stone can be worked. The contrast is deliberate — persistence beats material, and abandoning the attempt defeats even the easy case. It is about the carving of metal and stone, not about moving a mountain, which is a different parable. Modern usage praises sustained effort that does not stop.",
     "metaphoric_meaning": "Persevere until success",
     "traditionalCharacters": "鍥而不捨",
-    "description_tr": "This idiom originates from the story of an ancient man who attempted to carve (鍥) through a mountain with unwavering persistence (不捨). Recorded in pre-Qin texts, it exemplifies the classical Chinese virtue of perseverance through seemingly impossible tasks. The character 鍥 specifically refers to carving jade - a process requiring both strength and delicacy. Modern usage emphasizes persistent effort toward goals, particularly in contexts requiring both determination and careful attention to detail.",
+    "description_tr": "This comes from the Xunzi: carve and give up, and rotten wood will not break; carve (鍥) without ceasing (不捨), and metal and stone can be worked. The contrast is deliberate — persistence beats material, and abandoning the attempt defeats even the easy case. It is about the carving of metal and stone, not about moving a mountain, which is a different parable. Modern usage praises sustained effort that does not stop.",
     "chineseExample_tr": "儘管屢次失敗，研究員仍然堅持不懈地進行實驗"
   },
   {
@@ -4809,10 +4809,10 @@
     "example": "Securing temporary shelter became the immediate priority after the earthquake",
     "chineseExample": "地震后，确保临时住所成为当务之急",
     "theme": "Life Philosophy",
-    "description": "Han Dynasty crisis management documents introduced this method of identifying the current (当) matter's (务) most pressing urgency (之急). Tang Dynasty writers expanded it beyond governance into general priority setting. The phrase elegantly captures both temporal immediacy and relative importance, making it invaluable in emergency response and project management.",
+    "description": "This comes from the Mencius, which holds that the wise man does not try to know everything but attends to what the present business (当务) makes urgent (之急). The claim is about triage rather than diligence: knowing everything is not the goal, and choosing correctly among competing demands is. Modern usage names the thing that must be dealt with before anything else.",
     "metaphoric_meaning": "Most urgent priority requiring immediate attention",
     "traditionalCharacters": "當務之急",
-    "description_tr": "Han Dynasty crisis management documents introduced this method of identifying the current (當) matter's (務) most pressing urgency (之急). Tang Dynasty writers expanded it beyond governance into general priority setting. The phrase elegantly captures both temporal immediacy and relative importance, making it invaluable in emergency response and project management.",
+    "description_tr": "This comes from the Mencius, which holds that the wise man does not try to know everything but attends to what the present business (當務) makes urgent (之急). The claim is about triage rather than diligence: knowing everything is not the goal, and choosing correctly among competing demands is. Modern usage names the thing that must be dealt with before anything else.",
     "chineseExample_tr": "地震後，確保臨時住所成爲當務之急"
   },
   {
@@ -4907,10 +4907,10 @@
     "example": "The nervous visitor kept looking around anxiously during the interview",
     "chineseExample": "紧张的访客在面试期间不断东张西望",
     "theme": "Relationships & Character",
-    "description": "Han Dynasty court observers first noted this revealing behavior of looking anxiously east (东张) and west (西望) as a sign of concealed intentions. The cardinal directions created a comprehensive image of someone unable to maintain composure, constantly checking their surroundings. Modern usage describes that particular type of nervous surveillance that betrays underlying anxiety.",
+    "description": "This idiom describes looking east (东张) and west (西望) — turning the head about instead of settling the gaze. It belongs to vernacular fiction, where it marks either distraction or furtiveness depending on the scene, and the reader is expected to tell which from context. Modern usage describes glancing around restlessly, often with a suggestion that the person is up to something.",
     "metaphoric_meaning": "Look around nervously or suspiciously",
     "traditionalCharacters": "東張西望",
-    "description_tr": "Han Dynasty court observers first noted this revealing behavior of looking anxiously east (東張) and west (西望) as a sign of concealed intentions. The cardinal directions created a comprehensive image of someone unable to maintain composure, constantly checking their surroundings. Modern usage describes that particular type of nervous surveillance that betrays underlying anxiety.",
+    "description_tr": "This idiom describes looking east (東張) and west (西望) — turning the head about instead of settling the gaze. It belongs to vernacular fiction, where it marks either distraction or furtiveness depending on the scene, and the reader is expected to tell which from context. Modern usage describes glancing around restlessly, often with a suggestion that the person is up to something.",
     "chineseExample_tr": "緊張的訪客在面試期間不斷東張西望"
   },
   {
@@ -4921,10 +4921,10 @@
     "example": "After decades of corruption, the official was finally brought to justice",
     "chineseExample": "经过几十年的腐败，这名官员终于被绳之以法",
     "theme": "Relationships & Character",
-    "description": "Han Dynasty metaphysical discussions introduced this image of wickedness (恶) accumulating until fully (满) overflowing (盈). Buddhist influence strengthened its connection to inevitable karmic consequences. The metaphor of evil as a liquid gradually filling a vessel until it overflows perfectly captured how accumulated transgressions eventually trigger cosmic retribution.",
+    "description": "This descends from the Book of Documents, where the crimes of the last Shang king are said to be strung together and full — the image is of misdeeds threaded on a cord like coins until the string (贯) is full (满盈). The metaphor is quantitative and final: it implies a reckoning is now due, not merely deserved. Modern usage describes someone whose accumulated crimes have run out of room.",
     "metaphoric_meaning": "Accumulated evil deeds ripe for punishment",
     "traditionalCharacters": "惡貫滿盈",
-    "description_tr": "Han Dynasty metaphysical discussions introduced this image of wickedness (惡) accumulating until fully (滿) overflowing (盈). Buddhist influence strengthened its connection to inevitable karmic consequences. The metaphor of evil as a liquid gradually filling a vessel until it overflows perfectly captured how accumulated transgressions eventually trigger cosmic retribution.",
+    "description_tr": "This descends from the Book of Documents, where the crimes of the last Shang king are said to be strung together and full — the image is of misdeeds threaded on a cord like coins until the string (貫) is full (滿盈). The metaphor is quantitative and final: it implies a reckoning is now due, not merely deserved. Modern usage describes someone whose accumulated crimes have run out of room.",
     "chineseExample_tr": "經過幾十年的腐敗，這名官員終於被繩之以法"
   },
   {
@@ -4935,10 +4935,10 @@
     "example": "Despite repeated financial disasters, he continued investing in high-risk ventures",
     "chineseExample": "尽管屡次遭受财务灾难，他仍继续投资高风险项目",
     "theme": "Relationships & Character",
-    "description": "Han Dynasty naturalists first documented this self-destructive phenomenon of moths (飞蛾) rushing toward flames (扑火). Tang Dynasty poets transformed this natural observation into a powerful metaphor for human self-destructive fascinations. The biological accuracy makes it particularly compelling - moths genuinely exhibit this behavior, creating a perfect natural metaphor for irrational attraction to harmful things.",
+    "description": "This comes from a remark in the Book of Liang, where a man's headlong pursuit of ruin is likened to a moth (飞蛾) rushing into flame (扑火). The insect is not deceived in any interesting way; it is drawn by exactly the thing that destroys it. Modern usage describes courting an obvious destruction, sometimes with admiration for the recklessness.",
     "metaphoric_meaning": "Be irresistibly drawn toward self-destruction",
     "traditionalCharacters": "飛蛾撲火",
-    "description_tr": "Han Dynasty naturalists first documented this self-destructive phenomenon of moths (飛蛾) rushing toward flames (撲火). Tang Dynasty poets transformed this natural observation into a powerful metaphor for human self-destructive fascinations. The biological accuracy makes it particularly compelling - moths genuinely exhibit this behavior, creating a perfect natural metaphor for irrational attraction to harmful things.",
+    "description_tr": "This comes from a remark in the Book of Liang, where a man's headlong pursuit of ruin is likened to a moth (飛蛾) rushing into flame (撲火). The insect is not deceived in any interesting way; it is drawn by exactly the thing that destroys it. Modern usage describes courting an obvious destruction, sometimes with admiration for the recklessness.",
     "chineseExample_tr": "儘管屢次遭受財務災難，他仍繼續投資高風險項目"
   },
   {
@@ -5019,10 +5019,10 @@
     "example": "After installing the security system, the homeowners slept without concern",
     "chineseExample": "安装了安全系统后，房主高枕无忧地睡觉",
     "theme": "Life Philosophy",
-    "description": "Tang Dynasty poets first used this image of resting head on high pillow (高枕) without worry (无忧) to praise effective governance that allowed people to sleep soundly. Song Dynasty writers expanded it beyond political contexts to describe any circumstance enabling complete peace of mind. The physical posture of sleeping with an elevated head perfectly embodied the psychological security that allows complete vulnerability.",
+    "description": "This comes from the Strategies of the Warring States, where Feng Xuan tells Lord Mengchang that with three refuges secured he may at last sleep on a high pillow (高枕) without care (无忧). The security is manufactured rather than given — the phrase is the reward at the end of the work, not a description of a fortunate man. Modern usage describes resting easy because every contingency is covered.",
     "metaphoric_meaning": "Completely free from worry or concern",
     "traditionalCharacters": "高枕無憂",
-    "description_tr": "Tang Dynasty poets first used this image of resting head on high pillow (高枕) without worry (無憂) to praise effective governance that allowed people to sleep soundly. Song Dynasty writers expanded it beyond political contexts to describe any circumstance enabling complete peace of mind. The physical posture of sleeping with an elevated head perfectly embodied the psychological security that allows complete vulnerability.",
+    "description_tr": "This comes from the Strategies of the Warring States, where Feng Xuan tells Lord Mengchang that with three refuges secured he may at last sleep on a high pillow (高枕) without care (無憂). The security is manufactured rather than given — the phrase is the reward at the end of the work, not a description of a fortunate man. Modern usage describes resting easy because every contingency is covered.",
     "chineseExample_tr": "安裝了安全系統後，房主高枕無憂地睡覺"
   },
   {
@@ -5075,10 +5075,10 @@
     "example": "The professor avoided meeting alone with students to prevent any appearance of impropriety",
     "chineseExample": "教授避免单独与学生会面，以防止任何不当行为的出现",
     "theme": "Wisdom & Learning",
-    "description": "The 'Book of Rites' first warned against adjusting shoes in melon fields (瓜田) or hats under plum trees (李下), as these innocent actions could be misinterpreted as preparation for theft. Tang Dynasty writers expanded it beyond specific locations to any situation inviting misinterpretation. The agricultural settings provided concrete examples of how context can make innocent actions appear suspicious. Modern professional ethics still emphasizes avoiding not just impropriety but even its appearance.",
+    "description": "This comes from an old ballad advising the gentleman not to pull on his shoe in a melon field (瓜田) nor straighten his hat beneath a plum tree (李下), since either motion looks like theft. The counsel is not about honesty but about appearances: the man is innocent, and that is precisely why he must not be seen doing it. Modern usage warns against putting yourself in a position that invites suspicion.",
     "metaphoric_meaning": "Avoid situations that invite suspicion",
     "traditionalCharacters": "瓜田李下",
-    "description_tr": "The 'Book of Rites' first warned against adjusting shoes in melon fields (瓜田) or hats under plum trees (李下), as these innocent actions could be misinterpreted as preparation for theft. Tang Dynasty writers expanded it beyond specific locations to any situation inviting misinterpretation. The agricultural settings provided concrete examples of how context can make innocent actions appear suspicious. Modern professional ethics still emphasizes avoiding not just impropriety but even its appearance.",
+    "description_tr": "This comes from an old ballad advising the gentleman not to pull on his shoe in a melon field (瓜田) nor straighten his hat beneath a plum tree (李下), since either motion looks like theft. The counsel is not about honesty but about appearances: the man is innocent, and that is precisely why he must not be seen doing it. Modern usage warns against putting yourself in a position that invites suspicion.",
     "chineseExample_tr": "教授避免單獨與學生會面，以防止任何不當行爲的出現"
   },
   {
@@ -5131,10 +5131,10 @@
     "example": "The employee's repeated violations damaged team morale and productivity",
     "chineseExample": "该员工的反复违规损害了团队士气和生产力",
     "theme": "Relationships & Character",
-    "description": "Han Dynasty horse breeders first noted how a single problematic horse (马) could harm (害) an entire herd (群). Tang Dynasty administrators adopted it to describe how one disruptive official could damage entire departments. The agricultural observation proved universally applicable - groups dependent on coordination remain particularly vulnerable to individual disruptive elements.",
+    "description": "This comes from the Zhuangzi, where the Yellow Emperor, lost and asking a boy herding horses how to govern the empire, is told it is no different from tending horses: simply remove whatever harms (害) the herd (群). The answer's force is in its brevity — the boy declines the grandeur of the question. Modern usage describes the individual whose conduct damages a whole group.",
     "metaphoric_meaning": "Individual whose behavior harms entire group",
     "traditionalCharacters": "害羣之馬",
-    "description_tr": "Han Dynasty horse breeders first noted how a single problematic horse (馬) could harm (害) an entire herd (羣). Tang Dynasty administrators adopted it to describe how one disruptive official could damage entire departments. The agricultural observation proved universally applicable - groups dependent on coordination remain particularly vulnerable to individual disruptive elements.",
+    "description_tr": "This comes from the Zhuangzi, where the Yellow Emperor, lost and asking a boy herding horses how to govern the empire, is told it is no different from tending horses: simply remove whatever harms (害) the herd (群). The answer's force is in its brevity — the boy declines the grandeur of the question. Modern usage describes the individual whose conduct damages a whole group.",
     "chineseExample_tr": "該員工的反覆違規損害了團隊士氣和生產力"
   },
   {
@@ -5243,10 +5243,10 @@
     "example": "The family never mentioned the scandal, treating it as a forbidden topic",
     "chineseExample": "家人从不提及这一丑闻，将其视为禁忌话题",
     "theme": "Relationships & Character",
-    "description": "Han Dynasty court protocols first established this practice of avoiding discussion (讳莫) as deeply (如深) as possible regarding sensitive imperial matters. Tang Dynasty society expanded it to describe any collective agreement to maintain absolute silence about uncomfortable truths. The depth metaphor perfectly captured how some topics become so taboo that even acknowledging their existence becomes forbidden.",
+    "description": "This comes from the Guliang Commentary, which says of a matter too grave to record plainly that the concealment (讳) is as deep (如深) as the thing concealed. The depth of the silence is itself the measure of what is being hidden, so the evasion becomes evidence. Modern usage describes maintaining a conspicuous silence about something.",
     "metaphoric_meaning": "Maintain absolute silence about sensitive matter",
     "traditionalCharacters": "諱莫如深",
-    "description_tr": "Han Dynasty court protocols first established this practice of avoiding discussion (諱莫) as deeply (如深) as possible regarding sensitive imperial matters. Tang Dynasty society expanded it to describe any collective agreement to maintain absolute silence about uncomfortable truths. The depth metaphor perfectly captured how some topics become so taboo that even acknowledging their existence becomes forbidden.",
+    "description_tr": "This comes from the Guliang Commentary, which says of a matter too grave to record plainly that the concealment (諱) is as deep (如深) as the thing concealed. The depth of the silence is itself the measure of what is being hidden, so the evasion becomes evidence. Modern usage describes maintaining a conspicuous silence about something.",
     "chineseExample_tr": "家人從不提及這一醜聞，將其視爲禁忌話題"
   },
   {
@@ -5257,10 +5257,10 @@
     "example": "The manager erupted in rage upon discovering the accounting discrepancy",
     "chineseExample": "经理发现会计差异后，怒火中烧",
     "theme": "Life Philosophy",
-    "description": "Tang Dynasty theater directors first used this vivid image of anger as fire (火) rising (冒) three zhang (三丈) high - about 10 meters - in stage directions. Actors were instructed to physically manifest rage at this scale to convey its overwhelming nature. Ming Dynasty writers brought this theatrical metaphor into literature, where it perfectly captured those moments when provocation creates an explosive emotional response visible to all observers.",
+    "description": "This idiom describes anger as fire (火) rising (冒) three zhang (三丈) high — roughly ten metres, in a unit that makes the claim absurd on purpose. It belongs to vernacular fiction, where exaggeration of this kind is standard, and it describes sudden fury rather than sustained resentment. Modern usage describes flying into a rage.",
     "metaphoric_meaning": "Explode in extreme anger or rage",
     "traditionalCharacters": "火冒三丈",
-    "description_tr": "Tang Dynasty theater directors first used this vivid image of anger as fire (火) rising (冒) three zhang (三丈) high - about 10 meters - in stage directions. Actors were instructed to physically manifest rage at this scale to convey its overwhelming nature. Ming Dynasty writers brought this theatrical metaphor into literature, where it perfectly captured those moments when provocation creates an explosive emotional response visible to all observers.",
+    "description_tr": "This idiom describes anger as fire (火) rising (冒) three zhang (三丈) high — roughly ten metres, in a unit that makes the claim absurd on purpose. It belongs to vernacular fiction, where exaggeration of this kind is standard, and it describes sudden fury rather than sustained resentment. Modern usage describes flying into a rage.",
     "chineseExample_tr": "經理發現會計差異後，怒火中燒"
   },
   {
@@ -6615,10 +6615,10 @@
     "example": "Management deliberately ignored the obvious problems.",
     "chineseExample": "管理层对明显的问题视而不见。",
     "theme": "Relationships & Character",
-    "description": "This idiom describes looking (视) but not (不) seeing (见), indicating willful blindness rather than genuine inability to perceive. The phrase originated in Daoist philosophy discussing how distracted minds fail to register what's before them. It evolved to describe deliberate ignorance or choosing not to acknowledge obvious realities. Modern usage commonly criticizes those who intentionally overlook problems, injustice, or inconvenient truths that they would prefer to ignore.",
+    "description": "This comes from the Great Learning, which says that where the mind is not present, one looks (视) and does not (不) see (见), listens and does not hear, eats and does not taste. The failure is of attention rather than of the eye, and the passage treats it as a moral condition rather than a lapse. Modern usage describes deliberately ignoring what is in front of you.",
     "metaphoric_meaning": "Turn a blind eye; deliberately ignore",
     "traditionalCharacters": "視而不見",
-    "description_tr": "This idiom describes looking (視) but not (不) seeing (見), indicating willful blindness rather than genuine inability to perceive. The phrase originated in Daoist philosophy discussing how distracted minds fail to register what's before them. It evolved to describe deliberate ignorance or choosing not to acknowledge obvious realities. Modern usage commonly criticizes those who intentionally overlook problems, injustice, or inconvenient truths that they would prefer to ignore.",
+    "description_tr": "This comes from the Great Learning, which says that where the mind is not present, one looks (視) and does not (不) see (見), listens and does not hear, eats and does not taste. The failure is of attention rather than of the eye, and the passage treats it as a moral condition rather than a lapse. Modern usage describes deliberately ignoring what is in front of you.",
     "chineseExample_tr": "管理層對明顯的問題視而不見。"
   },
   {
@@ -8477,10 +8477,10 @@
     "example": "Achieving sustainability is a long-term challenge requiring sustained effort.",
     "chineseExample": "实现可持续发展任重道远。",
     "theme": "Success & Perseverance",
-    "description": "This idiom describes heavy (重) responsibility (任) and a long (远) road (道). From the Analects where Confucius described the burden of benevolence. The phrase captures the weight of important duties that require long journeys. Modern usage describes significant undertakings that require sustained effort over time, acknowledging both the importance and difficulty of major goals.",
+    "description": "This idiom describes heavy (重) responsibility (任) and a long (远) road (道). From the Analects, where it is Zengzi, not Confucius, who says the gentleman's burden is heavy and his road long, because benevolence is the load he carries and only death sets it down. The phrase captures the weight of important duties that require long journeys. Modern usage describes significant undertakings that require sustained effort over time, acknowledging both the importance and difficulty of major goals.",
     "metaphoric_meaning": "Heavy burden and long journey ahead",
     "traditionalCharacters": "任重道遠",
-    "description_tr": "This idiom describes heavy (重) responsibility (任) and a long (遠) road (道). From the Analects where Confucius described the burden of benevolence. The phrase captures the weight of important duties that require long journeys. Modern usage describes significant undertakings that require sustained effort over time, acknowledging both the importance and difficulty of major goals.",
+    "description_tr": "This idiom describes heavy (重) responsibility (任) and a long (遠) road (道). From the Analects, where it is Zengzi, not Confucius, who says the gentleman's burden is heavy and his road long, because benevolence is the load he carries and only death sets it down. The phrase captures the weight of important duties that require long journeys. Modern usage describes significant undertakings that require sustained effort over time, acknowledging both the importance and difficulty of major goals.",
     "chineseExample_tr": "實現可持續發展任重道遠。"
   },
   {
@@ -8902,20 +8902,6 @@
     "traditionalCharacters": "萬無一失",
     "description_tr": "This idiom describes ten thousand (萬) attempts without (無) one (一) failure (失). It depicts absolute reliability with no margin for error. The phrase was used for guaranteed outcomes. Modern usage describes plans or methods considered absolutely foolproof, though often used with ironic awareness that nothing is truly perfect.",
     "chineseExample_tr": "計劃設計得萬無一失。"
-  },
-  {
-    "id": "ID666",
-    "characters": "成竹在胸",
-    "pinyin": "chéng zhú zài xiōng",
-    "meaning": "Complete bamboo in chest",
-    "example": "He had already mapped out the entire strategy.",
-    "chineseExample": "他成竹在胸，已经规划好了整个策略。",
-    "theme": "Wisdom & Learning",
-    "description": "This idiom describes complete (成) bamboo (竹) being (在) in the chest (胸). A variant of 胸有成竹 with the same meaning - having thorough mental preparation. Modern usage similarly describes being fully prepared with a clear plan before starting, the confidence that comes from thorough preparation.",
-    "metaphoric_meaning": "Have a well-thought-out plan; be confident",
-    "traditionalCharacters": "成竹在胸",
-    "description_tr": "This idiom describes complete (成) bamboo (竹) being (在) in the chest (胸). A variant of 胸有成竹 with the same meaning - having thorough mental preparation. Modern usage similarly describes being fully prepared with a clear plan before starting, the confidence that comes from thorough preparation.",
-    "chineseExample_tr": "他成竹在胸，已經規劃好了整個策略。"
   },
   {
     "id": "ID667",
@@ -10605,10 +10591,10 @@
     "example": "His unexpected promotion was like flowers blooming on a tree, surprising everyone around him.",
     "chineseExample": "他的意外晋升就像树上开花，让周围的人都感到惊讶。",
     "theme": "Strategy & Action",
-    "description": "Commonly used in classical Chinese, the idiom 树上开花 (shù shàng kāi huā) is part of the Thirty-Six Stratagems, specifically the tenth strategy. It involves creating a favorable situation through deception or illusion, akin to making flowers bloom on a tree. A historical example is the story of Zhang Fei during the Three Kingdoms period, who used a dust-raising tactic to intimidate Cao Cao's forces. The characters 树 (shù, tree), 上 (shàng, on), 开 (kāi, bloom), and 花 (huā, flower) evoke the image of something unexpected and impressive. In modern contexts, it symbolizes using clever strategies to create advantageous conditions, often in business or negotiations, by making something appear more valuable or formidable than it is.",
+    "description": "Commonly used in classical Chinese, the idiom 树上开花 (shù shàng kāi huā) is part of the Thirty-Six Stratagems, specifically the twenty-ninth stratagem. It involves creating a favorable situation through deception or illusion, akin to making flowers bloom on a tree. A historical example is the story of Zhang Fei during the Three Kingdoms period, who used a dust-raising tactic to intimidate Cao Cao's forces. The characters 树 (shù, tree), 上 (shàng, on), 开 (kāi, bloom), and 花 (huā, flower) evoke the image of something unexpected and impressive. In modern contexts, it symbolizes using clever strategies to create advantageous conditions, often in business or negotiations, by making something appear more valuable or formidable than it is.",
     "metaphoric_meaning": "Create favorable illusion",
     "traditionalCharacters": "樹上開花",
-    "description_tr": "Commonly used in classical Chinese, the idiom 樹上開花 (shù shàng kāi huā) is part of the Thirty-Six Stratagems, specifically the tenth strategy. It involves creating a favorable situation through deception or illusion, akin to making flowers bloom on a tree. A historical example is the story of Zhang Fei during the Three Kingdoms period, who used a dust-raising tactic to intimidate Cao Cao's forces. The characters 樹 (shù, tree), 上 (shàng, on), 開 (kāi, bloom), and 花 (huā, flower) evoke the image of something unexpected and impressive. In modern contexts, it symbolizes using clever strategies to create advantageous conditions, often in business or negotiations, by making something appear more valuable or formidable than it is.",
+    "description_tr": "Commonly used in classical Chinese, the idiom 樹上開花 (shù shàng kāi huā) is part of the Thirty-Six Stratagems, specifically the twenty-ninth stratagem. It involves creating a favorable situation through deception or illusion, akin to making flowers bloom on a tree. A historical example is the story of Zhang Fei during the Three Kingdoms period, who used a dust-raising tactic to intimidate Cao Cao's forces. The characters 樹 (shù, tree), 上 (shàng, on), 開 (kāi, bloom), and 花 (huā, flower) evoke the image of something unexpected and impressive. In modern contexts, it symbolizes using clever strategies to create advantageous conditions, often in business or negotiations, by making something appear more valuable or formidable than it is.",
     "chineseExample_tr": "他的意外晉升就像樹上開花，讓周圍的人都感到驚訝。"
   },
   {
@@ -11921,7 +11907,7 @@
     "example": "The battle was costly, resulting in significant losses on both sides.",
     "chineseExample": "这场战斗损兵折将，损失惨重。",
     "theme": "Strategy & Action",
-    "description": "The idiom 损兵折将 (sǔn bīng zhé jiàng) is commonly used in classical Chinese to describe a situation where both soldiers (兵) and generals (将) suffer losses (损, zhé). It vividly paints the image of a military defeat where significant casualties occur among the ranks and leadership. Though the exact origin is not tied to a specific historical event, it first appeared in the Yuan dynasty play 《千里独行》. Over time, it has been used in various literary works, such as the Ming dynasty's 《水浒传》, to describe the aftermath of a failed military campaign. In modern usage, the idiom extends beyond military contexts to describe any scenario where significant losses are incurred, such as in business or sports competitions.",
+    "description": "The idiom 损兵折将 (sǔn bīng zhé jiàng) is commonly used in classical Chinese to describe a situation where both soldiers (兵) and generals (将) suffer losses (损, sǔn, and 折, zhé). It vividly paints the image of a military defeat where significant casualties occur among the ranks and leadership. Though the exact origin is not tied to a specific historical event, it first appeared in the Yuan dynasty play 《千里独行》. Over time, it has been used in various literary works, such as the Ming dynasty's 《水浒传》, to describe the aftermath of a failed military campaign. In modern usage, the idiom extends beyond military contexts to describe any scenario where significant losses are incurred, such as in business or sports competitions.",
     "metaphoric_meaning": "Suffer heavy losses",
     "traditionalCharacters": "損兵折將",
     "description_tr": "The idiom 損兵折將 (sǔn bīng zhé jiàng) is commonly used in classical Chinese to describe a situation where both soldiers (兵) and generals (將) suffer losses (損, zhé). It vividly paints the image of a military defeat where significant casualties occur among the ranks and leadership. Though the exact origin is not tied to a specific historical event, it first appeared in the Yuan dynasty play 《千里獨行》. Over time, it has been used in various literary works, such as the Ming dynasty's 《水滸傳》, to describe the aftermath of a failed military campaign. In modern usage, the idiom extends beyond military contexts to describe any scenario where significant losses are incurred, such as in business or sports competitions.",
@@ -13125,10 +13111,10 @@
     "example": "Her eloquence allows her to articulate complex ideas effortlessly.",
     "chineseExample": "她的口才使得出口成章，表达复杂的思想毫不费力。",
     "theme": "Wisdom & Learning",
-    "description": "The idiom 出口成章 (chū kǒu chéng zhāng) originates from the ancient Chinese text 《诗经·小雅·都人士》. In this poem, the phrase 出言成章 describes the elegant and articulate speech of the people from the capital, who were admired for their refined manners and adherence to rituals. The idiom literally means 'words spoken become a chapter,' illustrating the ability to speak eloquently and with literary flair. The characters are broken down as follows: 出 (chū, exit), 口 (kǒu, mouth), 成 (chéng, become), 章 (zhāng, chapter). In modern usage, 出口成章 is used to praise someone who can speak with great eloquence and clarity, often implying that their spoken words are as polished as written prose.",
+    "description": "The idiom 出口成章 (chū kǒu chéng zhāng) originates from the ancient Chinese text 《诗经·小雅·都人士》. In this poem, the phrase 出言有章 describes the elegant and articulate speech of the people from the capital, who were admired for their refined manners and adherence to rituals. The idiom literally means 'words spoken become a chapter,' illustrating the ability to speak eloquently and with literary flair. The characters are broken down as follows: 出 (chū, exit), 口 (kǒu, mouth), 成 (chéng, become), 章 (zhāng, chapter). In modern usage, 出口成章 is used to praise someone who can speak with great eloquence and clarity, often implying that their spoken words are as polished as written prose.",
     "metaphoric_meaning": "Eloquent speech",
     "traditionalCharacters": "出口成章",
-    "description_tr": "The idiom 出口成章 (chū kǒu chéng zhāng) originates from the ancient Chinese text 《詩經·小雅·都人士》. In this poem, the phrase 出言成章 describes the elegant and articulate speech of the people from the capital, who were admired for their refined manners and adherence to rituals. The idiom literally means 'words spoken become a chapter,' illustrating the ability to speak eloquently and with literary flair. The characters are broken down as follows: 出 (chū, exit), 口 (kǒu, mouth), 成 (chéng, become), 章 (zhāng, chapter). In modern usage, 出口成章 is used to praise someone who can speak with great eloquence and clarity, often implying that their spoken words are as polished as written prose.",
+    "description_tr": "The idiom 出口成章 (chū kǒu chéng zhāng) originates from the ancient Chinese text 《詩經·小雅·都人士》. In this poem, the phrase 出言有章 describes the elegant and articulate speech of the people from the capital, who were admired for their refined manners and adherence to rituals. The idiom literally means 'words spoken become a chapter,' illustrating the ability to speak eloquently and with literary flair. The characters are broken down as follows: 出 (chū, exit), 口 (kǒu, mouth), 成 (chéng, become), 章 (zhāng, chapter). In modern usage, 出口成章 is used to praise someone who can speak with great eloquence and clarity, often implying that their spoken words are as polished as written prose.",
     "chineseExample_tr": "她的口才使得出口成章，表達複雜的思想毫不費力。"
   },
   {
