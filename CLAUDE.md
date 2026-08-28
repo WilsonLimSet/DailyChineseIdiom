@@ -22,20 +22,20 @@ calls: no Chinese-language App Store localizations (drafted copy is parked in
 
 - **`Shared/`** is compiled into both the app and the widget: `AppGroup.swift` (preference
   keys, `MeaningDisplayMode`, widget reload), `IdiomProvider.swift`, `Resources/idioms.json`
-  (681 idioms), `Resources/Idiom.swift`.
+  (652 idioms), `Resources/Idiom.swift`.
 - **Preferences live in the app group `group.com.wilsonlimsetiawan.dailychinese`.** Both
   targets must be entitled to *this exact string*. A mismatch here shipped once and made
   every widget setting silently do nothing — verify entitlements on every archive.
 - **Xcode 16 file-system synchronized groups**: new `.swift` files in `DailyChineseIdiom/`,
   `DailyIdiom/`, or `Shared/` are picked up automatically, no pbxproj edit needed.
-- The idiom of the day is `idioms[daysSince(2025-01-01) % 681]`, changing at midnight.
+- The idiom of the day is `idioms[daysSince(2025-01-01) % idioms.count]`, changing at midnight.
 
 ## Traps
 
 - **Never use `@AppStorage` inside an `ObservableObject`.** It persists the value but never
   fires `objectWillChange`, so observing views keep showing the old setting. Use `@Published`
   plus explicit writes, as `UserPreferences` does now.
-- **187 of 681 idioms (27%) look identical in simplified and traditional.** The character
+- **174 of 652 idioms (27%) look identical in simplified and traditional.** The character
   toggle can legitimately appear to do nothing — verify via the example sentence, History,
   or the Settings preview (塞翁失马 → 塞翁失馬, which always differs).
 - **Audio needs an active `AVAudioSession` with `.playback`.** Without it the default
