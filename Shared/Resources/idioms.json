@@ -2646,20 +2646,6 @@
     "chineseExample_tr": "當競爭對手將注意力集中在其他地方時，該公司悄悄地開發了這項技術"
   },
   {
-    "id": "ID190",
-    "characters": "拔苗助长",
-    "pinyin": "bá miáo zhù zhǎng",
-    "meaning": "Pull seedlings help growth",
-    "example": "The overanxious parent's excessive intervention harmed the child's natural development",
-    "chineseExample": "过于焦虑的父母过度干预损害了孩子的自然发展",
-    "theme": "Wisdom & Learning",
-    "description": "This agricultural idiom describes the counterproductive action of pulling up (拔) seedlings (苗) to help (助) their growth (长), originating from Mencius's writings during the Warring States period. He recounted a story of an impatient farmer who, unsatisfied with his seedlings' slow growth, pulled them slightly upward each day, ultimately killing them. The tale emerged from agrarian society where understanding natural growth cycles was essential. During the Han Dynasty, the story became a standard teaching example in governance texts, warning against forced implementation of policies before conditions were ready. Modern usage criticizes well-intentioned but harmful interventions that interrupt natural development processes, particularly relevant in education, parenting, and organizational development.",
-    "metaphoric_meaning": "Ruin through impatient intervention",
-    "traditionalCharacters": "拔苗助長",
-    "description_tr": "This agricultural idiom describes the counterproductive action of pulling up (拔) seedlings (苗) to help (助) their growth (長), originating from Mencius's writings during the Warring States period. He recounted a story of an impatient farmer who, unsatisfied with his seedlings' slow growth, pulled them slightly upward each day, ultimately killing them. The tale emerged from agrarian society where understanding natural growth cycles was essential. During the Han Dynasty, the story became a standard teaching example in governance texts, warning against forced implementation of policies before conditions were ready. Modern usage criticizes well-intentioned but harmful interventions that interrupt natural development processes, particularly relevant in education, parenting, and organizational development.",
-    "chineseExample_tr": "過於焦慮的父母過度干預損害了孩子的自然發展"
-  },
-  {
     "id": "ID191",
     "characters": "釜底抽薪",
     "pinyin": "fǔ dǐ chōu xīn",
@@ -2709,10 +2695,10 @@
     "example": "The music ended abruptly in the middle of the performance",
     "chineseExample": "音乐在演出中突然戛然而止",
     "theme": "Life Philosophy",
-    "description": "This onomatopoeic idiom combines the sharp sound 'jia' (戛) with the character for 'thus' (然) and 'stop' (止), creating a vivid image of sudden cessation, originating from Han Dynasty music criticism. It first described performances where instruments stopped unexpectedly, breaking musical flow. The harsh consonant beginning matched the jarring experience of unexpected endings. During the Tang Dynasty, literary critics expanded its usage to describe narrative works with abrupt conclusions. The sound symbolism was particularly effective in Chinese aesthetics, where sonic qualities often reinforced meaning. Modern usage describes any unexpected termination - from interrupted conversations to discontinued projects - emphasizing both the suddenness and completeness of the cessation.",
+    "description": "This idiom uses 戛, the sound of a sharp knock or a bowstring's stop, to describe something that ceases (止) abruptly and completely. It belongs to literary and musical criticism, where it praises an ending that arrives without tapering — the sound simply is not there any more. The abruptness is a virtue in the original, not a fault. Modern usage describes any sudden halt, in music, in speech, or in a situation that stops mid-motion.",
     "metaphoric_meaning": "Come to an abrupt halt",
     "traditionalCharacters": "戛然而止",
-    "description_tr": "This onomatopoeic idiom combines the sharp sound 'jia' (戛) with the character for 'thus' (然) and 'stop' (止), creating a vivid image of sudden cessation, originating from Han Dynasty music criticism. It first described performances where instruments stopped unexpectedly, breaking musical flow. The harsh consonant beginning matched the jarring experience of unexpected endings. During the Tang Dynasty, literary critics expanded its usage to describe narrative works with abrupt conclusions. The sound symbolism was particularly effective in Chinese aesthetics, where sonic qualities often reinforced meaning. Modern usage describes any unexpected termination - from interrupted conversations to discontinued projects - emphasizing both the suddenness and completeness of the cessation.",
+    "description_tr": "This idiom uses 戛, the sound of a sharp knock or a bowstring's stop, to describe something that ceases (止) abruptly and completely. It belongs to literary and musical criticism, where it praises an ending that arrives without tapering — the sound simply is not there any more. The abruptness is a virtue in the original, not a fault. Modern usage describes any sudden halt, in music, in speech, or in a situation that stops mid-motion.",
     "chineseExample_tr": "音樂在演出中突然戛然而止"
   },
   {
@@ -2814,20 +2800,6 @@
     "chineseExample_tr": "儘管身有殘疾，她每天堅持訓練，最終贏得了冠軍"
   },
   {
-    "id": "ID202",
-    "characters": "走马观花",
-    "pinyin": "zǒu mǎ guān huā",
-    "meaning": "View flowers from galloping horse",
-    "example": "The three-day tour only allowed for a superficial impression of the ancient city",
-    "chineseExample": "为期三天的旅游只能对这座古城有一个肤浅的印象",
-    "theme": "Life Philosophy",
-    "description": "This vivid idiom describes viewing (观) flowers (花) while riding (走) a galloping horse (马), originating from Tang Dynasty tourism practices. Historical records mention how imperial messengers or officials traveling quickly through regions could only glimpse scenes briefly before moving on. The image perfectly captured the inherent tension between motion and observation. During the Song Dynasty, it evolved into literary criticism, describing works that covered many topics without deep engagement. Unlike terms for simple carelessness, it acknowledges the constraints of time or circumstance that necessitate superficial engagement. Modern usage describes cursory experiences of all kinds, from rushed tourism to superficial learning, without necessarily implying negligence.",
-    "metaphoric_meaning": "Observe hastily and superficially",
-    "traditionalCharacters": "走馬觀花",
-    "description_tr": "This vivid idiom describes viewing (觀) flowers (花) while riding (走) a galloping horse (馬), originating from Tang Dynasty tourism practices. Historical records mention how imperial messengers or officials traveling quickly through regions could only glimpse scenes briefly before moving on. The image perfectly captured the inherent tension between motion and observation. During the Song Dynasty, it evolved into literary criticism, describing works that covered many topics without deep engagement. Unlike terms for simple carelessness, it acknowledges the constraints of time or circumstance that necessitate superficial engagement. Modern usage describes cursory experiences of all kinds, from rushed tourism to superficial learning, without necessarily implying negligence.",
-    "chineseExample_tr": "爲期三天的旅遊只能對這座古城有一個膚淺的印象"
-  },
-  {
     "id": "ID203",
     "characters": "风雨无阻",
     "pinyin": "fēng yǔ wú zǔ",
@@ -2835,10 +2807,10 @@
     "example": "The delivery service continued operating throughout the severe typhoon season",
     "chineseExample": "快递服务在整个台风季节期间继续运营",
     "theme": "Success & Perseverance",
-    "description": "This determined idiom states that wind (风) and rain (雨) present no (无) obstacle (阻), originating from Han Dynasty courier service standards. Historical records describe how imperial postal systems maintained operation regardless of weather conditions, ensuring communication across the vast empire. During the Tang Dynasty, the phrase appeared in military manuals describing ideal troop resilience. The specific mention of wind and rain represented the most common natural challenges rather than extraordinary disasters. Unlike terms for blind recklessness, it emphasizes determined persistence despite normal difficulties. Modern usage describes steadfast dedication to duty or purpose regardless of predictable challenges, particularly in service contexts where reliability despite conditions is valued.",
+    "description": "This idiom states that wind (风) and rain (雨) constitute no (无) obstacle (阻). It is a promise rather than a description: what is asserted is that the arrangement holds regardless of conditions. Weather stands in for every ordinary excuse, which is why the phrase turns up on notices for events that intend to go ahead. Modern usage describes going through with something whatever the circumstances.",
     "metaphoric_meaning": "Persist despite difficult conditions",
     "traditionalCharacters": "風雨無阻",
-    "description_tr": "This determined idiom states that wind (風) and rain (雨) present no (無) obstacle (阻), originating from Han Dynasty courier service standards. Historical records describe how imperial postal systems maintained operation regardless of weather conditions, ensuring communication across the vast empire. During the Tang Dynasty, the phrase appeared in military manuals describing ideal troop resilience. The specific mention of wind and rain represented the most common natural challenges rather than extraordinary disasters. Unlike terms for blind recklessness, it emphasizes determined persistence despite normal difficulties. Modern usage describes steadfast dedication to duty or purpose regardless of predictable challenges, particularly in service contexts where reliability despite conditions is valued.",
+    "description_tr": "This idiom states that wind (風) and rain (雨) constitute no (無) obstacle (阻). It is a promise rather than a description: what is asserted is that the arrangement holds regardless of conditions. Weather stands in for every ordinary excuse, which is why the phrase turns up on notices for events that intend to go ahead. Modern usage describes going through with something whatever the circumstances.",
     "chineseExample_tr": "快遞服務在整個颱風季節期間繼續運營"
   },
   {
@@ -2933,10 +2905,10 @@
     "example": "The committee issued a vague statement that addressed none of the real concerns",
     "chineseExample": "委员会发表了一份模糊的声明，没有解决任何实际问题",
     "theme": "Life Philosophy",
-    "description": "This sensory idiom describes something neither (不) painful (痛) nor (不) itchy (痒), originating from Song Dynasty medical texts. It initially described symptoms too mild to definitively diagnose or require treatment. The pairing was meaningful as pain and itching represented the two primary categories of bodily discomfort in traditional Chinese medicine. During the Ming Dynasty, it evolved beyond medical contexts to describe ineffective actions or non-committal responses. Unlike terms for simple inadequacy, it specifically criticizes lack of meaningful impact despite apparent activity. Modern usage describes half-hearted efforts, lukewarm positions, or vague statements that deliberately avoid addressing core issues, particularly in political or corporate communication.",
+    "description": "This idiom describes something neither (不) painful (痛) nor (不) itchy (痒) — a sensation too slight to register as either. Applied to criticism or to effort it is dismissive: the thing made no impression at all, and might as well not have happened. The complaint is about insufficiency rather than error. Modern usage describes remarks or measures too weak to have any effect.",
     "metaphoric_meaning": "Ineffective and inconsequential",
     "traditionalCharacters": "不痛不癢",
-    "description_tr": "This sensory idiom describes something neither (不) painful (痛) nor (不) itchy (癢), originating from Song Dynasty medical texts. It initially described symptoms too mild to definitively diagnose or require treatment. The pairing was meaningful as pain and itching represented the two primary categories of bodily discomfort in traditional Chinese medicine. During the Ming Dynasty, it evolved beyond medical contexts to describe ineffective actions or non-committal responses. Unlike terms for simple inadequacy, it specifically criticizes lack of meaningful impact despite apparent activity. Modern usage describes half-hearted efforts, lukewarm positions, or vague statements that deliberately avoid addressing core issues, particularly in political or corporate communication.",
+    "description_tr": "This idiom describes something neither (不) painful (痛) nor (不) itchy (癢) — a sensation too slight to register as either. Applied to criticism or to effort it is dismissive: the thing made no impression at all, and might as well not have happened. The complaint is about insufficiency rather than error. Modern usage describes remarks or measures too weak to have any effect.",
     "chineseExample_tr": "委員會發表了一份模糊的聲明，沒有解決任何實際問題"
   },
   {
@@ -3171,10 +3143,10 @@
     "example": "After revealing confidential information, he realized some mistakes cannot be undone",
     "chineseExample": "在泄露机密信息后，他意识到有些错误无法挽回",
     "theme": "Life Philosophy",
-    "description": "This irreversible idiom states that water once spilled (覆水) is difficult (难) to gather back (收), originating from Tang Dynasty poetry. It first appeared in a poem about irrevocable separation between husband and wife, comparing their relationship to water impossible to return to its container once poured out. The water metaphor was particularly powerful in Chinese philosophy, where flowing water symbolized both time and opportunity that cannot be recaptured. During the Song Dynasty, it expanded beyond relationships to represent any irreversible action. Modern usage describes situations where consequences cannot be undone, particularly decisions, words, or actions with permanent effects, teaching the importance of careful consideration before taking irreversible steps.",
+    "description": "This comes from the story of Jiang Ziya, whose wife left him during his years of poverty and sought to return once he had risen. He poured a basin of water on the ground and invited her to gather it up. Water once overturned (覆水) cannot be recovered (难收). The story is unsentimental about the asymmetry: he is under no obligation, and the water is not coming back. Modern usage describes an action whose consequences cannot be undone.",
     "metaphoric_meaning": "Actions cannot be undone",
     "traditionalCharacters": "覆水難收",
-    "description_tr": "This irreversible idiom states that water once spilled (覆水) is difficult (難) to gather back (收), originating from Tang Dynasty poetry. It first appeared in a poem about irrevocable separation between husband and wife, comparing their relationship to water impossible to return to its container once poured out. The water metaphor was particularly powerful in Chinese philosophy, where flowing water symbolized both time and opportunity that cannot be recaptured. During the Song Dynasty, it expanded beyond relationships to represent any irreversible action. Modern usage describes situations where consequences cannot be undone, particularly decisions, words, or actions with permanent effects, teaching the importance of careful consideration before taking irreversible steps.",
+    "description_tr": "This comes from the story of Jiang Ziya, whose wife left him during his years of poverty and sought to return once he had risen. He poured a basin of water on the ground and invited her to gather it up. Water once overturned (覆水) cannot be recovered (難收). The story is unsentimental about the asymmetry: he is under no obligation, and the water is not coming back. Modern usage describes an action whose consequences cannot be undone.",
     "chineseExample_tr": "在泄露機密信息後，他意識到有些錯誤無法挽回"
   },
   {
@@ -3213,10 +3185,10 @@
     "example": "The manager's constant micromanagement hindered the team's natural development",
     "chineseExample": "经理不断的微观管理阻碍了团队的自然发展",
     "theme": "Wisdom & Learning",
-    "description": "This counterproductive idiom describes pulling up (揠) seedlings (苗) to help (助) their growth (长), originating from Mencius's writings during the Warring States period. The story tells of an impatient farmer from Song who, dissatisfied with his seedlings' slow growth, pulled them up slightly each day, ultimately killing his entire crop. The tale became a cornerstone of agricultural wisdom about respecting natural development processes. During the Tang Dynasty, officials applied this metaphor to warn against excessive government intervention. Modern usage criticizes well-intentioned but harmful interference that disrupts natural development, particularly relevant in education, parenting, and management where forced acceleration often produces opposite effects.",
+    "description": "This comes from the Mencius. A man of Song, impatient that his seedlings (苗) were not growing (长), went through the field pulling (揠) each one upward to help (助) it along, and came home exhausted to announce what he had done; his son ran out to find every plant dead. Mencius tells it against those who force what has to develop in its own time. It is also written 拔苗助长, with the commoner verb. Modern usage describes counterproductive interference in a process that needed patience.",
     "metaphoric_meaning": "Harmful interference ruins growth",
     "traditionalCharacters": "揠苗助長",
-    "description_tr": "This counterproductive idiom describes pulling up (揠) seedlings (苗) to help (助) their growth (長), originating from Mencius's writings during the Warring States period. The story tells of an impatient farmer from Song who, dissatisfied with his seedlings' slow growth, pulled them up slightly each day, ultimately killing his entire crop. The tale became a cornerstone of agricultural wisdom about respecting natural development processes. During the Tang Dynasty, officials applied this metaphor to warn against excessive government intervention. Modern usage criticizes well-intentioned but harmful interference that disrupts natural development, particularly relevant in education, parenting, and management where forced acceleration often produces opposite effects.",
+    "description_tr": "This comes from the Mencius. A man of Song, impatient that his seedlings (苗) were not growing (長), went through the field pulling (揠) each one upward to help (助) it along, and came home exhausted to announce what he had done; his son ran out to find every plant dead. Mencius tells it against those who force what has to develop in its own time. It is also written 拔苗助長, with the commoner verb. Modern usage describes counterproductive interference in a process that needed patience.",
     "chineseExample_tr": "經理不斷的微觀管理阻礙了團隊的自然發展"
   },
   {
@@ -3899,10 +3871,10 @@
     "example": "The whirlwind tour gave tourists only a superficial impression of the country's culture",
     "chineseExample": "匆忙的旅行只给游客留下了对这个国家文化的肤浅印象",
     "theme": "Life Philosophy",
-    "description": "This descends from Meng Jiao's poem on passing the imperial examination: 春风得意马蹄疾，一日看尽长安花 — with the spring wind at his back and the hooves quick, he sees all the flowers of Chang'an in a single day. The original is pure elation. The later idiom keeps the horse (走马) and the flowers (看花) but reverses the judgement, so that seeing everything quickly now means seeing nothing properly. Modern usage describes a hurried, superficial look.",
+    "description": "This descends from Meng Jiao's poem on passing the imperial examination: 春风得意马蹄疾，一日看尽长安花 — with the spring wind at his back and the hooves quick, he sees all the flowers of Chang'an in a single day. The original is pure elation. The later idiom keeps the horse (走马) and the flowers (看花) but reverses the judgement, so that seeing everything quickly now means seeing nothing properly. It is also written 走马观花. Modern usage describes a hurried, superficial look.",
     "metaphoric_meaning": "Superficial observation without depth",
     "traditionalCharacters": "走馬看花",
-    "description_tr": "This descends from Meng Jiao's poem on passing the imperial examination: 春風得意馬蹄疾，一日看盡長安花 — with the spring wind at his back and the hooves quick, he sees all the flowers of Chang'an in a single day. The original is pure elation. The later idiom keeps the horse (走馬) and the flowers (看花) but reverses the judgement, so that seeing everything quickly now means seeing nothing properly. Modern usage describes a hurried, superficial look.",
+    "description_tr": "This descends from Meng Jiao's poem on passing the imperial examination: 春風得意馬蹄疾，一日看盡長安花 — with the spring wind at his back and the hooves quick, he sees all the flowers of Chang'an in a single day. The original is pure elation. The later idiom keeps the horse (走馬) and the flowers (看花) but reverses the judgement, so that seeing everything quickly now means seeing nothing properly. It is also written 走馬觀花. Modern usage describes a hurried, superficial look.",
     "chineseExample_tr": "匆忙的旅行只給遊客留下了對這個國家文化的膚淺印象"
   },
   {
