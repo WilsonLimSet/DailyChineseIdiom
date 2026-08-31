@@ -5,7 +5,9 @@ App: ChengYu / Daily Chinese Idioms — App Store ID `6740611324`
 Everything below is written to Apple's field limits and checked against them. Paste each
 block into App Store Connect → **App Store** tab → the matching field, per language.
 
-Screenshots are deliberately untouched — the current set stays as is.
+Screenshots: a new set is being produced for 1.95 (approved 2026-08-31). The live set is
+three shots, one of which advertises 守时如金 — an idiom since removed as not genuine — and
+none of which show favourites, the 简/繁 toggle, the meaning modes or audio. See §9.
 
 ---
 
