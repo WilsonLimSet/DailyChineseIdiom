@@ -168,6 +168,6 @@ fires `objectWillChange`, so every observing view keeps rendering the old settin
 shipped once and made both Settings pickers look completely broken in-app.
 `UserPreferences` uses `@Published` + explicit persistence for exactly this reason.
 
-**27% of idioms (187 of 681) are written identically in simplified and traditional.** When
+**27% of idioms (267 of 1002) are written identically in simplified and traditional.** When
 testing the character toggle, check the example sentence or use History — the headline may
 legitimately not change. `塞翁失马 → 塞翁失馬` in the Settings preview always differs.

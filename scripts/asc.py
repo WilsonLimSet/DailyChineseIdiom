@@ -14,6 +14,7 @@ Usage:
     python3 scripts/asc.py status                  # app, versions, builds, submission state
     python3 scripts/asc.py show                    # current en-US metadata on the editable version
     python3 scripts/asc.py push <metadata.json>    # write description/keywords/promoText/whatsNew
+    python3 scripts/asc.py subtitle <metadata.json>  # write subtitle (app-level, all locales)
     python3 scripts/asc.py contact                 # set App Review contact details
     python3 scripts/asc.py attach <buildVersion>   # attach a build (e.g. 1.26) to the editable version
     python3 scripts/asc.py compliance <buildVer>   # declare usesNonExemptEncryption=false
@@ -185,15 +186,53 @@ def cmd_show(tok):
     print(f"\n--- description (first 200) ---\n{(a.get('description') or '')[:200]}")
 
 
+# Only these live on appStoreVersionLocalizations. `subtitle` does NOT — it belongs to
+# appInfoLocalizations and is pushed by `cmd_subtitle`. Sending it here makes Apple reject
+# the whole PATCH, which is how the subtitle silently stayed empty from v1.07 to v1.93.
+VERSION_LOC_FIELDS = {"description", "keywords", "marketingUrl", "promotionalText",
+                      "supportUrl", "whatsNew"}
+
+
 def cmd_push(tok, path):
     vid, vstr, _ = editable_version(tok)
     loc = en_us_localization(tok, vid)
-    attrs = json.load(open(path))
+    raw = json.load(open(path))
+    attrs = {k: v for k, v in raw.items() if k in VERSION_LOC_FIELDS}
+    skipped = sorted(set(raw) - VERSION_LOC_FIELDS)
+    if skipped:
+        print(f"skipping (not version-localization fields): {', '.join(skipped)}")
+        if "subtitle" in skipped:
+            print("  -> run `asc.py subtitle <metadata.json>` to push the subtitle")
     status, r = api("PATCH", f"/v1/appStoreVersionLocalizations/{loc}", tok,
                     {"data": {"type": "appStoreVersionLocalizations", "id": loc, "attributes": attrs}})
     print("PATCH metadata ->", status)
     if status != 200:
         print(json.dumps(r, indent=1)[:1200])
+
+
+def cmd_subtitle(tok, path):
+    """Subtitle is app-level (appInfoLocalizations), one row per locale, not version-scoped."""
+    sub = json.load(open(path)).get("subtitle")
+    if not sub:
+        sys.exit("No 'subtitle' key in that file.")
+    if len(sub) > 30:
+        sys.exit(f"Subtitle is {len(sub)} chars; Apple's limit is 30.")
+    status, infos = api("GET", f"/v1/apps/{APP_ID}/appInfos", tok)
+    if status != 200:
+        sys.exit(f"appInfos: HTTP {status}")
+    for info in infos["data"]:
+        state = info["attributes"].get("appStoreState") or info["attributes"].get("state")
+        if state not in EDITABLE_STATES:
+            continue
+        s2, locs = api("GET", f"/v1/appInfos/{info['id']}/appInfoLocalizations", tok)
+        for l in locs.get("data", []):
+            loc = l["attributes"]["locale"]
+            st, r = api("PATCH", f"/v1/appInfoLocalizations/{l['id']}", tok,
+                        {"data": {"type": "appInfoLocalizations", "id": l["id"],
+                                  "attributes": {"subtitle": sub}}})
+            print(f"  {loc:6} subtitle -> {st}")
+            if st != 200:
+                print(json.dumps(r, indent=1)[:600])
 
 
 def cmd_contact(tok):
@@ -271,6 +310,8 @@ def main():
         cmd_show(tok)
     elif cmd == "push":
         cmd_push(tok, sys.argv[2])
+    elif cmd == "subtitle":
+        cmd_subtitle(tok, sys.argv[2])
     elif cmd == "contact":
         cmd_contact(tok)
     elif cmd == "compliance":

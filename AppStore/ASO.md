@@ -258,3 +258,83 @@ two months, against an active base of ~840. Better search coverage plausibly mov
 20-50%. It does not move it 35x, which is what tip revenue of $10/week would require — see
 [[chengyu-tip-revenue-goal]]. Distribution outside App Store search is the only lever at
 that scale.
+
+---
+
+## 8. Staged for 1.95 (2026-08-31) — copy rebuilt around the idiom count
+
+`AppStore/metadata.json` holds the 1.95 copy. Nothing pushed to App Store Connect yet; the
+1.95 version record does not exist.
+
+| Field | Value | Chars |
+|---|---|---|
+| Subtitle | `Learn 1,000+ Mandarin proverbs` | 30/30 |
+| Promotional text | count + the three features that sell the app | 138/170 |
+| Description | count in the opening line, otherwise the 1.94 copy | 1704/4000 |
+| What's New | count, fuller explanations, traditional-mode fix | 421/4000 |
+| Keywords | unchanged, 98/100 | |
+
+The subtitle keeps every keyword the old one had (*learn*, *Mandarin*, *proverbs*) and spends
+the spare 7 characters on the number. The count was previously absent from the whole listing.
+
+**Do not write defensive copy.** First draft said "every one checked by hand" and "instead of
+inventing one". Rejected 2026-08-31, and the reasoning is worth keeping: advertising that the
+content is *verified* implies it might not have been, and rebutting an accusation nobody made
+plants it. Quality has to show through specifics instead — name the actual sources (Zuo Zhuan,
+Zhuangzi, Han Feizi) and show a real second half (塞翁失马，焉知非福). Same rule applies to
+What's New: state what is better now, do not confess.
+
+**Do not give the count its own section either.** A second draft added *MORE THAN A THOUSAND
+IDIOMS — nearly three years of daily idioms before a single one repeats*. Rejected the same
+day: it reads oddly, and framing the library by when it runs out plants exactly the thought
+you do not want. A section amounting to "there are a lot of them" is thin when the number is
+already in the first line. The count now sits in the opening sentence and nowhere else.
+
+**Second halves are content, not a selling point.** A third draft worked 塞翁失马，焉知非福
+into the opening paragraph. Cut 2026-08-31: it is a detail that rewards someone already using
+the app, not a reason to install, and it made a clean paragraph baggy. It stays in What's New,
+where "you now get second halves" is a genuine description of what changed for existing users.
+
+**Do not name classical texts in the listing.** A bullet read "the Zuo Zhuan, Zhuangzi, Han
+Feizi, the Records of the Grand Historian". The audience is ~99% English speakers learning
+Chinese (see CLAUDE.md); those four names are insider signalling that will not land, and they
+buy nothing a plain phrasing does not. Reverted to "The story behind each idiom, and where the
+phrase comes from".
+
+Net effect of all three edits: the description ended up **shorter** than the 1.94 copy it
+replaced (1704 vs 2111 chars), with the idiom count added. That is the right direction.
+
+**`asc.py push` no longer breaks on the subtitle.** `subtitle` lives on `appInfoLocalizations`,
+not `appStoreVersionLocalizations`; sending it in the same PATCH would make Apple reject the
+whole payload, taking description and keywords down with it — the same split that left the
+subtitle empty from v1.07 to v1.93. `cmd_push` now filters to the six legal fields and prints
+what it skipped, and `asc.py subtitle AppStore/metadata.json` writes it to every locale.
+
+## 9. The funnel, measured (App Store Discovery and Engagement, 19 months)
+
+| Window | Impressions/wk | Impression -> page view | Page view -> download |
+|---|---|---|---|
+| Last 365d | 195 | 24.2% | — |
+| Last 180d | 232 | 23.5% | — |
+| Last 60d | 286 | 20.4% | **~36%** (181 downloads / 501 views) |
+
+**Impressions grew ~47% over the year while downloads stayed flat at ~21/week**, so the
+conversion rate is softening as reach grows. That makes the product page a legitimate
+target: 3 screenshots, one of which advertises 守时如金 — an idiom removed as not genuine —
+and none showing favourites, the 简/繁 toggle, the meaning modes or audio.
+
+**Do not confuse "Web referrer" with website traffic.** That row counts App Store product
+page views *arriving from* the web: 184 in nineteen months, about 10 a month. The website
+itself (chineseidioms.com) is healthy and earns roughly SGD 1.50/day from AdSense — far more
+daily reach than the app's ~41 impressions/day. The gap between the two is the largest
+unexploited channel: the site has the audience and sends almost nobody to the app.
+
+The site also carries dramas and list content the app deliberately does not. Product
+decision (2026-08-31): **the app stays minimal**; the website is the wide net.
+
+**Promotional text should sell features, not restate the description.** It sits at the top of
+the product page and is the only field changeable without review, so it is the highest-leverage
+copy on the listing. A draft that read "each with pinyin, both meanings, a real example
+sentence, and the story behind it" was rejected 2026-08-31 as a restatement of the description's
+second paragraph. It now names the three things a reader can picture themselves doing — hearing
+it spoken, seeing it in an everyday sentence, saving it — after the count.

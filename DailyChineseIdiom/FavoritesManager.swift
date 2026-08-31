@@ -12,7 +12,14 @@ class FavoritesManager: ObservableObject {
     private init() {
         let store = UserDefaults(suiteName: AppGroup.identifier) ?? .standard
         self.defaults = store
-        self.favoriteIds = store.stringArray(forKey: key) ?? []
+
+        var ids = store.stringArray(forKey: key) ?? []
+        if store.integer(forKey: FavoritesMigration.migrationVersionKey) < FavoritesMigration.currentVersion {
+            ids = FavoritesMigration.migrate(ids)
+            store.set(ids, forKey: key)
+            store.set(FavoritesMigration.currentVersion, forKey: FavoritesMigration.migrationVersionKey)
+        }
+        self.favoriteIds = ids
     }
 
     func isFavorite(_ idiom: Idiom) -> Bool {
