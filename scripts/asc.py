@@ -15,6 +15,7 @@ Usage:
     python3 scripts/asc.py show                    # current en-US metadata on the editable version
     python3 scripts/asc.py push <metadata.json>    # write description/keywords/promoText/whatsNew
     python3 scripts/asc.py subtitle <metadata.json>  # write subtitle (app-level, all locales)
+    python3 scripts/asc.py whatsnew <metadata.json>  # write whatsNew to EVERY locale (required for review)
     python3 scripts/asc.py contact                 # set App Review contact details
     python3 scripts/asc.py attach <buildVersion>   # attach a build (e.g. 1.26) to the editable version
     python3 scripts/asc.py compliance <buildVer>   # declare usesNonExemptEncryption=false
@@ -399,8 +400,76 @@ def cmd_screenshots(tok, directory, display_type="APP_IPHONE_67"):
     print(f"{len(files)} screenshot(s) uploaded, in filename order.")
 
 
-def cmd_submit(tok):
+def ensure_submission(tok, version_id):
+    """Reuse an open submission, else create one and add this version to it.
+
+    ASC models submission as three calls: create the reviewSubmission, attach the
+    version as a reviewSubmissionItem, then flip submitted=true. The website does
+    the same thing behind one button.
+    """
     s = submission(tok)
+    sub_id = None
+    if s:
+        sub_id = s["id"]
+        print(f"reusing open submission {sub_id} ({s['attributes'].get('state')})")
+        st, items = api("GET", f"/v1/reviewSubmissions/{sub_id}/items", tok)
+        if st == 200 and items.get("data"):
+            return s
+        # An earlier attempt can leave an submission with no items behind; adding the
+        # version below is what makes it submittable.
+        print("  submission has no items — adding the version")
+
+    body = {"data": {
+        "type": "reviewSubmissions",
+        "attributes": {"platform": "IOS"},
+        "relationships": {"app": {"data": {"type": "apps", "id": APP_ID}}},
+    }}
+    if sub_id is None:
+        st, r = api("POST", "/v1/reviewSubmissions", tok, body)
+        if st not in (200, 201):
+            sys.exit(f"create submission: HTTP {st} {json.dumps(r)[:600]}")
+        sub_id = r["data"]["id"]
+        print(f"created submission {sub_id}")
+
+    item = {"data": {
+        "type": "reviewSubmissionItems",
+        "relationships": {
+            "reviewSubmission": {"data": {"type": "reviewSubmissions", "id": sub_id}},
+            "appStoreVersion": {"data": {"type": "appStoreVersions", "id": version_id}},
+        },
+    }}
+    st, r = api("POST", "/v1/reviewSubmissionItems", tok, item)
+    if st not in (200, 201):
+        sys.exit(f"add version to submission: HTTP {st} {json.dumps(r)[:600]}")
+    print("added version 1.95 to the submission")
+    return submission(tok)
+
+
+def cmd_whatsnew(tok, path):
+    """whatsNew is required on EVERY localization for a new version, not just en-US.
+
+    `push` writes en-US only, which leaves en-GB/CA/AU missing it; the submission
+    then fails with ENTITY_ERROR.ATTRIBUTE.REQUIRED and the version cannot be added
+    to a review submission at all.
+    """
+    meta = json.load(open(path))
+    text = meta.get("whatsNew")
+    if not text:
+        sys.exit(f"{path} has no whatsNew")
+    vid, vstr, _ = editable_version(tok)
+    status, locs = api("GET", f"/v1/appStoreVersions/{vid}/appStoreVersionLocalizations?limit=50", tok)
+    if status != 200:
+        sys.exit(f"localizations: HTTP {status} {locs}")
+    for l in locs["data"]:
+        body = {"data": {"type": "appStoreVersionLocalizations", "id": l["id"],
+                         "attributes": {"whatsNew": text}}}
+        st, _ = api("PATCH", f"/v1/appStoreVersionLocalizations/{l['id']}", tok, body)
+        print(f"  {l['attributes']['locale']:6s} whatsNew -> {st}")
+
+
+def cmd_submit(tok):
+    version_id, vstr, state = editable_version(tok)
+    s = ensure_submission(tok, version_id)
     if not s:
         sys.exit("No open submission to submit.")
     st, r = api("PATCH", f"/v1/reviewSubmissions/{s['id']}", tok,
@@ -424,6 +493,8 @@ def main():
         cmd_push(tok, sys.argv[2])
     elif cmd == "subtitle":
         cmd_subtitle(tok, sys.argv[2])
+    elif cmd == "whatsnew":
+        cmd_whatsnew(tok, sys.argv[2])
     elif cmd == "contact":
         cmd_contact(tok)
     elif cmd == "compliance":
