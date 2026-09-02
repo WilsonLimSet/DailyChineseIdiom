@@ -18,13 +18,22 @@ Usage:
     python3 scripts/asc.py contact                 # set App Review contact details
     python3 scripts/asc.py attach <buildVersion>   # attach a build (e.g. 1.26) to the editable version
     python3 scripts/asc.py compliance <buildVer>   # declare usesNonExemptEncryption=false
+    python3 scripts/asc.py create-version <x.y>    # create a new editable version record (e.g. 1.95)
+    python3 scripts/asc.py screenshots <dir> [type]  # replace a screenshot set from a directory
     python3 scripts/asc.py submit                  # submit the review submission (IRREVERSIBLE-ish)
+
+`screenshots` uploads every *.png in <dir>, sorted by filename, and that order becomes
+the order shown on the product page — so name them 01-..., 02-... The set is replaced,
+not appended to: existing screenshots of that display type are deleted first. Default
+display type is APP_IPHONE_67, which is the slot 1320x2868 (6.9in) belongs to.
 
 See scripts/RELEASE.md for the full release runbook.
 """
 import glob
+import hashlib
 import json
 import os
+import mimetypes
 import ssl
 import sys
 import time
@@ -287,6 +296,109 @@ def cmd_attach(tok, build_version):
         print(json.dumps(r, indent=1)[:1500])
 
 
+def cmd_create_version(tok, version_string):
+    """Create a new editable version record. Idempotent: reports an existing one instead."""
+    status, vers = api("GET", f"/v1/apps/{APP_ID}/appStoreVersions?limit=20", tok)
+    if status == 200:
+        for v in vers["data"]:
+            if v["attributes"]["versionString"] == version_string:
+                a = v["attributes"]
+                state = a.get("appStoreState") or a.get("appVersionState")
+                print(f"version {version_string} already exists ({state}) id={v['id']}")
+                return
+    body = {"data": {
+        "type": "appStoreVersions",
+        "attributes": {"platform": "IOS", "versionString": version_string},
+        "relationships": {"app": {"data": {"type": "apps", "id": APP_ID}}},
+    }}
+    status, resp = api("POST", "/v1/appStoreVersions", tok, body)
+    if status not in (200, 201):
+        sys.exit(f"create-version: HTTP {status} {json.dumps(resp)[:600]}")
+    a = resp["data"]["attributes"]
+    state = a.get("appStoreState") or a.get("appVersionState")
+    print(f"created version {a['versionString']} ({state}) id={resp['data']['id']}")
+
+
+def screenshot_set(tok, loc_id, display_type):
+    """The appScreenshotSet for this localization + display type, created if absent."""
+    status, sets = api("GET", f"/v1/appStoreVersionLocalizations/{loc_id}/appScreenshotSets", tok)
+    if status != 200:
+        sys.exit(f"screenshotSets: HTTP {status} {sets}")
+    for s in sets["data"]:
+        if s["attributes"]["screenshotDisplayType"] == display_type:
+            return s["id"], False
+    body = {"data": {
+        "type": "appScreenshotSets",
+        "attributes": {"screenshotDisplayType": display_type},
+        "relationships": {"appStoreVersionLocalization": {
+            "data": {"type": "appStoreVersionLocalizations", "id": loc_id}}},
+    }}
+    status, resp = api("POST", "/v1/appScreenshotSets", tok, body)
+    if status not in (200, 201):
+        sys.exit(f"create set: HTTP {status} {json.dumps(resp)[:600]}")
+    return resp["data"]["id"], True
+
+
+def upload_screenshot(tok, set_id, path):
+    """Apple's three-step upload: reserve, PUT the bytes, then commit with a checksum."""
+    blob = open(path, "rb").read()
+    name = os.path.basename(path)
+    body = {"data": {
+        "type": "appScreenshots",
+        "attributes": {"fileName": name, "fileSize": len(blob)},
+        "relationships": {"appScreenshotSet": {
+            "data": {"type": "appScreenshotSets", "id": set_id}}},
+    }}
+    status, resp = api("POST", "/v1/appScreenshots", tok, body)
+    if status not in (200, 201):
+        sys.exit(f"reserve {name}: HTTP {status} {json.dumps(resp)[:600]}")
+    shot_id = resp["data"]["id"]
+
+    for op in resp["data"]["attributes"]["uploadOperations"]:
+        chunk = blob[op["offset"]:op["offset"] + op["length"]]
+        req = urllib.request.Request(op["url"], method=op["method"], data=chunk)
+        for h in op.get("requestHeaders", []):
+            req.add_header(h["name"], h["value"])
+        try:
+            with urllib.request.urlopen(req, context=SSL_CTX) as r:
+                if r.status not in (200, 201, 204):
+                    sys.exit(f"upload {name}: HTTP {r.status}")
+        except urllib.error.HTTPError as e:
+            sys.exit(f"upload {name}: HTTP {e.code} {e.read()[:300]}")
+
+    patch = {"data": {"type": "appScreenshots", "id": shot_id,
+                      "attributes": {"uploaded": True,
+                                     "sourceFileChecksum": hashlib.md5(blob).hexdigest()}}}
+    status, resp = api("PATCH", f"/v1/appScreenshots/{shot_id}", tok, patch)
+    if status != 200:
+        sys.exit(f"commit {name}: HTTP {status} {json.dumps(resp)[:600]}")
+    return shot_id
+
+
+def cmd_screenshots(tok, directory, display_type="APP_IPHONE_67"):
+    files = sorted(glob.glob(os.path.join(directory, "*.png")))
+    if not files:
+        sys.exit(f"no .png files in {directory}")
+    vid, vstr, state = editable_version(tok)
+    loc_id = en_us_localization(tok, vid)
+    print(f"version {vstr} ({state}), display type {display_type}")
+    set_id, created = screenshot_set(tok, loc_id, display_type)
+    print(f"screenshot set {set_id}{' (created)' if created else ''}")
+
+    # Replace rather than append: a second upload would otherwise duplicate the set.
+    status, existing = api("GET", f"/v1/appScreenshotSets/{set_id}/appScreenshots", tok)
+    if status == 200 and existing["data"]:
+        for shot in existing["data"]:
+            st, _ = api("DELETE", f"/v1/appScreenshots/{shot['id']}", tok)
+            print(f"  deleted existing {shot['attributes'].get('fileName')} (HTTP {st})")
+
+    for f in files:
+        size = os.path.getsize(f)
+        shot_id = upload_screenshot(tok, set_id, f)
+        print(f"  uploaded {os.path.basename(f)} ({size:,} bytes) id={shot_id}")
+    print(f"{len(files)} screenshot(s) uploaded, in filename order.")
+
+
 def cmd_submit(tok):
     s = submission(tok)
     if not s:
@@ -318,6 +430,10 @@ def main():
         cmd_compliance(tok, sys.argv[2])
     elif cmd == "attach":
         cmd_attach(tok, sys.argv[2])
+    elif cmd == "create-version":
+        cmd_create_version(tok, sys.argv[2])
+    elif cmd == "screenshots":
+        cmd_screenshots(tok, sys.argv[2], *(sys.argv[3:4] or []))
     elif cmd == "submit":
         cmd_submit(tok)
     else:

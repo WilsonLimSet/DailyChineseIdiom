@@ -367,6 +367,29 @@ An iPhone 16 Pro Max simulator captures at exactly 1320×2868, the 6.9" App Stor
 resizing is needed. No 6.5" simulator is installed; 6.9" is the required size and Apple scales
 the rest.
 
-**Not yet uploaded.** `scripts/asc.py` has no screenshot support, and there is no editable
-version record — `asc.py status` returns "No editable version". The 1.95 record has to exist
-before any screenshot or metadata can be pushed.
+**The set is five shots, uploaded to the 1.95 draft (2026-09-02).** Shots 1 and 2 are the
+originals, byte-identical — they were pulled down from the live listing and re-uploaded,
+because `asc.py screenshots` replaces a whole set rather than appending to it. Shots 3-5 are
+new:
+
+| # | headline | screen |
+|---|----------|--------|
+| 1 | Chinese Idioms | widget mockup (original, tilted) |
+| 2 | Daily Wisdom | idiom detail (original, tilted) |
+| 3 | History and Meaning | the actual History & Meaning panel |
+| 4 | Save Your Favorites | Favourites list, 7 well-known idioms |
+| 5 | Over 1,000 Idioms | calendar / Previous Idioms |
+
+The old shot 3 was titled "History and Meaning" but showed the *calendar*, and featured
+守时如金 — an idiom since removed as not genuine. It is gone from both sizes.
+
+**Shots 1-2 are tilted and 3-5 are straight.** Deliberate, confirmed by the user.
+
+`scripts/compose.py` rebuilds any shot in this style in one command. Geometry was measured off
+the original shot 3: background `#1F1F1F`, headline at x=100 from y=120 in Helvetica Neue Bold
+Italic auto-sized to 1140px wide, device frame x 182-1112, y 835-2673 with a 22px bezel. The
+6.5in set is the same image resized to 1242x2688 (the aspect differs by 0.4%, imperceptible).
+
+**asc.py now handles this end to end:** `create-version`, and `screenshots <dir> [type]` which
+does Apple's reserve -> PUT -> commit flow. Note it *replaces* a set, so always assemble the
+complete set on disk first.
