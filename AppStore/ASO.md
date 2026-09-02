@@ -5,9 +5,9 @@ App: ChengYu / Daily Chinese Idioms — App Store ID `6740611324`
 Everything below is written to Apple's field limits and checked against them. Paste each
 block into App Store Connect → **App Store** tab → the matching field, per language.
 
-Screenshots: a new set is being produced for 1.95 (approved 2026-08-31). The live set is
-three shots, one of which advertises 守时如金 — an idiom since removed as not genuine — and
-none of which show favourites, the 简/繁 toggle, the meaning modes or audio. See §9.
+Screenshots: the History & Meaning shot is replaced for 1.95. The live set is three shots,
+one of which advertises 守时如金 — an idiom since removed as not genuine — and none of which
+show favourites, the 简/繁 toggle, the meaning modes or audio. See §9 and §10.
 
 ---
 
@@ -340,3 +340,33 @@ copy on the listing. A draft that read "each with pinyin, both meanings, a real 
 sentence, and the story behind it" was rejected 2026-08-31 as a restatement of the description's
 second paragraph. It now names the three things a reader can picture themselves doing — hearing
 it spoken, seeing it in an everyday sentence, saving it — after the count.
+
+
+## 10. Screenshots (2026-09-02)
+
+**History & Meaning shot: 画蛇添足.** Chosen by the user from seven captured candidates
+(塞翁失马, 井底之蛙, 画蛇添足, 杯弓蛇影, 对牛弹琴, 守株待兔, 亡羊补牢). Saved at
+`AppStore/screenshots/02-history-and-meaning-6.9in.png`, 1320×2868.
+
+Why this one: it is the shortest of the story idioms, so the text block is the airiest — which
+matters because App Store screenshots are first seen as **thumbnails**, where no body text is
+legible and only the shape reads. It still carries a complete story with a punchline, glosses
+all four characters inline (画蛇 / 添足), and the concept transfers to English instantly, since
+it is gilding the lily.
+
+**How to reproduce a shot of a specific idiom.** The idiom of the day is
+`idioms[abs(daysSince(2025-01-01)) % 1002]`, so a given idiom only surfaces on its own date.
+Rather than driving the calendar UI, patch the **bundled** `idioms.json` inside the built
+`.app` to swap the target into today's index, install, capture, then reinstall a clean build.
+The repo file is never touched. Set the marketing status bar first:
+
+    xcrun simctl status_bar <udid> override --time "9:41" --dataNetwork wifi --wifiMode active \
+      --wifiBars 3 --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+
+An iPhone 16 Pro Max simulator captures at exactly 1320×2868, the 6.9" App Store size, so no
+resizing is needed. No 6.5" simulator is installed; 6.9" is the required size and Apple scales
+the rest.
+
+**Not yet uploaded.** `scripts/asc.py` has no screenshot support, and there is no editable
+version record — `asc.py status` returns "No editable version". The 1.95 record has to exist
+before any screenshot or metadata can be pushed.
