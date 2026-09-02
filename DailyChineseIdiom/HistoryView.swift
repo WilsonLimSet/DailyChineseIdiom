@@ -4,7 +4,15 @@ struct HistoryView: View {
     @State private var selectedDate = Date()
     @StateObject private var preferences = UserPreferences.shared
     @StateObject private var speechService = SpeechService.shared
-    private let startDate = Calendar.current.date(from: DateComponents(year: 2025, month: 1, day: 1)) ?? Date()
+    /// Gregorian on purpose — see IdiomProvider.idiomForDate. Resolving this against
+    /// Calendar.current put the start date in the *future* on Minguo, Japanese, Islamic
+    /// and Persian calendars, and `startDate...Date()` traps when lower > upper.
+    private let startDate: Date = {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = .current
+        return calendar.date(from: DateComponents(year: 2025, month: 1, day: 1))
+            ?? Date(timeIntervalSince1970: 1_735_689_600)  // 2025-01-01T00:00:00Z
+    }()
     @State private var showingFullIdiom = false
     @State private var showingShareSheet = false
     private let dateFormatter: DateFormatter = {
@@ -20,7 +28,7 @@ struct HistoryView: View {
                 DatePicker(
                     "Select Date",
                     selection: $selectedDate,
-                    in: startDate...Date(),
+                    in: min(startDate, Date())...Date(),
                     displayedComponents: [.date]
                 )
                 .datePickerStyle(.graphical)

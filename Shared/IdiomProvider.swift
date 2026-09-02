@@ -51,14 +51,30 @@ class IdiomProvider {
             return sampleIdiom
         }
 
-        let calendar = Calendar.current
-        // Reference date: Jan 1, 2025
+        // The reference below is a *Gregorian* date, so it must be resolved against a
+        // Gregorian calendar. Calendar.current follows the user's region: on a Minguo
+        // (Taiwan), Japanese, Islamic or Persian calendar, `year: 2025` lands centuries
+        // away — which gave those users a different idiom from everyone else, and made
+        // HistoryView's `startDate...Date()` an invalid range that traps at runtime.
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = .current
         let referenceComponents = DateComponents(year: 2025, month: 1, day: 1)
-        let referenceDate = calendar.date(from: referenceComponents) ?? date
+        guard let referenceDate = calendar.date(from: referenceComponents) else {
+            return idioms[0]
+        }
 
-        // Calculate days since reference date
-        let daysSinceReference = calendar.dateComponents([.day], from: referenceDate, to: date).day ?? 0
-        let index = abs(daysSinceReference) % max(1, idioms.count)
+        // Compare whole days, so the idiom turns over at the user's local midnight
+        // rather than drifting with the time of day or a DST transition.
+        let daysSinceReference = calendar.dateComponents(
+            [.day],
+            from: calendar.startOfDay(for: referenceDate),
+            to: calendar.startOfDay(for: date)
+        ).day ?? 0
+
+        // Modulo that stays in range for dates before the reference too; `abs` would
+        // mirror them, showing 2024-12-31 the same idiom as 2025-01-02.
+        let count = idioms.count
+        let index = ((daysSinceReference % count) + count) % count
         return idioms[index]
     }
     
